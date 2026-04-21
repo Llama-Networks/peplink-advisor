@@ -8,9 +8,9 @@
     "What's the right pick for a fishing charter with guest Wi-Fi?"
   ],
   "capabilities": {
-    "web_browsing": false,
-    "dalle": false,
-    "code_interpreter": true
-  },
-  "model": "gpt-4"
+    "web_search": false,
+    "image_generation": false,
+    "canvas": false,
+    "code_interpreter_and_data_analysis": true
+  }
 }

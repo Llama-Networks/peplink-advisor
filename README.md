@@ -50,6 +50,7 @@ Grab `peplink-advisor-chatgpt-<version>.zip` from the latest [GitHub Release](..
 # Build both artifacts locally.
 python3 build/build_anthropic.py
 python3 build/build_chatgpt.py
+python3 build/verify_chatgpt_bundle.py
 
 # Sanity-check query.py against the dataset.
 python3 core/scripts/query.py list
@@ -62,13 +63,20 @@ python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
 1. Make your changes in `core/` (and adapters if needed).
 2. Bump `version` in `adapters/anthropic/.claude-plugin/plugin.json`.
 3. Update `CHANGELOG.md`.
-4. Commit, tag, and push:
+4. Build and verify the release artifacts locally:
    ```bash
-   git commit -am "Release v0.2.0"
+   python3 build/build_anthropic.py
+   python3 build/build_chatgpt.py
+   python3 build/verify_chatgpt_bundle.py
+   ```
+5. Commit, tag, and push:
+   ```bash
+   git add -A
+   git commit -m "Release v0.2.0"
    git tag v0.2.0
    git push --follow-tags
    ```
-5. GitHub Actions builds both artifacts and attaches them to a new Release.
+6. GitHub Actions builds both artifacts and attaches them to a new Release.
 
 ## Refreshing the dataset
 

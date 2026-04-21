@@ -1,0 +1,38 @@
+name: CI
+
+# Runs on every push and PR. Keeps the two build scripts honest — a broken
+# core/ or adapter will fail here instead of at release time.
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Sanity-check query.py against the bundled dataset
+        run: |
+          cd core/scripts
+          python3 query.py list | head -5
+          python3 query.py show "Balance 20X" > /dev/null
+          python3 query.py search "GPS" > /dev/null
+
+      - name: Build Anthropic plugin
+        run: python3 build/build_anthropic.py
+
+      - name: Build ChatGPT bundle
+        run: python3 build/build_chatgpt.py
+
+      - name: Verify ChatGPT bundle
+        run: python3 build/verify_chatgpt_bundle.py
+
+      - name: Inspect dist/
+        run: ls -la dist/

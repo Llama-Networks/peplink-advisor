@@ -16,9 +16,14 @@ This adapter turns `core/` into a ChatGPT Custom GPT. The build produces a zip c
    - **Description:** (from config.json)
    - **Instructions:** paste the full contents of `instructions.md`
    - **Conversation starters:** (from config.json)
-5. Under **Capabilities**, enable **Code Interpreter & Data Analysis**. Leave Web Browsing and DALL·E off unless you have a reason.
-6. Under **Knowledge**, upload every file from the `knowledge/` folder. All files should be in the root of the Knowledge area — do not nest them in subfolders; ChatGPT flattens paths.
-7. Save as **Only me** first and test with the prompts in `EVALS.md` (if present). Then change to **Anyone with the link** or **GPT Store** when you're happy.
+5. Under **Recommended model**, leave ChatGPT's current default in place unless you have a specific reason to pin a currently available model in your workspace.
+6. Under **Capabilities**, enable **Code Interpreter & Data Analysis**. Leave Web search, Image generation, and Canvas off unless you have a reason.
+7. Under **Knowledge**, upload every file from the `knowledge/` folder. All files should be in the root of the Knowledge area — do not nest them in subfolders; ChatGPT flattens paths.
+8. Save as **Only me** first and test with prompts that force `query.py` to execute, such as:
+   - `List the available router models.`
+   - `Show the full spec card for Balance 20X.`
+   - `Compare HD2 MBX 5G and HD4 MBX 5G on Performance and Interfaces.`
+9. Then change to **Anyone with the link** or **GPT Store** when you're happy.
 
 ## Updates
 

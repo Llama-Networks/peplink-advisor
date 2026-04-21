@@ -36,16 +36,43 @@ import json
 import os
 import re
 import sys
+from pathlib import Path
 from typing import Any, Iterable
 
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA_PATH = os.path.normpath(os.path.join(HERE, "..", "data", "peplink_all_devices.json"))
+HERE = Path(__file__).resolve().parent
+
+
+def resolve_data_path() -> Path:
+    """Find the dataset in both repo and packaged-adapter layouts."""
+    candidates: list[Path] = []
+
+    override = os.environ.get("PEPLINK_DATA_PATH")
+    if override:
+        candidates.append(Path(override).expanduser())
+
+    candidates.extend([
+        HERE.parent / "data" / "peplink_all_devices.json",  # core/scripts/query.py
+        HERE / "peplink_all_devices.json",                  # ChatGPT knowledge bundle
+        Path.cwd() / "peplink_all_devices.json",            # ad-hoc local runs
+        Path("/mnt/data/peplink_all_devices.json"),         # Custom GPT sandbox
+    ])
+
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+
+    tried = "\n".join(f"- {candidate}" for candidate in candidates)
+    raise FileNotFoundError(
+        "Could not find peplink_all_devices.json. Tried:\n"
+        f"{tried}\n"
+        "Set PEPLINK_DATA_PATH to override the lookup path."
+    )
 
 
 # ---------- data loading ----------
 
 def load() -> dict[str, Any]:
-    with open(DATA_PATH, "r", encoding="utf-8") as f:
+    with resolve_data_path().open("r", encoding="utf-8") as f:
         return json.load(f)
 
 

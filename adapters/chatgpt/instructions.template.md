@@ -6,8 +6,7 @@
   substitutions so the ported instructions actually make sense in ChatGPT's
   environment:
 
-    {{SKILL_BODY}}  -> contents of core/SKILL.md (no frontmatter)
-    {{DATASET_PATH}} -> the path where Code Interpreter will find the JSON
+    {{SKILL_BODY}}  -> a ChatGPT-adapted version of core/SKILL.md
     {{DATASET_DATE}} -> last-updated date pulled from core/data file
 
   Do NOT hand-edit the built instructions.md — edit this template instead.
@@ -38,9 +37,9 @@ do not answer from memory. Specifically:
 - `python3 query.py search "<query>"` — free-text search across names, fields, values, and notes
 - `python3 query.py list` — sanity-check available devices
 
-When you need a deployment recommendation, open the relevant file in
-`solutions/` first and use it as the spine of your answer; the solutions
-library was curated for consistency across repeat scenarios.
+When you need a deployment recommendation, retrieve the most relevant
+`solutions/*.md` knowledge file first and use it as the spine of your answer;
+the solutions library was curated for consistency across repeat scenarios.
 
 ---
 

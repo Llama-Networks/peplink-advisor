@@ -36,6 +36,36 @@ ARTIFACT_PREFIX = "peplink-advisor-chatgpt"
 HTML_COMMENT = re.compile(r"<!--.*?-->", re.DOTALL)
 
 
+def strip_section(markdown: str, heading: str) -> str:
+    pattern = re.compile(rf"(?ms)^## {re.escape(heading)}\n.*?(?=^## |\Z)")
+    return pattern.sub("", markdown)
+
+
+def adapt_skill_body_for_chatgpt(skill_body: str) -> str:
+    """Keep shared guidance, but remove Anthropic-only sections and paths."""
+    adapted = skill_body.strip()
+
+    for heading in ("When to use this skill", "Refreshing the dataset"):
+        adapted = strip_section(adapted, heading)
+
+    replacements = {
+        "`data/peplink_all_devices.json`": "`peplink_all_devices.json`",
+        "`scripts/query.py`": "`query.py`",
+        "python3 scripts/query.py": "python3 query.py",
+        "1. **Check the solutions library first.** `ls solutions/` and skim any filenames that look related. If one matches, open it and use it as the spine of your answer — it was curated for this purpose.":
+            "1. **Check the solutions library first.** Retrieve the most relevant `solutions/*.md` knowledge file and use it as the spine of your answer — it was curated for this purpose.",
+        "- If the user describes a scenario that isn't covered, offer to draft a new solution file at the end — that's how the library grows.":
+            "- If the user describes a scenario that isn't covered, say the library doesn't have a matching recipe yet and give a best-effort recommendation grounded in the dataset.",
+        '- For "live" tracker or dashboard-style asks (e.g., "give me a page where I can keep comparing these"), suggest turning the answer into a Cowork artifact.':
+            '- For "live" tracker or dashboard-style asks (e.g., "give me a page where I can keep comparing these"), suggest exporting the answer to a spreadsheet or doc.',
+    }
+    for old, new in replacements.items():
+        adapted = adapted.replace(old, new)
+
+    adapted = re.sub(r"\n{3,}", "\n\n", adapted)
+    return adapted.strip()
+
+
 def render_instructions(template: str, skill_body: str, dataset_date: str) -> str:
     # Strip documentation comments BEFORE substitution, otherwise placeholders
     # that appear inside a comment (as documentation) would be substituted and
@@ -43,9 +73,8 @@ def render_instructions(template: str, skill_body: str, dataset_date: str) -> st
     rendered = HTML_COMMENT.sub("", template)
     rendered = (
         rendered
-        .replace("{{SKILL_BODY}}", skill_body.strip())
+        .replace("{{SKILL_BODY}}", adapt_skill_body_for_chatgpt(skill_body))
         .replace("{{DATASET_DATE}}", dataset_date)
-        .replace("{{DATASET_PATH}}", "/mnt/data/peplink_all_devices.json")
     )
     # Collapse the 2-3 blank lines left behind by stripped comments.
     rendered = re.sub(r"\n{3,}", "\n\n", rendered)

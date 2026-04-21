@@ -1,0 +1,56 @@
+name: Release
+
+# Fires on any tag of the form v0.1.0, v1.2.3, etc. Bump the version in
+# adapters/anthropic/.claude-plugin/plugin.json in the same commit that you
+# tag, so the produced artifacts carry the right version string.
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write  # required to create a GitHub Release and upload assets
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build Anthropic plugin
+        run: python3 build/build_anthropic.py
+
+      - name: Build ChatGPT bundle
+        run: python3 build/build_chatgpt.py
+
+      - name: Verify ChatGPT bundle
+        run: python3 build/verify_chatgpt_bundle.py
+
+      - name: List artifacts
+        run: ls -la dist/
+
+      # For tag pushes, cut a GitHub Release and attach both artifacts.
+      - name: Create GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            dist/peplink-advisor-*.plugin
+            dist/peplink-advisor-chatgpt-*.zip
+          generate_release_notes: true
+          fail_on_unmatched_files: true
+
+      # For manual runs (no tag), expose the artifacts in the Actions UI.
+      - name: Upload build artifacts (non-release runs)
+        if: "!startsWith(github.ref, 'refs/tags/v')"
+        uses: actions/upload-artifact@v4
+        with:
+          name: peplink-advisor-dist
+          path: dist/

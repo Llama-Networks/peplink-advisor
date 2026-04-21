@@ -4,10 +4,13 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
-### Added
-- Monorepo layout with `core/` + `adapters/{anthropic,chatgpt}/` + `build/` for dual-platform releases.
-- GitHub Actions CI that builds both adapters on every push.
-- GitHub Actions release workflow that attaches `.plugin` and `.zip` artifacts to every `v*` tag.
+## [0.1.1] — 2026-04-21
+
+### Fixed
+- ChatGPT bundle path mismatches that made the packaged `query.py` fail to find `peplink_all_devices.json`.
+- ChatGPT instructions now strip Anthropic-only guidance and rewrite shared path references to match the shipped GPT knowledge bundle.
+- ChatGPT deploy metadata now matches the current GPT editor capability names and no longer points at a stale model setting.
+- CI and release workflows now verify the built ChatGPT bundle before shipping artifacts.
 
 ## [0.1.0] — 2026-04-21
 

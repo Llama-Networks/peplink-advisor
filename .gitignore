@@ -1,0 +1,26 @@
+# Build outputs — always regenerated; don't commit.
+dist/
+build/__pycache__/
+
+# Python junk
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Editor junk
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local eval / experiment scratch space — keep out of the repo.
+/.scratch/
+/peplink-advisor-workspace/
+.DS_Store

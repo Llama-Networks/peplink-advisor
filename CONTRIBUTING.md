@@ -46,6 +46,7 @@ python3 core/scripts/enrich_datasheets.py
 # 6. Run the builds locally to confirm nothing broke:
 python3 build/build_anthropic.py
 python3 build/build_chatgpt.py
+python3 build/verify_chatgpt_bundle.py
 ```
 
 If the JSON schema changed (new nested sections, renamed fields), update the "Data shape quick reference" section in `core/SKILL.md` and run the query.py sanity checks from `.github/workflows/ci.yml` before merging.
