@@ -25,8 +25,11 @@ jobs:
           python3 query.py show "Balance 20X" > /dev/null
           python3 query.py search "GPS" > /dev/null
 
-      - name: Build Anthropic plugin
+      - name: Build Anthropic artifacts
         run: python3 build/build_anthropic.py
+
+      - name: Verify Anthropic artifacts
+        run: python3 build/verify_anthropic_artifacts.py
 
       - name: Build ChatGPT bundle
         run: python3 build/build_chatgpt.py

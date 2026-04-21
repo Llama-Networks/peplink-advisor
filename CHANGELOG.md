@@ -4,6 +4,10 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+### Fixed
+- Anthropic releases now ship both official packaging formats: the Claude Desktop / claude.ai skill zip and a Cowork / Claude Code plugin bundle that includes `.claude-plugin/plugin.json`.
+- CI and release workflows now verify both Anthropic artifacts before publishing them.
+
 ## [0.1.3] — 2026-04-21
 
 ### Fixed

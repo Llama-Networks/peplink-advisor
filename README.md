@@ -4,8 +4,10 @@ An AI assistant for Peplink hardware questions — spec lookups, side-by-side co
 
 This repo ships **two deployment targets from a single source of truth**:
 
-- **Anthropic** (Claude Desktop / claude.ai / Claude Code) — an Agent Skills-format skill zip that Claude Desktop accepts via "Upload skill" and that Claude Code discovers when unzipped into `~/.claude/skills/`.
-- **ChatGPT** (Custom GPT) — same content, packaged as a knowledge bundle with pasted Instructions.
+- **Anthropic** — published in two Anthropic-native formats:
+  - `peplink-advisor-anthropic-<version>.zip` for Claude Desktop / claude.ai skill upload
+  - `peplink-advisor-anthropic-plugin-<version>.plugin` for Claude Cowork / Claude Code plugin installs that expect `.claude-plugin/plugin.json`
+- **ChatGPT** (Custom GPT) — packaged as a knowledge bundle with pasted Instructions.
 
 Both builds are produced from the same `core/` directory by the scripts in `build/`. CI runs on every push; GitHub Releases publish both artifacts on every tag.
 
@@ -27,7 +29,7 @@ peplink-advisor/
 │   └── chatgpt/                # Instructions template + knowledge manifest + deploy README.
 ├── build/
 │   ├── common.py
-│   ├── build_anthropic.py      # -> dist/peplink-advisor-anthropic-<version>.zip (Claude Desktop skill)
+│   ├── build_anthropic.py      # -> Desktop skill zip + Cowork/Code plugin bundle
 │   └── build_chatgpt.py        # -> dist/peplink-advisor-chatgpt-<version>.zip
 └── .github/workflows/
     ├── ci.yml                  # Build both adapters on every push/PR.
@@ -40,9 +42,13 @@ peplink-advisor/
 
 Grab `peplink-advisor-anthropic-<version>.zip` from the latest [GitHub Release](../../releases). In Claude Desktop, go to Customize → Skills → Upload skill and pick the zip.
 
-### Claude Code
+### Claude Code skills
 
 Same zip. Unzip it so the skill lives at `~/.claude/skills/peplink-advisor/SKILL.md` and Claude Code will discover it automatically.
+
+### Claude Cowork / Claude Code plugins
+
+If the host expects `.claude-plugin/plugin.json`, use `peplink-advisor-anthropic-plugin-<version>.plugin` from the release instead.
 
 ### ChatGPT Custom GPT
 
@@ -53,6 +59,7 @@ Grab `peplink-advisor-chatgpt-<version>.zip` from the latest [GitHub Release](..
 ```bash
 # Build both artifacts locally.
 python3 build/build_anthropic.py
+python3 build/verify_anthropic_artifacts.py
 python3 build/build_chatgpt.py
 python3 build/verify_chatgpt_bundle.py
 
@@ -70,6 +77,7 @@ python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
 4. Build and verify the release artifacts locally:
    ```bash
    python3 build/build_anthropic.py
+   python3 build/verify_anthropic_artifacts.py
    python3 build/build_chatgpt.py
    python3 build/verify_chatgpt_bundle.py
    ```

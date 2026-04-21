@@ -1,30 +1,37 @@
 #!/usr/bin/env python3
-"""Assemble the Anthropic skill artifact for Claude Desktop / claude.ai.
+"""Assemble the Anthropic artifacts for Claude hosts.
 
-Claude Desktop's "Upload skill" flow expects a .zip whose root is a single
-folder named after the skill, with SKILL.md at the top of that folder. This
-is the Agent Skills open-standard layout — see
-https://support.claude.com/en/articles/12512198-how-to-create-custom-skills
+This build intentionally ships two Anthropic-targeted bundles because Anthropic
+currently has two distinct extension formats:
 
-Layout produced inside dist/peplink-advisor-anthropic-<version>.zip:
+1. Claude Desktop / claude.ai custom skills expect an Agent Skills-format zip:
 
-    peplink-advisor/
-    ├── SKILL.md                (frontmatter + core SKILL body)
-    ├── scripts/                (core/scripts/*)
-    ├── data/                   (core/data/*)
-    ├── solutions/              (core/solutions/*)
-    └── references/             (core/references/*)
+       peplink-advisor/
+       ├── SKILL.md
+       ├── scripts/
+       ├── data/
+       ├── solutions/
+       └── references/
+
+   This is written to `dist/peplink-advisor-anthropic-<version>.zip`.
+
+2. Claude Cowork / Claude Code plugin installs expect a plugin bundle with
+   `.claude-plugin/plugin.json` at the root:
+
+       .claude-plugin/plugin.json
+       skills/peplink-advisor/SKILL.md
+       skills/peplink-advisor/{scripts,data,solutions,references}/...
+
+   This is written to `dist/peplink-advisor-anthropic-plugin-<version>.plugin`.
 
 Run from anywhere:
 
     python3 build/build_anthropic.py
 
 Safe to re-run; dist/ is rebuilt each time.
-
-Note: This artifact also works as a personal skill in Claude Code — unzip it
-into ~/.claude/skills/ and the skill is discovered automatically.
 """
 from __future__ import annotations
+
 import re
 import shutil
 import tempfile
@@ -35,18 +42,15 @@ from common import repo_root, read_version
 
 
 SKILL_NAME = "peplink-advisor"
-ARTIFACT_PREFIX = "peplink-advisor-anthropic"
+DESKTOP_ARTIFACT_PREFIX = "peplink-advisor-anthropic"
+PLUGIN_ARTIFACT_PREFIX = "peplink-advisor-anthropic-plugin"
 
 # Claude Desktop enforces: lowercase letters, numbers, and hyphens, max 64 chars.
 NAME_RE = re.compile(r"^[a-z0-9-]{1,64}$")
 
 
 def build_skill_md(core_skill: Path, frontmatter_yaml: Path) -> str:
-    """Prepend the Anthropic frontmatter to the portable SKILL body.
-
-    The frontmatter must include `name` and `description` for Claude Desktop to
-    accept the upload. `name` must match the top-level folder name in the zip.
-    """
+    """Prepend the Anthropic frontmatter to the portable SKILL body."""
     body = core_skill.read_text().lstrip()
     fm = frontmatter_yaml.read_text().rstrip()
     lines = [ln for ln in fm.splitlines() if not ln.lstrip().startswith("#")]
@@ -75,6 +79,51 @@ def build_skill_md(core_skill: Path, frontmatter_yaml: Path) -> str:
     return f"---\n{frontmatter}\n---\n\n{body}"
 
 
+def zip_tree(stage: Path, artifact: Path) -> None:
+    if artifact.exists():
+        artifact.unlink()
+    with zipfile.ZipFile(artifact, "w", zipfile.ZIP_DEFLATED) as zf:
+        for p in sorted(stage.rglob("*")):
+            if p.is_file():
+                zf.write(p, p.relative_to(stage))
+
+
+def stage_desktop_skill(root: Path, stage: Path) -> None:
+    skill_dir = stage / SKILL_NAME
+    skill_dir.mkdir(parents=True)
+
+    skill_md = build_skill_md(
+        core_skill=root / "core" / "SKILL.md",
+        frontmatter_yaml=root / "adapters" / "anthropic" / "frontmatter.yaml",
+    )
+    (skill_dir / "SKILL.md").write_text(skill_md)
+
+    for sub in ("scripts", "data", "solutions", "references"):
+        src = root / "core" / sub
+        if src.exists():
+            shutil.copytree(src, skill_dir / sub)
+
+
+def stage_plugin_bundle(root: Path, stage: Path) -> None:
+    plugin_manifest = root / "adapters" / "anthropic" / ".claude-plugin" / "plugin.json"
+    (stage / ".claude-plugin").mkdir(parents=True)
+    shutil.copy(plugin_manifest, stage / ".claude-plugin" / "plugin.json")
+
+    skill_dir = stage / "skills" / SKILL_NAME
+    skill_dir.mkdir(parents=True)
+
+    skill_md = build_skill_md(
+        core_skill=root / "core" / "SKILL.md",
+        frontmatter_yaml=root / "adapters" / "anthropic" / "frontmatter.yaml",
+    )
+    (skill_dir / "SKILL.md").write_text(skill_md)
+
+    for sub in ("scripts", "data", "solutions", "references"):
+        src = root / "core" / sub
+        if src.exists():
+            shutil.copytree(src, skill_dir / sub)
+
+
 def main() -> None:
     root = repo_root()
     version = read_version()
@@ -82,36 +131,27 @@ def main() -> None:
     dist.mkdir(exist_ok=True)
 
     with tempfile.TemporaryDirectory(prefix="peplink-anthropic-") as tmp:
-        stage = Path(tmp)
-        skill_dir = stage / SKILL_NAME
-        skill_dir.mkdir(parents=True)
+        stage_root = Path(tmp)
+        desktop_stage = stage_root / "desktop"
+        plugin_stage = stage_root / "plugin"
 
-        skill_md = build_skill_md(
-            core_skill=root / "core" / "SKILL.md",
-            frontmatter_yaml=root / "adapters" / "anthropic" / "frontmatter.yaml",
-        )
-        (skill_dir / "SKILL.md").write_text(skill_md)
+        stage_desktop_skill(root, desktop_stage)
+        stage_plugin_bundle(root, plugin_stage)
 
-        for sub in ("scripts", "data", "solutions", "references"):
-            src = root / "core" / sub
-            if src.exists():
-                shutil.copytree(src, skill_dir / sub)
-
-        # Remove any stale .plugin artifact from previous builds so releases
-        # don't accidentally ship both formats.
-        for stale in dist.glob(f"{ARTIFACT_PREFIX}-*.plugin"):
+        for stale in dist.glob(f"{DESKTOP_ARTIFACT_PREFIX}-*.plugin"):
+            stale.unlink()
+        for stale in dist.glob(f"{PLUGIN_ARTIFACT_PREFIX}-*.zip"):
             stale.unlink()
 
-        artifact = dist / f"{ARTIFACT_PREFIX}-{version}.zip"
-        if artifact.exists():
-            artifact.unlink()
-        with zipfile.ZipFile(artifact, "w", zipfile.ZIP_DEFLATED) as zf:
-            for p in sorted(stage.rglob("*")):
-                if p.is_file():
-                    zf.write(p, p.relative_to(stage))
+        desktop_artifact = dist / f"{DESKTOP_ARTIFACT_PREFIX}-{version}.zip"
+        plugin_artifact = dist / f"{PLUGIN_ARTIFACT_PREFIX}-{version}.plugin"
+        zip_tree(desktop_stage, desktop_artifact)
+        zip_tree(plugin_stage, plugin_artifact)
 
-    size_kb = artifact.stat().st_size / 1024
-    print(f"[anthropic] wrote {artifact.relative_to(root)} ({size_kb:.0f} KB)")
+    desktop_size_kb = desktop_artifact.stat().st_size / 1024
+    plugin_size_kb = plugin_artifact.stat().st_size / 1024
+    print(f"[anthropic] wrote {desktop_artifact.relative_to(root)} ({desktop_size_kb:.0f} KB)")
+    print(f"[anthropic] wrote {plugin_artifact.relative_to(root)} ({plugin_size_kb:.0f} KB)")
 
 
 if __name__ == "__main__":

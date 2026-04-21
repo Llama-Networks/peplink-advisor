@@ -24,8 +24,11 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Build Anthropic plugin
+      - name: Build Anthropic artifacts
         run: python3 build/build_anthropic.py
+
+      - name: Verify Anthropic artifacts
+        run: python3 build/verify_anthropic_artifacts.py
 
       - name: Build ChatGPT bundle
         run: python3 build/build_chatgpt.py
@@ -43,6 +46,7 @@ jobs:
         with:
           files: |
             dist/peplink-advisor-anthropic-*.zip
+            dist/peplink-advisor-anthropic-plugin-*.plugin
             dist/peplink-advisor-chatgpt-*.zip
           generate_release_notes: true
           fail_on_unmatched_files: true
