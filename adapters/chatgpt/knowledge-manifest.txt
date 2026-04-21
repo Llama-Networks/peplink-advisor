@@ -1,0 +1,13 @@
+# Files to upload as Knowledge to the ChatGPT Custom GPT.
+# Paths are relative to the repo root. build_chatgpt.py reads this manifest
+# and bundles each listed file into dist/peplink-advisor-chatgpt-<version>.zip
+# at the filename shown after the '->' (so they land in the GPT's Knowledge
+# with flat, predictable names).
+
+core/scripts/query.py                      -> query.py
+core/data/peplink_all_devices.json         -> peplink_all_devices.json
+core/solutions/README.md                   -> solutions/README.md
+core/solutions/_template.md                -> solutions/_template.md
+core/solutions/maritime-bonded-cellular.md -> solutions/maritime-bonded-cellular.md
+core/solutions/retail-branch-cellular-failover.md -> solutions/retail-branch-cellular-failover.md
+core/references/device-families.md         -> references/device-families.md
