@@ -8,6 +8,16 @@ on:
     tags:
       - "v*"
   workflow_dispatch:
+    inputs:
+      publish_release:
+        description: "Create/update a GitHub Release for this run"
+        required: false
+        default: true
+        type: boolean
+      tag_name:
+        description: "Release tag to create/use (defaults to v<plugin.json version>)"
+        required: false
+        type: string
 
 permissions:
   contents: write  # required to create a GitHub Release and upload assets
@@ -24,6 +34,44 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Resolve release metadata
+        id: release_meta
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          REF_NAME: ${{ github.ref_name }}
+          INPUT_PUBLISH_RELEASE: ${{ inputs.publish_release }}
+          INPUT_TAG_NAME: ${{ inputs.tag_name }}
+        run: |
+          version="$(python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          manifest = Path("adapters/anthropic/.claude-plugin/plugin.json")
+          print(json.loads(manifest.read_text())["version"])
+          PY
+          )"
+          expected_tag="v${version}"
+
+          if [ "$EVENT_NAME" = "push" ]; then
+            should_release=true
+            tag_name="$REF_NAME"
+          else
+            should_release="${INPUT_PUBLISH_RELEASE:-true}"
+            tag_name="${INPUT_TAG_NAME:-$expected_tag}"
+          fi
+
+          if [ "$should_release" = "true" ] && [ "$tag_name" != "$expected_tag" ]; then
+            echo "Refusing to publish release ${tag_name}: plugin.json version is ${version}, expected tag ${expected_tag}." >&2
+            exit 1
+          fi
+
+          {
+            echo "version=${version}"
+            echo "expected_tag=${expected_tag}"
+            echo "tag_name=${tag_name}"
+            echo "should_release=${should_release}"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Build Anthropic artifacts
         run: python3 build/build_anthropic.py
 
@@ -39,20 +87,24 @@ jobs:
       - name: List artifacts
         run: ls -la dist/
 
-      # For tag pushes, cut a GitHub Release and attach both artifacts.
+      # For tag pushes, or manual dispatches that opt into publishing, cut a
+      # GitHub Release and attach the built artifacts.
       - name: Create GitHub Release
-        if: startsWith(github.ref, 'refs/tags/v')
+        if: steps.release_meta.outputs.should_release == 'true'
         uses: softprops/action-gh-release@v2
         with:
+          tag_name: ${{ steps.release_meta.outputs.tag_name }}
+          target_commitish: ${{ github.sha }}
           files: |
             dist/peplink-advisor-anthropic-*.zip
             dist/peplink-advisor-chatgpt-*.zip
           generate_release_notes: true
           fail_on_unmatched_files: true
 
-      # For manual runs (no tag), expose the artifacts in the Actions UI.
+      # For manual runs that skip publishing, expose the artifacts in the
+      # Actions UI instead.
       - name: Upload build artifacts (non-release runs)
-        if: "!startsWith(github.ref, 'refs/tags/v')"
+        if: steps.release_meta.outputs.should_release != 'true'
         uses: actions/upload-artifact@v4
         with:
           name: peplink-advisor-dist

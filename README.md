@@ -85,14 +85,19 @@ python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
    python3 build/build_chatgpt.py
    python3 build/verify_chatgpt_bundle.py
    ```
-5. Commit, tag, and push:
+5. Publish the release using either path:
    ```bash
+   # Option A: tag push
    git add -A
    git commit -m "Release v0.2.0"
    git tag v0.2.0
    git push --follow-tags
    ```
-6. GitHub Actions builds both artifacts and attaches them to a new Release.
+   Or run **Actions -> Release -> Run workflow** on the commit you want to ship.
+   The manual workflow defaults to creating/updating tag `v<plugin.json version>`
+   for that commit; leave `publish_release` checked to publish the GitHub Release,
+   or uncheck it for an artifact-only dry run.
+6. GitHub Actions builds both artifacts and attaches them to the Release.
 
 ## Refreshing the dataset
 
