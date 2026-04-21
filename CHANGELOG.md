@@ -4,6 +4,8 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+## [0.1.3] — 2026-04-21
+
 ### Fixed
 - Anthropic artifact now ships as a Claude Desktop-compliant skill zip (`peplink-advisor-anthropic-<version>.zip`) with a single top-level `peplink-advisor/` folder containing `SKILL.md` at its root. Previous `.plugin`-wrapped builds with a `.claude-plugin/plugin.json` + nested `skills/<name>/` layout were rejected by Claude Desktop's "Upload skill" flow with an "upload failed" error; the new layout matches the [Agent Skills open standard](https://agentskills.io) and the format documented for [custom skills in Claude](https://support.claude.com/en/articles/12512198-how-to-create-custom-skills). The same zip also drops into `~/.claude/skills/` for Claude Code.
 - Build now validates that the skill `name` is lowercase letters/numbers/hyphens only and matches the top-level folder in the zip, since Claude Desktop rejects uploads that violate either rule.
