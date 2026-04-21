@@ -4,7 +4,7 @@ An AI assistant for Peplink hardware questions — spec lookups, side-by-side co
 
 This repo ships **two deployment targets from a single source of truth**:
 
-- **Anthropic** (Claude Code / Cowork plugin) — auto-discovered skill, progressive disclosure, Cowork artifacts.
+- **Anthropic** (Claude Desktop / claude.ai / Claude Code) — an Agent Skills-format skill zip that Claude Desktop accepts via "Upload skill" and that Claude Code discovers when unzipped into `~/.claude/skills/`.
 - **ChatGPT** (Custom GPT) — same content, packaged as a knowledge bundle with pasted Instructions.
 
 Both builds are produced from the same `core/` directory by the scripts in `build/`. CI runs on every push; GitHub Releases publish both artifacts on every tag.
@@ -27,7 +27,7 @@ peplink-advisor/
 │   └── chatgpt/                # Instructions template + knowledge manifest + deploy README.
 ├── build/
 │   ├── common.py
-│   ├── build_anthropic.py      # -> dist/peplink-advisor-anthropic-<version>.plugin
+│   ├── build_anthropic.py      # -> dist/peplink-advisor-anthropic-<version>.zip (Claude Desktop skill)
 │   └── build_chatgpt.py        # -> dist/peplink-advisor-chatgpt-<version>.zip
 └── .github/workflows/
     ├── ci.yml                  # Build both adapters on every push/PR.
@@ -36,9 +36,13 @@ peplink-advisor/
 
 ## Install / deploy
 
-### Claude Code or Cowork
+### Claude Desktop / claude.ai
 
-Grab `peplink-advisor-anthropic-<version>.plugin` from the latest [GitHub Release](../../releases) and install it via your host's plugin flow. That's it.
+Grab `peplink-advisor-anthropic-<version>.zip` from the latest [GitHub Release](../../releases). In Claude Desktop, go to Customize → Skills → Upload skill and pick the zip.
+
+### Claude Code
+
+Same zip. Unzip it so the skill lives at `~/.claude/skills/peplink-advisor/SKILL.md` and Claude Code will discover it automatically.
 
 ### ChatGPT Custom GPT
 
