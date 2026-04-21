@@ -4,6 +4,12 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+## [0.1.6] — 2026-04-21
+
+### Added
+- `core/SKILL.md` now includes a `User-specific instructions` section with precedence guidance and an explicit insertion marker for account-specific defaults.
+- `README.md` now points maintainers to the exact place in `core/SKILL.md` where user- or account-specific instructions should be added.
+
 ### Fixed
 - Plugin-bundle artifact now ships as `peplink-advisor-anthropic-plugin-<version>.zip` (previously `.plugin`). Claude Desktop's Customize upload handler rejects every extension other than `.zip` (anthropics/claude-code#40414, #28337), so the old `.plugin` file failed with "unable to install" and the skill-only `.zip` failed with "missing `.claude-plugin/plugin.json`". The renamed plugin-bundle zip satisfies both requirements in one artifact.
 - Anthropic releases still ship the single-skill zip alongside the plugin-bundle zip for hosts that expect the `~/.claude/skills/`-style layout.

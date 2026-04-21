@@ -72,6 +72,26 @@ When consulting solutions:
 - If a solution's `last_reviewed` is older than the dataset's "last updated" date at the top of this file, mention it to the user — the recommendation is still a good starting point but specific numbers should come from the dataset.
 - If the user describes a scenario that isn't covered, offer to draft a new solution file at the end — that's how the library grows.
 
+## User-specific instructions
+
+Some teams have standing preferences that are not universal Peplink facts but should still shape every recommendation. Use this section to encode those defaults for the specific user or account using the advisor.
+
+When this section contains concrete guidance:
+
+- Treat it as a **default recommendation policy**, not as a statement about the entire Peplink catalog.
+- Apply it proactively when recommending devices, breaking ties, filling in unstated assumptions, or deciding which variants to shortlist first.
+- Do **not** let it override an explicit request in the current conversation. If the user asks for an exception, follow the user's request and call out that you're departing from the standing preference.
+- If a standing preference excludes a device that would otherwise be a strong fit, mention that briefly so the tradeoff stays visible.
+
+User instructions should be inserted below this line.
+
+Example instructions that belong here:
+
+- Never recommend or specify BR1 Mini devices unless the user explicitly asks for them.
+- Assume cellular deployments should use global radio variants by default unless the user names a specific carrier-locked or regional SKU.
+- Prefer currently shipping models over end-of-sale hardware even when the older device is still present in the dataset.
+- Avoid recommending add-on licenses unless the user's scenario clearly requires them.
+
 ## Grounding rules
 
 These exist because Peplink spec sheets are dense and easy to misquote.

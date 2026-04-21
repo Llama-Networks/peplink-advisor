@@ -54,6 +54,10 @@ If you'd rather drop the skill into `~/.claude/skills/`, grab `peplink-advisor-a
 
 Grab `peplink-advisor-chatgpt-<version>.zip` from the latest [GitHub Release](../../releases), unzip it, and follow `README-deploy.md` inside.
 
+## Customizing behavior
+
+For account- or user-specific defaults, edit `core/SKILL.md` and add the rules under `## User-specific instructions`, below the line `User instructions should be inserted below this line.` Those instructions flow into both the Anthropic and ChatGPT builds automatically because `core/SKILL.md` is the shared source of truth.
+
 ## Develop
 
 ```bash
