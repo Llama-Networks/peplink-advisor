@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Assemble the Anthropic (Claude Code / Cowork) plugin artifact.
 
-Layout produced inside dist/peplink-advisor-<version>.plugin (a zip):
+Layout produced inside dist/peplink-advisor-anthropic-<version>.plugin (a zip):
 
     .claude-plugin/plugin.json
     skills/peplink-advisor/SKILL.md        (frontmatter + core SKILL body)
@@ -26,6 +26,7 @@ from common import repo_root, read_version
 
 
 SKILL_NAME = "peplink-advisor"
+ARTIFACT_PREFIX = "peplink-advisor-anthropic"
 
 
 def build_skill_md(core_skill: Path, frontmatter_yaml: Path) -> str:
@@ -74,7 +75,7 @@ def main() -> None:
                 shutil.copytree(src, skill_dir / sub)
 
         # Zip it up into a .plugin file.
-        artifact = dist / f"{SKILL_NAME}-{version}.plugin"
+        artifact = dist / f"{ARTIFACT_PREFIX}-{version}.plugin"
         if artifact.exists():
             artifact.unlink()
         with zipfile.ZipFile(artifact, "w", zipfile.ZIP_DEFLATED) as zf:

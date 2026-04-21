@@ -27,7 +27,7 @@ peplink-advisor/
 │   └── chatgpt/                # Instructions template + knowledge manifest + deploy README.
 ├── build/
 │   ├── common.py
-│   ├── build_anthropic.py      # -> dist/peplink-advisor-<version>.plugin
+│   ├── build_anthropic.py      # -> dist/peplink-advisor-anthropic-<version>.plugin
 │   └── build_chatgpt.py        # -> dist/peplink-advisor-chatgpt-<version>.zip
 └── .github/workflows/
     ├── ci.yml                  # Build both adapters on every push/PR.
@@ -38,7 +38,7 @@ peplink-advisor/
 
 ### Claude Code or Cowork
 
-Grab `peplink-advisor-<version>.plugin` from the latest [GitHub Release](../../releases) and install it via your host's plugin flow. That's it.
+Grab `peplink-advisor-anthropic-<version>.plugin` from the latest [GitHub Release](../../releases) and install it via your host's plugin flow. That's it.
 
 ### ChatGPT Custom GPT
 

@@ -15,7 +15,7 @@ From the repo root:
 python3 build/build_anthropic.py
 ```
 
-Produces `dist/peplink-advisor-<version>.plugin` (a zip renamed). Drop it into Cowork or Claude Code to install.
+Produces `dist/peplink-advisor-anthropic-<version>.plugin` (a zip renamed). Drop it into Cowork or Claude Code to install.
 
 ## Why this adapter is tiny
 

@@ -4,6 +4,9 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+### Fixed
+- Anthropic release artifacts now publish as `peplink-advisor-anthropic-<version>.plugin` to distinguish them from the ChatGPT bundle at a glance.
+
 ## [0.1.1] — 2026-04-21
 
 ### Fixed
