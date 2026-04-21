@@ -28,7 +28,7 @@ python3 build/build_anthropic.py
 
 Produces:
 
-- `dist/peplink-advisor-anthropic-<version>.zip` with this layout:
+- `dist/peplink-advisor-anthropic-standalone-<version>.zip` with this layout:
 
   ```
   peplink-advisor/
@@ -64,7 +64,7 @@ artifact has both.
 unpacked directory.
 
 **Claude Code skills (standalone):** Unzip
-`peplink-advisor-anthropic-<version>.zip` into `~/.claude/skills/` so the
+`peplink-advisor-anthropic-standalone-<version>.zip` into `~/.claude/skills/` so the
 skill lives at `~/.claude/skills/peplink-advisor/SKILL.md`.
 
 ## Why this adapter is tiny

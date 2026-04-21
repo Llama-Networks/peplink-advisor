@@ -19,7 +19,7 @@ def main() -> None:
     root = repo_root()
     version = read_version()
     dist = root / "dist"
-    desktop_artifact = dist / f"peplink-advisor-anthropic-{version}.zip"
+    desktop_artifact = dist / f"peplink-advisor-anthropic-standalone-{version}.zip"
     plugin_artifact = dist / f"peplink-advisor-anthropic-plugin-{version}.zip"
 
     for artifact in (desktop_artifact, plugin_artifact):

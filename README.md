@@ -6,7 +6,7 @@ This repo ships **two deployment targets from a single source of truth**:
 
 - **Anthropic** — published in two Anthropic-native formats (both `.zip`; Claude Desktop's upload handler rejects any other extension):
   - `peplink-advisor-anthropic-plugin-<version>.zip` — plugin-bundle layout with `.claude-plugin/plugin.json` at the root. This is what Claude Desktop's Customize menu and Claude Code plugin installs accept.
-  - `peplink-advisor-anthropic-<version>.zip` — single-skill layout (`peplink-advisor/SKILL.md` at the root) for dropping into `~/.claude/skills/`.
+  - `peplink-advisor-anthropic-standalone-<version>.zip` — single-skill layout (`peplink-advisor/SKILL.md` at the root) for dropping into `~/.claude/skills/`.
 - **ChatGPT** (Custom GPT) — packaged as a knowledge bundle with pasted Instructions.
 
 Both builds are produced from the same `core/` directory by the scripts in `build/`. CI runs on every push; GitHub Releases publish both artifacts on every tag.
@@ -48,7 +48,7 @@ Same zip — `peplink-advisor-anthropic-plugin-<version>.zip`. Use `/plugin inst
 
 ### Claude Code skills (standalone)
 
-If you'd rather drop the skill into `~/.claude/skills/`, grab `peplink-advisor-anthropic-<version>.zip` and unzip it so the skill lives at `~/.claude/skills/peplink-advisor/SKILL.md`.
+If you'd rather drop the skill into `~/.claude/skills/`, grab `peplink-advisor-anthropic-standalone-<version>.zip` and unzip it so the skill lives at `~/.claude/skills/peplink-advisor/SKILL.md`.
 
 ### ChatGPT Custom GPT
 

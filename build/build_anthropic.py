@@ -26,7 +26,7 @@ upload handler, see anthropics/claude-code#40414 and #28337):
        ├── solutions/
        └── references/
 
-   This is written to `dist/peplink-advisor-anthropic-<version>.zip`.
+   This is written to `dist/peplink-advisor-anthropic-standalone-<version>.zip`.
 
 Run from anywhere:
 
@@ -46,8 +46,9 @@ from common import repo_root, read_version
 
 
 SKILL_NAME = "peplink-advisor"
-DESKTOP_ARTIFACT_PREFIX = "peplink-advisor-anthropic"
+DESKTOP_ARTIFACT_PREFIX = "peplink-advisor-anthropic-standalone"
 PLUGIN_ARTIFACT_PREFIX = "peplink-advisor-anthropic-plugin"
+LEGACY_STANDALONE_PREFIX = "peplink-advisor-anthropic"
 
 # Claude Desktop enforces: lowercase letters, numbers, and hyphens, max 64 chars.
 NAME_RE = re.compile(r"^[a-z0-9-]{1,64}$")
@@ -142,11 +143,17 @@ def main() -> None:
         stage_desktop_skill(root, desktop_stage)
         stage_plugin_bundle(root, plugin_stage)
 
-        # Clean any previously-built artifacts, including the legacy `.plugin`
-        # extension we used before discovering Claude Desktop rejects it.
+        # Clean previously-built artifacts, including legacy names:
+        #   - `.plugin` extension (replaced by `.zip`)
+        #   - standalone zip that used to be named without the `-standalone-`
+        #     infix (collides with the plugin zip's prefix, so match by regex)
+        legacy_standalone_re = re.compile(
+            rf"^{re.escape(LEGACY_STANDALONE_PREFIX)}-[0-9][^-]*\.zip$"
+        )
+        for stale in dist.glob(f"{LEGACY_STANDALONE_PREFIX}-*.zip"):
+            if legacy_standalone_re.match(stale.name):
+                stale.unlink()
         for stale in dist.glob(f"{DESKTOP_ARTIFACT_PREFIX}-*.zip"):
-            if stale.name.startswith(f"{PLUGIN_ARTIFACT_PREFIX}-"):
-                continue
             stale.unlink()
         for stale in dist.glob(f"{PLUGIN_ARTIFACT_PREFIX}-*.zip"):
             stale.unlink()

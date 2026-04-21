@@ -9,6 +9,9 @@ All notable changes to Peplink Advisor are documented here. This project follows
 - Anthropic releases still ship the single-skill zip alongside the plugin-bundle zip for hosts that expect the `~/.claude/skills/`-style layout.
 - CI and release workflows now verify both Anthropic artifacts before publishing them.
 
+### Changed
+- Single-skill zip renamed from `peplink-advisor-anthropic-<version>.zip` to `peplink-advisor-anthropic-standalone-<version>.zip` so the filename makes clear it's for the standalone `~/.claude/skills/` drop-in flow, not the Claude Desktop Customize menu (which needs the plugin-bundle zip).
+
 ## [0.1.3] — 2026-04-21
 
 ### Fixed
