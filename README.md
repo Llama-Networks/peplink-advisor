@@ -4,9 +4,9 @@ An AI assistant for Peplink hardware questions — spec lookups, side-by-side co
 
 This repo ships **two deployment targets from a single source of truth**:
 
-- **Anthropic** — published in two Anthropic-native formats:
-  - `peplink-advisor-anthropic-<version>.zip` for Claude Desktop / claude.ai skill upload
-  - `peplink-advisor-anthropic-plugin-<version>.plugin` for Claude Cowork / Claude Code plugin installs that expect `.claude-plugin/plugin.json`
+- **Anthropic** — published in two Anthropic-native formats (both `.zip`; Claude Desktop's upload handler rejects any other extension):
+  - `peplink-advisor-anthropic-plugin-<version>.zip` — plugin-bundle layout with `.claude-plugin/plugin.json` at the root. This is what Claude Desktop's Customize menu and Claude Code plugin installs accept.
+  - `peplink-advisor-anthropic-<version>.zip` — single-skill layout (`peplink-advisor/SKILL.md` at the root) for dropping into `~/.claude/skills/`.
 - **ChatGPT** (Custom GPT) — packaged as a knowledge bundle with pasted Instructions.
 
 Both builds are produced from the same `core/` directory by the scripts in `build/`. CI runs on every push; GitHub Releases publish both artifacts on every tag.
@@ -38,17 +38,17 @@ peplink-advisor/
 
 ## Install / deploy
 
-### Claude Desktop / claude.ai
+### Claude Desktop (Customize menu)
 
-Grab `peplink-advisor-anthropic-<version>.zip` from the latest [GitHub Release](../../releases). In Claude Desktop, go to Customize → Skills → Upload skill and pick the zip.
+Grab `peplink-advisor-anthropic-plugin-<version>.zip` from the latest [GitHub Release](../../releases). In Claude Desktop, go to Customize and upload the zip. Claude Desktop requires the `.zip` extension and a `.claude-plugin/plugin.json` at the zip root — this artifact has both.
 
-### Claude Code skills
+### Claude Code plugins
 
-Same zip. Unzip it so the skill lives at `~/.claude/skills/peplink-advisor/SKILL.md` and Claude Code will discover it automatically.
+Same zip — `peplink-advisor-anthropic-plugin-<version>.zip`. Use `/plugin install` or point `--plugin-dir` at the unpacked directory.
 
-### Claude Cowork / Claude Code plugins
+### Claude Code skills (standalone)
 
-If the host expects `.claude-plugin/plugin.json`, use `peplink-advisor-anthropic-plugin-<version>.plugin` from the release instead.
+If you'd rather drop the skill into `~/.claude/skills/`, grab `peplink-advisor-anthropic-<version>.zip` and unzip it so the skill lives at `~/.claude/skills/peplink-advisor/SKILL.md`.
 
 ### ChatGPT Custom GPT
 

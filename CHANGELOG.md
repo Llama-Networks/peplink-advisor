@@ -5,7 +5,8 @@ All notable changes to Peplink Advisor are documented here. This project follows
 ## [Unreleased]
 
 ### Fixed
-- Anthropic releases now ship both official packaging formats: the Claude Desktop / claude.ai skill zip and a Cowork / Claude Code plugin bundle that includes `.claude-plugin/plugin.json`.
+- Plugin-bundle artifact now ships as `peplink-advisor-anthropic-plugin-<version>.zip` (previously `.plugin`). Claude Desktop's Customize upload handler rejects every extension other than `.zip` (anthropics/claude-code#40414, #28337), so the old `.plugin` file failed with "unable to install" and the skill-only `.zip` failed with "missing `.claude-plugin/plugin.json`". The renamed plugin-bundle zip satisfies both requirements in one artifact.
+- Anthropic releases still ship the single-skill zip alongside the plugin-bundle zip for hosts that expect the `~/.claude/skills/`-style layout.
 - CI and release workflows now verify both Anthropic artifacts before publishing them.
 
 ## [0.1.3] — 2026-04-21

@@ -1,10 +1,12 @@
 # Anthropic adapter
 
-Packages `core/` into both Anthropic-native distribution formats:
+Packages `core/` into both Anthropic-native distribution formats. Both are
+`.zip` files, because Claude Desktop's upload handler rejects any other
+extension (see anthropics/claude-code#40414 and #28337):
 
-- A Claude Desktop / claude.ai skill zip for "Upload skill"
-- A Claude Cowork / Claude Code plugin bundle for hosts that expect
-  `.claude-plugin/plugin.json`
+- A plugin-bundle zip with `.claude-plugin/plugin.json` at the root — for
+  Claude Desktop's Customize menu and Claude Code plugin installs
+- A single-skill zip for dropping into `~/.claude/skills/`
 
 ## Files
 
@@ -37,7 +39,7 @@ Produces:
   └── references/
   ```
 
-- `dist/peplink-advisor-anthropic-plugin-<version>.plugin` with this layout:
+- `dist/peplink-advisor-anthropic-plugin-<version>.zip` with this layout:
 
   ```
   .claude-plugin/
@@ -53,16 +55,17 @@ Produces:
 
 ## Install
 
-**Claude Desktop / claude.ai:** Customize → Skills → Upload skill, then pick
-`peplink-advisor-anthropic-<version>.zip`.
+**Claude Desktop (Customize menu):** Upload
+`peplink-advisor-anthropic-plugin-<version>.zip`. Claude Desktop requires the
+`.zip` extension and a `.claude-plugin/plugin.json` at the zip root — this
+artifact has both.
 
-**Claude Code skills:** Unzip `peplink-advisor-anthropic-<version>.zip` into
-`~/.claude/skills/` so the skill lives at
-`~/.claude/skills/peplink-advisor/SKILL.md`.
+**Claude Code plugins:** Same zip — `/plugin install` or `--plugin-dir` the
+unpacked directory.
 
-**Claude Cowork / Claude Code plugins:** Use
-`peplink-advisor-anthropic-plugin-<version>.plugin` when the host expects a
-plugin bundle with `.claude-plugin/plugin.json`.
+**Claude Code skills (standalone):** Unzip
+`peplink-advisor-anthropic-<version>.zip` into `~/.claude/skills/` so the
+skill lives at `~/.claude/skills/peplink-advisor/SKILL.md`.
 
 ## Why this adapter is tiny
 

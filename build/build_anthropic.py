@@ -1,10 +1,23 @@
 #!/usr/bin/env python3
 """Assemble the Anthropic artifacts for Claude hosts.
 
-This build intentionally ships two Anthropic-targeted bundles because Anthropic
-currently has two distinct extension formats:
+This build ships two Anthropic-targeted zips because Anthropic currently has
+two distinct install formats — both of which Claude Desktop's "Customize"
+flow accepts only as `.zip` (the `.plugin` extension is rejected by the
+upload handler, see anthropics/claude-code#40414 and #28337):
 
-1. Claude Desktop / claude.ai custom skills expect an Agent Skills-format zip:
+1. Plugin-bundle zip (what Claude Desktop's Customize → plugin install and
+   Claude Code plugin installs expect). `.claude-plugin/plugin.json` sits at
+   the zip root:
+
+       .claude-plugin/plugin.json
+       skills/peplink-advisor/SKILL.md
+       skills/peplink-advisor/{scripts,data,solutions,references}/...
+
+   This is written to `dist/peplink-advisor-anthropic-plugin-<version>.zip`.
+
+2. Agent Skills-format zip (for hosts that still take the single-skill
+   layout, e.g. dropping into `~/.claude/skills/` for Claude Code):
 
        peplink-advisor/
        ├── SKILL.md
@@ -14,15 +27,6 @@ currently has two distinct extension formats:
        └── references/
 
    This is written to `dist/peplink-advisor-anthropic-<version>.zip`.
-
-2. Claude Cowork / Claude Code plugin installs expect a plugin bundle with
-   `.claude-plugin/plugin.json` at the root:
-
-       .claude-plugin/plugin.json
-       skills/peplink-advisor/SKILL.md
-       skills/peplink-advisor/{scripts,data,solutions,references}/...
-
-   This is written to `dist/peplink-advisor-anthropic-plugin-<version>.plugin`.
 
 Run from anywhere:
 
@@ -138,13 +142,19 @@ def main() -> None:
         stage_desktop_skill(root, desktop_stage)
         stage_plugin_bundle(root, plugin_stage)
 
-        for stale in dist.glob(f"{DESKTOP_ARTIFACT_PREFIX}-*.plugin"):
+        # Clean any previously-built artifacts, including the legacy `.plugin`
+        # extension we used before discovering Claude Desktop rejects it.
+        for stale in dist.glob(f"{DESKTOP_ARTIFACT_PREFIX}-*.zip"):
+            if stale.name.startswith(f"{PLUGIN_ARTIFACT_PREFIX}-"):
+                continue
             stale.unlink()
         for stale in dist.glob(f"{PLUGIN_ARTIFACT_PREFIX}-*.zip"):
             stale.unlink()
+        for stale in dist.glob(f"{PLUGIN_ARTIFACT_PREFIX}-*.plugin"):
+            stale.unlink()
 
         desktop_artifact = dist / f"{DESKTOP_ARTIFACT_PREFIX}-{version}.zip"
-        plugin_artifact = dist / f"{PLUGIN_ARTIFACT_PREFIX}-{version}.plugin"
+        plugin_artifact = dist / f"{PLUGIN_ARTIFACT_PREFIX}-{version}.zip"
         zip_tree(desktop_stage, desktop_artifact)
         zip_tree(plugin_stage, plugin_artifact)
 
