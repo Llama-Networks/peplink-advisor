@@ -73,33 +73,7 @@ python3 core/scripts/query.py show "Balance 20X"
 python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
 ```
 
-## Release
-
-1. Make your changes in `core/` (and adapters if needed).
-2. Bump `version` in `adapters/anthropic/.claude-plugin/plugin.json`.
-3. Update `CHANGELOG.md`.
-4. Build and verify the release artifacts locally:
-   ```bash
-   python3 build/build_anthropic.py
-   python3 build/verify_anthropic_artifacts.py
-   python3 build/build_chatgpt.py
-   python3 build/verify_chatgpt_bundle.py
-   ```
-5. Publish the release using either path:
-   ```bash
-   # Option A: tag push
-   git add -A
-   git commit -m "Release v0.2.0"
-   git tag v0.2.0
-   git push --follow-tags
-   ```
-   Or run **Actions -> Release -> Run workflow** on the commit you want to ship.
-   The manual workflow defaults to creating/updating tag `v<plugin.json version>`
-   for that commit; leave `publish_release` checked to publish the GitHub Release,
-   or uncheck it for an artifact-only dry run.
-6. GitHub Actions builds both artifacts and attaches them to the Release.
-
-## Refreshing the dataset
+## Refreshing the dataset (Maintainers Only)
 
 See `CONTRIBUTING.md` for the full procedure, but the short version:
 
