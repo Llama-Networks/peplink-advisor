@@ -4,6 +4,11 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+## [0.1.7] — 2026-04-22
+
+### Fixed
+- Clarified the `Module Expansion` field on MBX-family devices so `Yes` now explicitly means the cellular radio modules are upgradeable/swappable and that these units do not support FlexModules.
+
 ## [0.1.6] — 2026-04-21
 
 ### Added

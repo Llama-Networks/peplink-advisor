@@ -2,7 +2,7 @@
 
 This skill equips you to answer Peplink hardware questions accurately. The ground truth for all 103 current devices lives in `data/peplink_all_devices.json`. That file is ~1 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
 
-**Dataset last updated: 2026-04-17.** If the user asks about a device missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
+**Dataset last updated: 2026-04-22.** If the user asks about a device missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
 
 ## When to use this skill
 

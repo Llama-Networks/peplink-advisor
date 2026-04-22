@@ -385,7 +385,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
@@ -723,7 +724,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
@@ -1061,7 +1063,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
@@ -1399,7 +1402,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
@@ -12354,7 +12358,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
@@ -12692,7 +12697,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
@@ -13030,7 +13036,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
@@ -13368,7 +13375,8 @@
             "value": "Yes (2x USB)"
           },
           "Module Expansion": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "'Yes' indicates that the cellular radio modules are upgradeable/swappable. These units do not support FlexModules."
           }
         },
         "Performance": {
