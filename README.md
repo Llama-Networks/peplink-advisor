@@ -1,6 +1,6 @@
 # Peplink Advisor
 
-An AI assistant for Peplink hardware questions — spec lookups, side-by-side comparisons, and use-case-driven device recommendations grounded in a dataset of 103 current devices plus a curated solutions library.
+An AI assistant for Peplink hardware questions including spec lookups, side-by-side comparisons, and use-case-driven device recommendations grounded in a dataset of 103 current devices plus a curated solutions library.
 
 This repo ships **two deployment targets from a single source of truth**:
 
@@ -9,7 +9,7 @@ This repo ships **two deployment targets from a single source of truth**:
   - `peplink-advisor-anthropic-standalone-<version>.zip` — single-skill layout (`peplink-advisor/SKILL.md` at the root) for dropping into `~/.claude/skills/`.
 - **ChatGPT** (Custom GPT) — packaged as a knowledge bundle with pasted Instructions.
 
-Both builds are produced from the same `core/` directory by the scripts in `build/`. CI runs on every push; GitHub Releases publish both artifacts on every tag.
+Both builds are produced from the same data, they're just wrapped up differently :) 
 
 ## Layout
 
@@ -73,7 +73,7 @@ python3 core/scripts/query.py show "Balance 20X"
 python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
 ```
 
-## Refreshing the dataset (Maintainers Only)
+## Updating the dataset on your own
 
 See `CONTRIBUTING.md` for the full procedure, but the short version:
 
