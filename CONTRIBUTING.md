@@ -1,6 +1,6 @@
 # Contributing to Peplink Advisor
 
-Most changes happen in `core/`. The adapters are intentionally thin wrappers — don't add behavior there.
+Most changes happen in `core/`. The adapters are intentionally thin wrappers, don't add behavior there.
 
 ## Where does my change go?
 
@@ -28,7 +28,7 @@ Most changes happen in `core/`. The adapters are intentionally thin wrappers —
 
 ## Refreshing the dataset
 
-When you have a new JSON export from Peplink:
+When you have updated JSON data:
 
 ```bash
 # 1. Replace the file.
