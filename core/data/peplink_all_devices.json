@@ -355,19 +355,22 @@
         {
           "sku": "B-ONE-PLUS-LTE-MX-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -424,20 +427,23 @@
         {
           "sku": "B-ONE-PLUS-LTE-E-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
-            "plus1y": [
-              "PCP-A-1Y",
+            "std1y": [
               "PRM-A-1Y"
             ],
-            "plus2y": [
-              "PCP-A-2Y",
+            "std2y": [
               "PRM-A-2Y"
             ],
-            "plus4y": [
-              "PCP-A-4Y",
+            "std4y": [
               "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
             ],
             "vwanLicenses": [
               "LIC-VWAN",
@@ -506,19 +512,22 @@
         {
           "sku": "B-ONE-PLUS-LTE-US-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -5824,19 +5833,22 @@
         {
           "sku": "BPL-021X-LTE-MX-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -5888,19 +5900,22 @@
         {
           "sku": "BPL-021X-LTE-E-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7026,25 +7041,22 @@
         {
           "sku": "MAX-BR1-MINI-LTE-US-T-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7101,6 +7113,10 @@
             ],
             "bundleOffers": [],
             "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "ACW-765"
             ]
           }
@@ -7108,25 +7124,22 @@
         {
           "sku": "MAX-BR1-MINI-LTEA-B-T-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7184,6 +7197,10 @@
             ],
             "bundleOffers": [],
             "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "ACW-765"
             ]
           }
@@ -7191,25 +7208,22 @@
         {
           "sku": "MAX-BR1-MINI-LTEA-US-T-M-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7261,31 +7275,33 @@
               "ACW-DIN-BR1-MINI"
             ],
             "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+            ]
           }
         },
         {
           "sku": "MAX-BR1-MINI-LTE-E-T-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7342,6 +7358,10 @@
             ],
             "bundleOffers": [],
             "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "ACW-765"
             ]
           }
@@ -7349,25 +7369,22 @@
         {
           "sku": "MAX-BR1-MINI-LTEA-US-T-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7424,6 +7441,10 @@
             ],
             "bundleOffers": [],
             "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "ACW-765"
             ]
           }
@@ -7431,26 +7452,23 @@
         {
           "sku": "MAX-BR1-MINI-LTE-US-T-M-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
-              "PCP-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y"
+              "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
-              "PCP-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+              "PCP-A-4Y"
             ],
             "vwanLicenses": [
               "LIC-3VWAN",
@@ -7502,31 +7520,33 @@
               "ACW-DIN-BR1-MINI"
             ],
             "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+            ]
           }
         },
         {
           "sku": "MAX-BR1-MINI-LTE-MX-T-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7576,6 +7596,10 @@
             ],
             "bundleOffers": [],
             "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "ACW-765"
             ]
           }
@@ -7583,25 +7607,22 @@
         {
           "sku": "MAX-BR1-MINI-LTEA-US-DC-T-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7660,6 +7681,10 @@
             ],
             "bundleOffers": [],
             "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
               "ACW-765"
             ]
           }
@@ -7667,26 +7692,23 @@
         {
           "sku": "MAX-BR1-MINI-LTEA-E-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
-            ],
-            "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
-            ],
-            "plus1y": [
-              "PCP-A-1Y",
+            "std1y": [
               "PRM-A-1Y"
             ],
-            "plus2y": [
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
-              "PCP-A-2Y",
+            "std2y": [
               "PRM-A-2Y"
             ],
-            "plus4y": [
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
-              "PCP-A-4Y",
+            "std4y": [
               "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
             ],
             "vwanLicenses": [
               "LIC-VWAN",
@@ -7742,6 +7764,10 @@
             ],
             "bundleOffers": [],
             "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
               "ACW-765"
             ]
           }
@@ -7749,23 +7775,22 @@
         {
           "sku": "MAX-BR1-MINI-LTE-E-T-M-PRM",
           "addons": {
-            "std1y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -7817,7 +7842,10 @@
               "ACW-DIN-BR1-MINI"
             ],
             "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y"
+            ]
           }
         }
       ]
@@ -8160,26 +8188,23 @@
         {
           "sku": "MAX-BR1-MINI-5GN-T-M-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
-            ],
-            "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
-            ],
-            "plus1y": [
-              "PCP-A-1Y",
+            "std1y": [
               "PRM-A-1Y"
             ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
             "plus2y": [
-              "PCP-A-2Y",
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y"
+              "PCP-A-2Y"
             ],
             "plus4y": [
-              "PCP-A-4Y",
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+              "PCP-A-4Y"
             ],
             "vwanLicenses": [
               "LIC-VWAN",
@@ -8235,32 +8260,34 @@
               "ACW-DIN-BR1-MINI"
             ],
             "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y"
+            ]
           }
         },
         {
           "sku": "MAX-BR1-MINI-5GN-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
-            ],
-            "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
-            ],
-            "plus1y": [
-              "PCP-A-1Y",
+            "std1y": [
               "PRM-A-1Y"
             ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
             "plus2y": [
-              "PCP-A-2Y",
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y"
+              "PCP-A-2Y"
             ],
             "plus4y": [
-              "PCP-A-4Y",
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+              "PCP-A-4Y"
             ],
             "vwanLicenses": [
               "LIC-2VWAN",
@@ -8316,7 +8343,12 @@
               "ACW-DIN-BR1-MINI"
             ],
             "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y"
+            ]
           }
         }
       ]
@@ -8999,98 +9031,22 @@
         {
           "sku": "MAX-BR1-MINI-M2M-LTE-E-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
-            ],
-            "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
-            ],
-            "plus1y": [
-              "PCP-A-1Y",
+            "std1y": [
               "PRM-A-1Y"
             ],
-            "plus2y": [
-              "PCP-A-2Y",
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y"
-            ],
-            "plus4y": [
-              "PCP-A-4Y",
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
-            ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [
-              "LIC-OPN-WAN",
-              "LIC-2OPN-WAN",
-              "LIC-3OPN-WAN",
-              "LIC-4OPN-WAN"
-            ],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [
-              "SFC-RLY-LC-50",
-              "SFC-RLY-LC-10",
-              "SFC-RLY-LC-20"
-            ],
-            "featureLicenses": [
-              "MAX-BR1-MINI-LC-FP"
-            ],
-            "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [
-              "SFC-CLD-D",
-              "SFC-CLD-G",
-              "SFC-CLD-B",
-              "SFC-CLD-E",
-              "SFC-CLD-F",
-              "SFC-CLD-C",
-              "SFC-CLD-U-1M",
-              "SFC-CLD-U-1Y"
-            ],
-            "esimDataPlans": [
-              "SFC-CN-A",
-              "SFC-CN-B",
-              "SFC-CN-C",
-              "SFC-CN-S-A",
-              "SFC-CN-S-B",
-              "SFC-CN-S-C"
-            ],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [],
-            "cablesAdapters": [
-              "ACW-634",
-              "ACW-643"
-            ],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
-          }
-        },
-        {
-          "sku": "MAX-BR1-MINI-M2M-LTE-US-T-PRM",
-          "addons": {
-            "std1y": [],
             "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
+              "PRM-A-2Y"
             ],
             "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
+              "PRM-A-4Y"
             ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y",
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [],
@@ -9139,32 +9095,109 @@
             ],
             "mountingBrackets": [],
             "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+            ]
+          }
+        },
+        {
+          "sku": "MAX-BR1-MINI-M2M-LTE-US-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [
+              "LIC-OPN-WAN",
+              "LIC-2OPN-WAN",
+              "LIC-3OPN-WAN",
+              "LIC-4OPN-WAN"
+            ],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [
+              "SFC-RLY-LC-50",
+              "SFC-RLY-LC-10",
+              "SFC-RLY-LC-20"
+            ],
+            "featureLicenses": [
+              "MAX-BR1-MINI-LC-FP"
+            ],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-D",
+              "SFC-CLD-G",
+              "SFC-CLD-B",
+              "SFC-CLD-E",
+              "SFC-CLD-F",
+              "SFC-CLD-C",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-634",
+              "ACW-643"
+            ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+            ]
           }
         },
         {
           "sku": "MAX-BR1-MINI-M2M-LTE-MX-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [
-              "MAX-BR1-MINI-BD-FP-2Y"
-            ],
-            "std4y": [
-              "MAX-BR1-MINI-BD-FP-4Y"
-            ],
-            "plus1y": [
-              "PCP-A-1Y",
+            "std1y": [
               "PRM-A-1Y"
             ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
             "plus2y": [
-              "PCP-A-2Y",
-              "PRM-A-2Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-2Y"
+              "PCP-A-2Y"
             ],
             "plus4y": [
-              "PCP-A-4Y",
-              "PRM-A-4Y",
-              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+              "PCP-A-4Y"
             ],
             "vwanLicenses": [],
             "openvpnLicenses": [
@@ -9205,7 +9238,12 @@
             ],
             "mountingBrackets": [],
             "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "MAX-BR1-MINI-BD-FP-2Y",
+              "MAX-BR1-MINI-BD-FP-4Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-2Y",
+              "MAX-BR1-MINI-BD-FP-PLUS-4Y"
+            ]
           }
         }
       ]
@@ -28991,19 +29029,22 @@
         {
           "sku": "B-ONE-T-PRM",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [
@@ -39423,19 +39464,22 @@
         {
           "sku": "APO-ENTR",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [],
@@ -39784,19 +39828,22 @@
         {
           "sku": "PLS-8-10G-720W",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [],
@@ -40015,19 +40062,22 @@
         {
           "sku": "PLS-24-H2G-410W",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
             "plus1y": [
-              "PRM-A-1Y",
               "PCP-A-1Y"
             ],
             "plus2y": [
-              "PRM-A-2Y",
               "PCP-A-2Y"
             ],
             "plus4y": [
-              "PRM-A-4Y",
               "PCP-A-4Y"
             ],
             "vwanLicenses": [],
@@ -40732,15 +40782,17 @@
         {
           "sku": "EXM-2GLTE-G",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-507"
+            ],
+            "std2y": [
+              "SVL-509"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-507",
               "ECP-EXM-1Y"
             ],
             "plus2y": [
-              "SVL-509",
               "ECP-EXM-2Y"
             ],
             "plus4y": [
@@ -40833,15 +40885,17 @@
         {
           "sku": "EXM-LCDT",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-507"
+            ],
+            "std2y": [
+              "SVL-509"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-507",
               "ECP-EXM-1Y"
             ],
             "plus2y": [
-              "SVL-509",
               "ECP-EXM-2Y"
             ],
             "plus4y": [
@@ -40877,15 +40931,17 @@
         {
           "sku": "EXM-8C",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-507"
+            ],
+            "std2y": [
+              "SVL-509"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-507",
               "ECP-EXM-1Y"
             ],
             "plus2y": [
-              "SVL-509",
               "ECP-EXM-2Y"
             ],
             "plus4y": [
@@ -41335,15 +41391,17 @@
         {
           "sku": "EXM-4F",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-507"
+            ],
+            "std2y": [
+              "SVL-509"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-507",
               "ECP-EXM-1Y"
             ],
             "plus2y": [
-              "SVL-509",
               "ECP-EXM-2Y"
             ],
             "plus4y": [
@@ -41684,15 +41742,17 @@
         {
           "sku": "EXM-2GLTE-S",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-507"
+            ],
+            "std2y": [
+              "SVL-509"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-507",
               "ECP-EXM-1Y"
             ],
             "plus2y": [
-              "SVL-509",
               "ECP-EXM-2Y"
             ],
             "plus4y": [
@@ -41736,15 +41796,17 @@
         {
           "sku": "EXM-4LTEA-R",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-EXM-4LTEA-1Y"
+            ],
+            "std2y": [
+              "SVL-EXM-4LTEA-2Y"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-EXM-4LTEA-1Y",
               "ECP-EXM-4LTEA-1Y"
             ],
             "plus2y": [
-              "SVL-EXM-4LTEA-2Y",
               "ECP-EXM-4LTEA-2Y"
             ],
             "plus4y": [
@@ -41928,15 +41990,17 @@
         {
           "sku": "EXM-2X5GH",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-EXM-2X5G-1Y"
+            ],
+            "std2y": [
+              "SVL-EXM-2X5G-2Y"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-EXM-2X5G-1Y",
               "ECP-EXM-2X5G-1Y"
             ],
             "plus2y": [
-              "SVL-EXM-2X5G-2Y",
               "ECP-EXM-2X5G-2Y"
             ],
             "plus4y": [
@@ -42199,15 +42263,17 @@
         {
           "sku": "EXM-SIM-BK56",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-EXM-SIM-BK56-1Y"
+            ],
+            "std2y": [
+              "SVL-EXM-SIM-BK56-2Y"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-EXM-SIM-BK56-1Y",
               "ECP-EXM-SIM-BK56-1Y"
             ],
             "plus2y": [
-              "SVL-EXM-SIM-BK56-2Y",
               "ECP-EXM-SIM-BK56-2Y"
             ],
             "plus4y": [
@@ -42327,15 +42393,15 @@
         {
           "sku": "EXM-4LTEA-K",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
-            "plus1y": [
+            "std1y": [
               "SVL-EXM-4LTEA-1Y"
             ],
-            "plus2y": [
+            "std2y": [
               "SVL-EXM-4LTEA-2Y"
             ],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
             "plus4y": [],
             "vwanLicenses": [],
             "openvpnLicenses": [],
@@ -42836,16 +42902,18 @@
         {
           "sku": "EXM-2X5GN",
           "addons": {
-            "std1y": [],
-            "std2y": [],
-            "std4y": [],
-            "plus1y": [
-              "ECP-EXM-2X5G-1Y",
+            "std1y": [
               "SVL-EXM-2X5G-1Y"
             ],
-            "plus2y": [
-              "ECP-EXM-2X5G-2Y",
+            "std2y": [
               "SVL-EXM-2X5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-EXM-2X5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-EXM-2X5G-2Y"
             ],
             "plus4y": [
               "ECP-EXM-2X5G-4Y"
@@ -43123,15 +43191,17 @@
         {
           "sku": "EXM-4LTEA-Q",
           "addons": {
-            "std1y": [],
-            "std2y": [],
+            "std1y": [
+              "SVL-EXM-4LTEA-1Y"
+            ],
+            "std2y": [
+              "SVL-EXM-4LTEA-2Y"
+            ],
             "std4y": [],
             "plus1y": [
-              "SVL-EXM-4LTEA-1Y",
               "ECP-EXM-4LTEA-1Y"
             ],
             "plus2y": [
-              "SVL-EXM-4LTEA-2Y",
               "ECP-EXM-4LTEA-2Y"
             ],
             "plus4y": [

@@ -4,6 +4,11 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+## [0.2.1] — 2026-05-03
+
+### Fixed
+- Corrected SKU add-on categorization from the updated source CSV so standard care plans (`SVL-*` / `PRM-*`) are listed under `std*`, plus/enhanced care plans (`ECP-*` / `PCP-*`) are listed under `plus*`, and BR1 Mini bundle SKUs are no longer misclassified as care plans.
+
 ## [0.2.0] — 2026-05-03
 
 ### Added

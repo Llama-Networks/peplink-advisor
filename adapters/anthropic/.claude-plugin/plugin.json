@@ -1,6 +1,6 @@
 {
   "name": "peplink-advisor",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Answer questions about Peplink routers, access points, and switches, compare specs, and recommend devices and curated solutions for real deployment scenarios.",
   "author": {
     "name": "Christopher (Llama Networks)"
