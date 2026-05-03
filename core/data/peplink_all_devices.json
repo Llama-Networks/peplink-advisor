@@ -4,9 +4,9 @@
     "PeplinkAPComparisonJSON(External).xlsx",
     "PeplinkSwitchComparisonJSON(External).xlsx"
   ],
-  "device_count": 163,
+  "device_count": 165,
   "counts_by_type": {
-    "router": 88,
+    "router": 90,
     "access_point": 6,
     "switch": 9,
     "flex_module": 29,
@@ -10983,7 +10983,750 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        }
+      ]
+    },
+    {
+      "product_name": "5G Dongle",
+      "type": "router",
+      "metadata": {
+        "Marketing Series": "Cellular Modems & Adapters",
+        "Product URL": "https://www.peplink.com/support/download-datasheet/",
+        "Datasheet URL": "https://download.peplink.com/resources/pepwave_5g_dongle_datasheet.pdf",
+        "Source Note": "Manual catalog addition from Peplink 5G Dongle datasheet and public reseller SKU listings, checked 2026-05-03."
+      },
+      "specifications": {
+        "Interfaces": {
+          "Number of Ethernet WAN port": {
+            "value": "0"
+          },
+          "Number of Ethernet LAN port": {
+            "value": "0"
+          },
+          "Maximum Ethernet WAN / LAN port configuration": {
+            "value": "0 WAN with 0 LAN"
+          },
+          "SFP LAN / WAN": {
+            "value": "No"
+          },
+          "Serial Interface": {
+            "value": "No"
+          },
+          "Wi-Fi AP": {
+            "value": "No"
+          },
+          "Wi-Fi WAN": {
+            "value": "No"
+          },
+          "USB WAN": {
+            "value": "1x USB-C virtual Ethernet handoff",
+            "note": "USB-C port supports RNDIS driver for virtual Ethernet and is compatible with Windows, Linux, macOS, and Peplink routers."
+          },
+          "Module Expansion": {
+            "value": "No"
+          }
         },
+        "Performance": {
+          "Router Throughput": {
+            "value": "N/A (5G USB-C modem product)"
+          },
+          "SpeedFusion VPN Throughput (No Encryption)": {
+            "value": "No"
+          },
+          "SpeedFusion VPN Throughput (256-bit AES)": {
+            "value": "No"
+          },
+          "Number of Recommended Users": {
+            "value": "1"
+          },
+          "Maximum Number of Controlled AP / Switch": {
+            "value": "No"
+          }
+        },
+        "Wireless details": {
+          "Number of Cellular Modem": {
+            "value": "1"
+          },
+          "Cellular Modem Category options": {
+            "value": "1x 5G\nLTE CAT-19\n5G: 3.4Gbps / 550Mbps\nCAT-19: 1.6Gbps / 200Mbps"
+          },
+          "5G support": {
+            "value": "Yes"
+          },
+          "SIM Slots": {
+            "value": "Physical Nano-SIM plus eSIM support",
+            "note": "Peplink datasheet lists redundant SIM support, Peplink eSIM, and BYO eSIM with up to 2 profiles; confirm physical SIM count by hardware revision before quoting."
+          },
+          "SIM Card Size": {
+            "value": "Nano-SIM (4FF)"
+          },
+          "Wi-Fi Radio": {
+            "value": "No"
+          },
+          "Wi-Fi Antenna Transmit Power (2.4GHz, single chain)": {
+            "value": "No"
+          },
+          "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
+            "value": "No"
+          },
+          "Multiple SSIDs": {
+            "value": "No"
+          },
+          "GPS": {
+            "value": "No"
+          },
+          "RemoteSIM (used in SIM Injector)": {
+            "value": "No"
+          },
+          "FusionSIM": {
+            "value": "No"
+          },
+          "Peplink eSIM Data Plans": {
+            "value": "Yes"
+          },
+          "BYO eSIM": {
+            "value": "Yes"
+          }
+        },
+        "Features": {
+          "SpeedFusion Hot Failover": {
+            "value": "No"
+          },
+          "SpeedFusion Smoothing": {
+            "value": "No"
+          },
+          "SpeedFusion Bandwidth Bonding": {
+            "value": "No"
+          },
+          "SpeedFusion Connect": {
+            "value": "No"
+          },
+          "SpeedFusion Relay Mode (Server)": {
+            "value": "No"
+          },
+          "Drop-In Mode": {
+            "value": "No"
+          },
+          "High Availability": {
+            "value": "No"
+          },
+          "Peplink AP Series Management": {
+            "value": "No"
+          },
+          "Remote AP & Multiple Config Profiles Management": {
+            "value": "No"
+          },
+          "Switch Controller": {
+            "value": "No"
+          },
+          "WAN as LAN": {
+            "value": "No"
+          },
+          "LAN Bypass": {
+            "value": "No"
+          },
+          "InTouch": {
+            "value": "No"
+          },
+          "Virtual WAN": {
+            "value": "No"
+          },
+          "Synergy Mode (Controller)": {
+            "value": "No"
+          },
+          "Synergized Device": {
+            "value": "No"
+          },
+          "Application and Web Blocking": {
+            "value": "No"
+          },
+          "Web Content Filtering": {
+            "value": "No"
+          },
+          "IP Passthrough": {
+            "value": "No"
+          },
+          "IPv6": {
+            "value": "No"
+          },
+          "x.509 Certificate": {
+            "value": "No"
+          },
+          "Captive Portal": {
+            "value": "No"
+          },
+          "GPIO": {
+            "value": "No"
+          },
+          "Ignition Sensing": {
+            "value": "No"
+          },
+          "Netflow Support": {
+            "value": "No"
+          },
+          "LACP (802.3ad) NIC Bonding": {
+            "value": "No"
+          },
+          "Jumbo Frame Support": {
+            "value": "No"
+          },
+          "Internal Storage for Edge Computing": {
+            "value": "No"
+          },
+          "External Storage via USB Port": {
+            "value": "No"
+          },
+          "Dead Reckoning": {
+            "value": "No"
+          }
+        },
+        "Core Functionality": {
+          "Inter-VLAN Routing": {
+            "value": "No"
+          },
+          "802.1q VLANs Supported": {
+            "value": "No"
+          },
+          "Port-Based VLAN": {
+            "value": "No"
+          },
+          "Load Balancing Algorithms": {
+            "value": "No"
+          },
+          "Load Balancing & Failover": {
+            "value": "No"
+          },
+          "Inbound Load Balancing": {
+            "value": "No"
+          },
+          "InControl 2 Cloud Management": {
+            "value": "Yes"
+          },
+          "InControl GPS Fleet Management": {
+            "value": "No"
+          }
+        },
+        "Advanced QoS Functionality": {
+          "Bandwidth Usage Monitoring": {
+            "value": "Yes"
+          },
+          "QoS for VoIP and E-Commerce": {
+            "value": "No"
+          },
+          "User Groups Bandwidth Control": {
+            "value": "No"
+          }
+        },
+        "VPN Functionality": {
+          "SpeedFusion VPN": {
+            "value": "No"
+          },
+          "Number of SpeedFusion VPN Peers": {
+            "value": "No"
+          },
+          "IPsec VPN": {
+            "value": "No"
+          },
+          "Number of IPsec Tunnels": {
+            "value": "No"
+          },
+          "L2TP VPN / Open VPN / PPTP VPN Server": {
+            "value": "No"
+          },
+          "Maximum PPTP / L2TP / OpenVPN Users": {
+            "value": "No"
+          },
+          "Remote RADIUS / LDAP authentication in Remote User Access": {
+            "value": "No"
+          },
+          "Number of OpenVPN Tunnel (Site to Site)": {
+            "value": "No"
+          },
+          "Number of GRE Tunnel (Site to Site)": {
+            "value": "No"
+          }
+        },
+        "Hardware": {
+          "Enclosure": {
+            "value": "Compact, indoor"
+          },
+          "4pin Molex Micro-Fit Connector": {
+            "value": "No"
+          },
+          "Terminal Block Power Connector for Mobile / Vehicular Deployment": {
+            "value": "No"
+          },
+          "AC Adapter or PSU": {
+            "value": "No"
+          },
+          "Input voltage": {
+            "value": "USB-C port: 5V 2A DC"
+          },
+          "PoE Input": {
+            "value": "No"
+          },
+          "PoE Output": {
+            "value": "No"
+          },
+          "USB Power Input": {
+            "value": "Yes"
+          },
+          "Nominal Power Consumption": {
+            "value": "3.2W"
+          },
+          "Maximum Power Consumption": {
+            "value": "8W"
+          },
+          "Dimensions in inches": {
+            "value": "3.9 x 2.8 x 0.7 inches"
+          },
+          "Dimensions in mm": {
+            "value": "100 x 71 x 18.4 mm"
+          },
+          "Weight (Pound)": {
+            "value": "0.3 pounds"
+          },
+          "Weight (Gram / Kilogram)": {
+            "value": "135 grams"
+          },
+          "Operating Temperature": {
+            "value": "-40°–149°F\n-40°–65°C"
+          },
+          "Humidity": {
+            "value": "15%–95% (non-condensing)"
+          },
+          "Rack-mount": {
+            "value": "No"
+          },
+          "Dual Hot Swap Power Supply": {
+            "value": "No"
+          }
+        },
+        "Warranty Info": {
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": [
+        {
+          "sku": "DNGL-5GY-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-Z-1Y"
+            ],
+            "std2y": [
+              "PRM-Z-2Y"
+            ],
+            "std4y": [
+              "PRM-Z-4Y"
+            ],
+            "plus1y": [
+              "PCP-Z-1Y"
+            ],
+            "plus2y": [
+              "PCP-Z-2Y"
+            ],
+            "plus4y": [
+              "PCP-Z-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C",
+              "SFC-CN-SP"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "DNGL-5GZ-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-Z-1Y"
+            ],
+            "std2y": [
+              "PRM-Z-2Y"
+            ],
+            "std4y": [
+              "PRM-Z-4Y"
+            ],
+            "plus1y": [
+              "PCP-Z-1Y"
+            ],
+            "plus2y": [
+              "PCP-Z-2Y"
+            ],
+            "plus4y": [
+              "PCP-Z-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C",
+              "SFC-CN-SP"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "5G Adapter",
+      "type": "router",
+      "metadata": {
+        "Marketing Series": "Cellular Modems & Adapters",
+        "Product URL": "https://www.peplink.com/support/download-datasheet/",
+        "Source Note": "Manual catalog addition from Peplink resource downloads, public reseller SKU listings, and field note that 5G Adapter is the larger Ethernet-port product, checked 2026-05-03."
+      },
+      "specifications": {
+        "Interfaces": {
+          "Number of Ethernet WAN port": {
+            "value": "0"
+          },
+          "Number of Ethernet LAN port": {
+            "value": "1 (2.5GE RJ45)"
+          },
+          "Maximum Ethernet WAN / LAN port configuration": {
+            "value": "0 WAN with 1 LAN"
+          },
+          "SFP LAN / WAN": {
+            "value": "No"
+          },
+          "Serial Interface": {
+            "value": "No"
+          },
+          "Wi-Fi AP": {
+            "value": "No"
+          },
+          "Wi-Fi WAN": {
+            "value": "No"
+          },
+          "USB WAN": {
+            "value": "No"
+          },
+          "Module Expansion": {
+            "value": "No"
+          }
+        },
+        "Performance": {
+          "Router Throughput": {
+            "value": "N/A (5G Ethernet adapter product)"
+          },
+          "SpeedFusion VPN Throughput (No Encryption)": {
+            "value": "No"
+          },
+          "SpeedFusion VPN Throughput (256-bit AES)": {
+            "value": "No"
+          },
+          "Number of Recommended Users": {
+            "value": "1"
+          },
+          "Maximum Number of Controlled AP / Switch": {
+            "value": "No"
+          }
+        },
+        "Wireless details": {
+          "Number of Cellular Modem": {
+            "value": "1"
+          },
+          "Cellular Modem Category options": {
+            "value": "1x 5G\nLTE CAT-19\n5G: 3.4Gbps / 550Mbps\nCAT-19: 1.6Gbps / 200Mbps"
+          },
+          "5G support": {
+            "value": "Yes"
+          },
+          "SIM Slots": {
+            "value": "2 physical SIMs plus eSIM support"
+          },
+          "SIM Card Size": {
+            "value": "Nano-SIM (4FF)"
+          },
+          "Wi-Fi Radio": {
+            "value": "No"
+          },
+          "Wi-Fi Antenna Transmit Power (2.4GHz, single chain)": {
+            "value": "No"
+          },
+          "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
+            "value": "No"
+          },
+          "Multiple SSIDs": {
+            "value": "No"
+          },
+          "GPS": {
+            "value": "Yes"
+          },
+          "RemoteSIM (used in SIM Injector)": {
+            "value": "Yes"
+          },
+          "FusionSIM": {
+            "value": "Yes"
+          },
+          "Peplink eSIM Data Plans": {
+            "value": "Yes"
+          },
+          "BYO eSIM": {
+            "value": "Yes"
+          }
+        },
+        "Features": {
+          "SpeedFusion Hot Failover": {
+            "value": "No"
+          },
+          "SpeedFusion Smoothing": {
+            "value": "No"
+          },
+          "SpeedFusion Bandwidth Bonding": {
+            "value": "No"
+          },
+          "SpeedFusion Connect": {
+            "value": "No"
+          },
+          "SpeedFusion Relay Mode (Server)": {
+            "value": "No"
+          },
+          "Drop-In Mode": {
+            "value": "No"
+          },
+          "High Availability": {
+            "value": "No"
+          },
+          "Peplink AP Series Management": {
+            "value": "No"
+          },
+          "Remote AP & Multiple Config Profiles Management": {
+            "value": "No"
+          },
+          "Switch Controller": {
+            "value": "No"
+          },
+          "WAN as LAN": {
+            "value": "No"
+          },
+          "LAN Bypass": {
+            "value": "No"
+          },
+          "InTouch": {
+            "value": "Yes"
+          },
+          "Virtual WAN": {
+            "value": "No"
+          },
+          "Synergy Mode (Controller)": {
+            "value": "No"
+          },
+          "Synergized Device": {
+            "value": "No"
+          },
+          "Application and Web Blocking": {
+            "value": "No"
+          },
+          "Web Content Filtering": {
+            "value": "No"
+          },
+          "IP Passthrough": {
+            "value": "No"
+          },
+          "IPv6": {
+            "value": "No"
+          },
+          "x.509 Certificate": {
+            "value": "No"
+          },
+          "Captive Portal": {
+            "value": "No"
+          },
+          "GPIO": {
+            "value": "No"
+          },
+          "Ignition Sensing": {
+            "value": "Yes"
+          },
+          "Netflow Support": {
+            "value": "No"
+          },
+          "LACP (802.3ad) NIC Bonding": {
+            "value": "No"
+          },
+          "Jumbo Frame Support": {
+            "value": "No"
+          },
+          "Internal Storage for Edge Computing": {
+            "value": "No"
+          },
+          "External Storage via USB Port": {
+            "value": "No"
+          },
+          "Dead Reckoning": {
+            "value": "No"
+          }
+        },
+        "Core Functionality": {
+          "Inter-VLAN Routing": {
+            "value": "No"
+          },
+          "802.1q VLANs Supported": {
+            "value": "No"
+          },
+          "Port-Based VLAN": {
+            "value": "No"
+          },
+          "Load Balancing Algorithms": {
+            "value": "No"
+          },
+          "Load Balancing & Failover": {
+            "value": "No"
+          },
+          "Inbound Load Balancing": {
+            "value": "No"
+          },
+          "InControl 2 Cloud Management": {
+            "value": "Yes"
+          },
+          "InControl GPS Fleet Management": {
+            "value": "Yes"
+          }
+        },
+        "Advanced QoS Functionality": {
+          "Bandwidth Usage Monitoring": {
+            "value": "Yes"
+          },
+          "QoS for VoIP and E-Commerce": {
+            "value": "No"
+          },
+          "User Groups Bandwidth Control": {
+            "value": "No"
+          }
+        },
+        "VPN Functionality": {
+          "SpeedFusion VPN": {
+            "value": "No"
+          },
+          "Number of SpeedFusion VPN Peers": {
+            "value": "No"
+          },
+          "IPsec VPN": {
+            "value": "No"
+          },
+          "Number of IPsec Tunnels": {
+            "value": "No"
+          },
+          "L2TP VPN / Open VPN / PPTP VPN Server": {
+            "value": "No"
+          },
+          "Maximum PPTP / L2TP / OpenVPN Users": {
+            "value": "No"
+          },
+          "Remote RADIUS / LDAP authentication in Remote User Access": {
+            "value": "No"
+          },
+          "Number of OpenVPN Tunnel (Site to Site)": {
+            "value": "No"
+          },
+          "Number of GRE Tunnel (Site to Site)": {
+            "value": "No"
+          }
+        },
+        "Hardware": {
+          "Enclosure": {
+            "value": "Ruggedized, indoor"
+          },
+          "4pin Molex Micro-Fit Connector": {
+            "value": "Yes"
+          },
+          "Terminal Block Power Connector for Mobile / Vehicular Deployment": {
+            "value": "No"
+          },
+          "AC Adapter or PSU": {
+            "value": "AC Input 100V–240V\nDC Output 12V 2A"
+          },
+          "Input voltage": {
+            "value": "Micro-fit connector: DC 10–30V\nPoE input: 802.3at"
+          },
+          "PoE Input": {
+            "value": "Yes (802.3at)"
+          },
+          "PoE Output": {
+            "value": "No"
+          },
+          "USB Power Input": {
+            "value": "No"
+          },
+          "Nominal Power Consumption": {
+            "value": "6.5W"
+          },
+          "Maximum Power Consumption": {
+            "value": "12W"
+          },
+          "Dimensions in inches": {
+            "value": "5.4 x 3.1 x 1.3 inches"
+          },
+          "Dimensions in mm": {
+            "value": "138.2 x 80 x 33.5 mm"
+          },
+          "Weight (Pound)": {
+            "value": "0.86 pounds"
+          },
+          "Weight (Gram / Kilogram)": {
+            "value": "390 grams"
+          },
+          "Operating Temperature": {
+            "value": "-40°–149°F\n-40°–65°C"
+          },
+          "Humidity": {
+            "value": "15%–95% (non-condensing)"
+          },
+          "Rack-mount": {
+            "value": "No"
+          },
+          "Dual Hot Swap Power Supply": {
+            "value": "No"
+          }
+        },
+        "Warranty Info": {
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": [
         {
           "sku": "ADP-5GY-T-PRM",
           "addons": {

@@ -51,18 +51,18 @@ def main() -> None:
                 raise SystemExit(f"Bundle instructions still contain stale guidance: {snippet}")
 
         result = subprocess.run(
-            ["python3", "query.py", "show", "Balance 20X"],
+            ["python3", "query.py", "show", "B One 5G"],
             cwd=stage / "knowledge",
             check=True,
             capture_output=True,
             text=True,
         )
         payload = json.loads(result.stdout)
-        if payload.get("product_name") != "Balance 20X":
+        if payload.get("product_name") != "B One 5G":
             raise SystemExit("Packaged query.py returned an unexpected payload.")
 
         result = subprocess.run(
-            ["python3", "query.py", "skus", "Balance 20X"],
+            ["python3", "query.py", "skus", "B One 5G"],
             cwd=stage / "knowledge",
             check=True,
             capture_output=True,

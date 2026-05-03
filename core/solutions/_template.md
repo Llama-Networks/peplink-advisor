@@ -7,7 +7,7 @@ use_cases:
   - # e.g., "point of sale"
 primary_devices:
   # Exact product names from the dataset. Use `query.py list` to confirm.
-  - # e.g., "Balance 20X"
+  - # e.g., "B One 5G"
 alternate_devices:
   # Optional step-up / step-down picks.
   - # e.g., "B One"

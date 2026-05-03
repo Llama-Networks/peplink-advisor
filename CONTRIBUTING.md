@@ -35,8 +35,8 @@ If you propose a data update, prefer a complete corrected record or export over 
 When checking the local catalog, use:
 
 ```bash
-python3 core/scripts/query.py show "Balance 20X"
-python3 core/scripts/query.py skus "Balance 20X"
+python3 core/scripts/query.py show "B One 5G"
+python3 core/scripts/query.py skus "B One 5G"
 python3 core/scripts/query.py skus --find "LIC-VWAN" --type router
 ```
 
@@ -76,8 +76,8 @@ If you are editing files locally, these checks are useful before sharing a chang
 
 ```bash
 python3 -m py_compile core/scripts/query.py
-python3 core/scripts/query.py show "Balance 20X"
-python3 core/scripts/query.py skus "Balance 20X"
+python3 core/scripts/query.py show "B One 5G"
+python3 core/scripts/query.py skus "B One 5G"
 python3 core/scripts/query.py search "GPS"
 ```
 

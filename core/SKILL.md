@@ -1,6 +1,6 @@
 # Peplink Advisor
 
-This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 163 catalog records covering 103 fully specified devices plus SKU-only records for modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.2 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
+This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 165 catalog records covering 105 fully specified devices plus SKU-only records for modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.2 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
 
 **Dataset last updated: 2026-05-03.** If the user asks about a device or SKU missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
 
@@ -37,7 +37,7 @@ Use `filter`: `python3 scripts/query.py filter --type router --field "5G support
 
 `python3 scripts/query.py search "<query>"` scans names, metadata, section/field names, values, and notes. Use it when you don't know which field to target.
 
-### 5. SKU/add-on lookup ("What are the SKUs for Balance 20X?" / "Where is LIC-VWAN used?")
+### 5. SKU/add-on lookup ("What are the SKUs for B One 5G?" / "Where is LIC-VWAN used?")
 
 Run `python3 scripts/query.py skus "<device name>"` to list product SKU variants and their compatible add-ons. For a SKU or add-on string where you do not know the parent device, run `python3 scripts/query.py skus --find "<SKU>"`; add `--type router` / `--type flex_module` / etc. when a broad add-on appears on many records. `search` also scans `sku_variants`, but `skus` returns cleaner compatibility slices.
 

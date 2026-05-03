@@ -54,7 +54,7 @@ The shared source lives under `core/`:
 - `core/solutions/` contains curated deployment recipes.
 - `core/references/` contains supporting reference notes.
 
-The current catalog contains 163 records: 103 fully specified devices plus SKU-only records for modules, FusionHub licenses, SIM injectors, antennas, and accessories. Many fully specified devices include direct datasheet URLs in addition to product page URLs.
+The current catalog contains 165 records: 105 fully specified devices plus SKU-only records for modules, FusionHub licenses, SIM injectors, antennas, and accessories. Many fully specified devices include direct datasheet URLs in addition to product page URLs.
 
 ## Example Questions
 
@@ -62,7 +62,7 @@ Ask questions like:
 
 - Which Peplink routers support 5G and GPS?
 - Compare the HD2 MBX 5G and HD4 MBX 5G on throughput, cellular count, and VPN performance.
-- What SKUs and add-ons apply to the Balance 20X?
+- What SKUs and add-ons apply to the B One 5G?
 - Does this feature require PrimeCare or an extra license?
 - What would you specify for a retail branch with wired internet plus cellular failover?
 - What is a reasonable Peplink hardware stack for a small vessel with guest Wi-Fi?
@@ -75,10 +75,10 @@ If you download the source repository, you can query the catalog directly:
 
 ```bash
 python3 core/scripts/query.py list
-python3 core/scripts/query.py show "Balance 20X"
+python3 core/scripts/query.py show "B One 5G"
 python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
 python3 core/scripts/query.py filter --type router --field "5G support" --value Yes
-python3 core/scripts/query.py skus "Balance 20X"
+python3 core/scripts/query.py skus "B One 5G"
 python3 core/scripts/query.py skus --find "LIC-VWAN" --type router
 ```
 
