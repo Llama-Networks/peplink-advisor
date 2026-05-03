@@ -1,6 +1,6 @@
 {
   "name": "Peplink Advisor",
-  "description": "Spec lookups, side-by-side comparisons, SKU/add-on checks, and deployment recommendations for Peplink routers, access points, switches, and related catalog SKUs. Grounded in a curated dataset of 165 records and a library of vetted solution recipes.",
+  "description": "Spec lookups, side-by-side comparisons, SKU/add-on checks, and deployment recommendations for Peplink routers, access points, switches, and related catalog SKUs. Grounded in a curated dataset of 188 records and a library of vetted solution recipes.",
   "conversation_starters": [
     "Recommend a Peplink router for a retail store with cellular failover.",
     "Compare the HD2 MBX 5G and the HD4 MBX 5G on performance and VPN throughput.",

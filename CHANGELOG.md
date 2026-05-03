@@ -4,6 +4,11 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+## [0.2.2] — 2026-05-03
+
+### Fixed
+- Aligned the SKU compatibility catalog with the expanded `productSKU_addonSKUs_with_care.csv` source: all 298 source rows are now represented, including 72 newly mapped variants on existing catalog records and 23 additional SKU-only records for source rows without full device records.
+
 ## [0.2.1] — 2026-05-03
 
 ### Fixed

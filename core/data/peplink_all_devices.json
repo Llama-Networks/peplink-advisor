@@ -4,16 +4,16 @@
     "PeplinkAPComparisonJSON(External).xlsx",
     "PeplinkSwitchComparisonJSON(External).xlsx"
   ],
-  "device_count": 165,
+  "device_count": 188,
   "counts_by_type": {
-    "router": 90,
-    "access_point": 6,
-    "switch": 9,
-    "flex_module": 29,
+    "router": 99,
+    "access_point": 10,
+    "switch": 10,
+    "flex_module": 31,
     "fusionhub_license": 7,
-    "accessory": 1,
+    "accessory": 4,
     "sim_injector": 3,
-    "antenna": 20
+    "antenna": 24
   },
   "devices": [
     {
@@ -3742,7 +3742,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MFA-200-W",
+          "addons": {
+            "std1y": [
+              "SVL-772"
+            ],
+            "std2y": [
+              "SVL-672"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MFA-200-1Y"
+            ],
+            "plus2y": [
+              "ECP-MFA-200-2Y"
+            ],
+            "plus4y": [
+              "ECP-MFA-200-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "MediaFast 500",
@@ -4071,7 +4110,62 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MFA-500-B",
+          "addons": {
+            "std1y": [
+              "SVL-773"
+            ],
+            "std2y": [
+              "SVL-673"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MFA-500-1Y"
+            ],
+            "plus2y": [
+              "ECP-MFA-500-2Y"
+            ],
+            "plus4y": [
+              "ECP-MFA-500-4Y"
+            ],
+            "vwanLicenses": [
+              "LIC-VWAN",
+              "LIC-2VWAN",
+              "LIC-3VWAN"
+            ],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [
+              "ICS-B08-1Y",
+              "ICS-B08-2Y"
+            ],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-B",
+              "SFC-CLD-E",
+              "SFC-CLD-F",
+              "SFC-CLD-C",
+              "SFC-CLD-G",
+              "SFC-CLD-D",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "MediaFast 750",
@@ -4400,7 +4494,62 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MFA-750-B",
+          "addons": {
+            "std1y": [
+              "SVL-779"
+            ],
+            "std2y": [
+              "SVL-679"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MFA-750-1Y"
+            ],
+            "plus2y": [
+              "ECP-MFA-750-2Y"
+            ],
+            "plus4y": [
+              "ECP-MFA-750-4Y"
+            ],
+            "vwanLicenses": [
+              "LIC-VWAN",
+              "LIC-2VWAN",
+              "LIC-3VWAN"
+            ],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [
+              "ICS-B09-1Y",
+              "ICS-B09-2Y"
+            ],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-F",
+              "SFC-CLD-C",
+              "SFC-CLD-E",
+              "SFC-CLD-D",
+              "SFC-CLD-G",
+              "SFC-CLD-B",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "BR1 Mini 5G (Wi-Fi)",
@@ -5964,6 +6113,86 @@
             "simInjectors": [
               "EXM-MINI-SIM-8"
             ],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "BPL-021X-LTE-US-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "BPL-021X-LTEA-US-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
             "antennas": [],
             "powerSupplies": [],
             "poeKits": [],
@@ -7847,6 +8076,160 @@
               "MAX-BR1-MINI-BD-FP-4Y"
             ]
           }
+        },
+        {
+          "sku": "MAX-BR1-MINI-LTEA-W",
+          "addons": {
+            "std1y": [
+              "SVL-418"
+            ],
+            "std2y": [
+              "SVL-518"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-B-1Y"
+            ],
+            "plus2y": [
+              "ECP-B-2Y"
+            ],
+            "plus4y": [
+              "ECP-B-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-MINI-LTE-US",
+          "addons": {
+            "std1y": [
+              "SVL-419"
+            ],
+            "std2y": [
+              "SVL-519"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-A-1Y"
+            ],
+            "plus2y": [
+              "ECP-A-2Y"
+            ],
+            "plus4y": [
+              "ECP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-MINI-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-419"
+            ],
+            "std2y": [
+              "SVL-519"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-A-1Y"
+            ],
+            "plus2y": [
+              "ECP-A-2Y"
+            ],
+            "plus4y": [
+              "ECP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-MINI-LTE-US-DC-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -9629,6 +10012,44 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-BR1-MK2-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-429"
+            ],
+            "std2y": [
+              "SVL-590"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-BR1-MK2-LTE-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-BR1-MK2-LTE-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-BR1-MK2-LTE-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -10486,6 +10907,44 @@
               "ACW-622-EU",
               "ACW-622-UK"
             ],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-ENT-LTEA-W-T",
+          "addons": {
+            "std1y": [
+              "SVL-420"
+            ],
+            "std2y": [
+              "SVL-520"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-BR1-ENT-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-BR1-ENT-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-BR1-ENT-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
             "cablesAdapters": [],
             "mountingBrackets": [],
             "bundleOffers": [],
@@ -11817,6 +12276,82 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-ADP-5GH",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-ADP-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-ADP-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-ADP-5GH-T",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-ADP-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-ADP-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -12153,7 +12688,48 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MAX-TST-MINI-LTE-F-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Transit",
@@ -12545,6 +13121,78 @@
             "mountingBrackets": [
               "ACW-DIN-TST"
             ],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-TST-5GD-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-C-1Y"
+            ],
+            "std2y": [
+              "PRM-C-2Y"
+            ],
+            "std4y": [
+              "PRM-C-4Y"
+            ],
+            "plus1y": [
+              "PCP-C-1Y"
+            ],
+            "plus2y": [
+              "PCP-C-2Y"
+            ],
+            "plus4y": [
+              "PCP-C-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-TST-LTEA-R-T",
+          "addons": {
+            "std1y": [
+              "SVL-424"
+            ],
+            "std2y": [
+              "SVL-525"
+            ],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
           }
@@ -12947,6 +13595,86 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-TST-DUO-LTEA-R-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-D-1Y"
+            ],
+            "std2y": [
+              "PRM-D-2Y"
+            ],
+            "std4y": [
+              "PRM-D-4Y"
+            ],
+            "plus1y": [
+              "PCP-D-1Y"
+            ],
+            "plus2y": [
+              "PCP-D-2Y"
+            ],
+            "plus4y": [
+              "PCP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-TST-DUO-LTEA-K-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-D-1Y"
+            ],
+            "std2y": [
+              "PRM-D-2Y"
+            ],
+            "std4y": [
+              "PRM-D-4Y"
+            ],
+            "plus1y": [
+              "PCP-D-1Y"
+            ],
+            "plus2y": [
+              "PCP-D-2Y"
+            ],
+            "plus4y": [
+              "PCP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -13283,7 +14011,48 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MAX-TST-DUO-CORE-LTEA-R-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-D-1Y"
+            ],
+            "std2y": [
+              "PRM-D-2Y"
+            ],
+            "std4y": [
+              "PRM-D-4Y"
+            ],
+            "plus1y": [
+              "PCP-D-1Y"
+            ],
+            "plus2y": [
+              "PCP-D-2Y"
+            ],
+            "plus4y": [
+              "PCP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Transit Duo Pro",
@@ -14199,6 +14968,46 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-TST-PROE-LTEA-R-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-D-1Y"
+            ],
+            "std2y": [
+              "PRM-D-2Y"
+            ],
+            "std4y": [
+              "PRM-D-4Y"
+            ],
+            "plus1y": [
+              "PCP-D-1Y"
+            ],
+            "plus2y": [
+              "PCP-D-2Y"
+            ],
+            "plus4y": [
+              "PCP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -14646,6 +15455,82 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-BR1-LTE-US",
+          "addons": {
+            "std1y": [
+              "SVL-723"
+            ],
+            "std2y": [
+              "SVL-645"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-BR1-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-BR1-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-BR1-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-723"
+            ],
+            "std2y": [
+              "SVL-645"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-BR1-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-BR1-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-BR1-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -15029,6 +15914,44 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-BR1-M2M-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-799"
+            ],
+            "std2y": [
+              "SVL-699"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-BR1-M2M-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-BR1-M2M-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-BR1-M2M-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -15361,7 +16284,226 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MAX-HD2-LTEA-P-T",
+          "addons": {
+            "std1y": [
+              "SVL-436"
+            ],
+            "std2y": [
+              "SVL-528"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-LTEA-4Y"
+            ],
+            "vwanLicenses": [
+              "LIC-2VWAN",
+              "LIC-3VWAN",
+              "LIC-VWAN"
+            ],
+            "openvpnLicenses": [
+              "LIC-OPN-WAN",
+              "LIC-2OPN-WAN",
+              "LIC-3OPN-WAN",
+              "LIC-4OPN-WAN"
+            ],
+            "apSupportLicenses": [
+              "AP-LC-50"
+            ],
+            "speedfusionLicenses": [
+              "MAX-HD-020-SPF"
+            ],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [
+              "ICS-B04-1Y"
+            ],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-F",
+              "SFC-CLD-G",
+              "SFC-CLD-D",
+              "SFC-CLD-E",
+              "SFC-CLD-B",
+              "SFC-CLD-C",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [
+              "PUMA-421-S-W-6",
+              "PUMA-020-R-B-6"
+            ],
+            "powerSupplies": [],
+            "poeKits": [
+              "ACW-622-AU",
+              "ACW-622-EU",
+              "ACW-622-UK",
+              "ACW-622-US"
+            ],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-LTE-E-T",
+          "addons": {
+            "std1y": [
+              "SVL-724"
+            ],
+            "std2y": [
+              "SVL-642"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-LTE-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-LTE-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-LTE-4Y"
+            ],
+            "vwanLicenses": [
+              "LIC-2VWAN",
+              "LIC-3VWAN",
+              "LIC-VWAN"
+            ],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [
+              "AP-LC-50"
+            ],
+            "speedfusionLicenses": [
+              "MAX-HD-020-SPF"
+            ],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [
+              "ICS-B04-1Y"
+            ],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-F",
+              "SFC-CLD-B",
+              "SFC-CLD-G",
+              "SFC-CLD-C",
+              "SFC-CLD-E",
+              "SFC-CLD-D",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [
+              "PUMA-421-S-W-6",
+              "PUMA-020-R-B-6"
+            ],
+            "powerSupplies": [],
+            "poeKits": [
+              "ACW-622-AU",
+              "ACW-622-EU",
+              "ACW-622-UK",
+              "ACW-622-US"
+            ],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-LTEA-W",
+          "addons": {
+            "std1y": [
+              "SVL-436"
+            ],
+            "std2y": [
+              "SVL-528"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-LTEA-WF-T",
+          "addons": {
+            "std1y": [
+              "SVL-436"
+            ],
+            "std2y": [
+              "SVL-528"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "HD2 Mini",
@@ -16422,7 +17564,122 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MAX-HD4-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-734"
+            ],
+            "std2y": [
+              "SVL-656"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-LTE-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-LTE-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-LTE-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD4-LTEA-W-T",
+          "addons": {
+            "std1y": [
+              "SVL-464"
+            ],
+            "std2y": [
+              "SVL-527"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD4-LTEA-WF-T",
+          "addons": {
+            "std1y": [
+              "SVL-464"
+            ],
+            "std2y": [
+              "SVL-527"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "HD2 MBX",
@@ -17573,6 +18830,234 @@
             "miscAccessories": [
               "ACW-754"
             ]
+          }
+        },
+        {
+          "sku": "MAX-HD2-MBX-5GD",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD2-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD2-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-MBX-5GD-T",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD2-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD2-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-MBX-5GH",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD2-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD2-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-MBX-5GH-T",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD2-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD2-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-MBX-5GK",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD2-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD2-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-MBX-5GN",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD2-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD2-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
           }
         }
       ]
@@ -19116,6 +20601,196 @@
               "ACW-754"
             ]
           }
+        },
+        {
+          "sku": "MAX-HD4-MBX-5GN",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD4-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD4-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD4-MBX-5GD",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD4-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD4-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD4-MBX-5GH",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD4-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD4-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD4-MBX-5GH-T",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD4-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD4-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD4-MBX-5GK",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD4-MBX-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD4-MBX-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-MBX-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-MBX-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-MBX-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -19448,7 +21123,84 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MAX-HD2-MFA-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-775"
+            ],
+            "std2y": [
+              "SVL-675"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MFA-LTE-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MFA-LTE-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MFA-LTE-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-MFA-LTEA-W-T",
+          "addons": {
+            "std1y": [
+              "SVL-434"
+            ],
+            "std2y": [
+              "SVL-534"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-MFA-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-MFA-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-MFA-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "HD4 Mediafast",
@@ -19779,7 +21531,84 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MAX-HD4-MFA-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-776"
+            ],
+            "std2y": [
+              "SVL-676"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-MFA-LTE-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-MFA-LTE-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-MFA-LTE-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD4-MFA-LTEA-W-T",
+          "addons": {
+            "std1y": [
+              "SVL-435"
+            ],
+            "std2y": [
+              "SVL-535"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD4-MFA-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD4-MFA-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD4-MFA-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "BR1 IP55",
@@ -21060,6 +22889,82 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-HD2-M-LTEA-W-IP67",
+          "addons": {
+            "std1y": [
+              "SVL-445"
+            ],
+            "std2y": [
+              "SVL-544"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-LTEA-WP-IP67-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-LTEA-WP-IP67-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-LTEA-WP-IP67-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD2-M-LTEA-WF-IP67",
+          "addons": {
+            "std1y": [
+              "SVL-445"
+            ],
+            "std2y": [
+              "SVL-544"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-M-LTEA-RK-IP67-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-M-LTEA-RK-IP67-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-M-LTEA-RK-IP67-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -21837,6 +23742,44 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-HD1-DOM-M-GLTE-G",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD1-DOM-M-GLTE-G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD1-DOM-M-GLTE-G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD1-DOM-M-GLTE-G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD1-DOM-M-GLTE-G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD1-DOM-M-GLTE-G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -22294,6 +24237,44 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-HD2-DOM-M-LTEA-W",
+          "addons": {
+            "std1y": [
+              "SVL-471"
+            ],
+            "std2y": [
+              "SVL-575"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HD2-DOM-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD2-DOM-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD2-DOM-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -22699,6 +24680,46 @@
               "ACW-651",
               "ACW-652"
             ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-HD1-DOM-PRO-5GH",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-HD1-DOM-PRO-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-HD1-DOM-PRO-5G-2Y"
+            ],
+            "std4y": [
+              "SVL-MAX-HD1-DOM-PRO-5G-4Y"
+            ],
+            "plus1y": [
+              "ECP-MAX-HD1-DOM-PRO-5G-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HD1-DOM-PRO-5G-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HD1-DOM-PRO-5G-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
             "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
@@ -23850,7 +25871,48 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "UBR-LTE-US-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-B-1Y"
+            ],
+            "std2y": [
+              "PRM-B-2Y"
+            ],
+            "std4y": [
+              "PRM-B-4Y"
+            ],
+            "plus1y": [
+              "PCP-B-1Y"
+            ],
+            "plus2y": [
+              "PCP-B-2Y"
+            ],
+            "plus4y": [
+              "PCP-B-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "SpeedFusion Engine",
@@ -24494,6 +26556,44 @@
               "SFE-DUO-ACW-KIT-US"
             ]
           }
+        },
+        {
+          "sku": "SFE-DUO-LTEA-W-ET",
+          "addons": {
+            "std1y": [
+              "SVL-475"
+            ],
+            "std2y": [
+              "SVL-581"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -24830,7 +26930,84 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "MAX-BR1-PRO-LTEA-W-T",
+          "addons": {
+            "std1y": [
+              "SVL-437"
+            ],
+            "std2y": [
+              "SVL-665"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BR1-PRO-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-BR1-PRO-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-BR1-PRO-LTEA-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-PRO-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-777"
+            ],
+            "std2y": [
+              "SVL-677"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BR1-PRO-LTE-1Y"
+            ],
+            "plus2y": [
+              "ECP-BR1-PRO-LTE-2Y"
+            ],
+            "plus4y": [
+              "ECP-BR1-PRO-LTE-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "BR1 Pro 5G",
@@ -25323,6 +27500,86 @@
             "miscAccessories": [
               "ACW-765"
             ]
+          }
+        },
+        {
+          "sku": "MAX-BR1-PRO-5GD-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-C-1Y"
+            ],
+            "std2y": [
+              "PRM-C-2Y"
+            ],
+            "std4y": [
+              "PRM-C-4Y"
+            ],
+            "plus1y": [
+              "PCP-C-1Y"
+            ],
+            "plus2y": [
+              "PCP-C-2Y"
+            ],
+            "plus4y": [
+              "PCP-C-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-PRO-5GH-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-C-1Y"
+            ],
+            "std2y": [
+              "PRM-C-2Y"
+            ],
+            "std4y": [
+              "PRM-C-4Y"
+            ],
+            "plus1y": [
+              "PCP-C-1Y"
+            ],
+            "plus2y": [
+              "PCP-C-2Y"
+            ],
+            "plus4y": [
+              "PCP-C-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
           }
         }
       ]
@@ -25838,6 +28095,86 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "MAX-BR2-PRO-5GH-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-E-1Y"
+            ],
+            "std2y": [
+              "PRM-E-2Y"
+            ],
+            "std4y": [
+              "PRM-E-4Y"
+            ],
+            "plus1y": [
+              "PCP-E-1Y"
+            ],
+            "plus2y": [
+              "PCP-E-2Y"
+            ],
+            "plus4y": [
+              "PCP-E-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR2-PRO-5GN-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-E-1Y"
+            ],
+            "std2y": [
+              "PRM-E-2Y"
+            ],
+            "std4y": [
+              "PRM-E-4Y"
+            ],
+            "plus1y": [
+              "PCP-E-1Y"
+            ],
+            "plus2y": [
+              "PCP-E-2Y"
+            ],
+            "plus4y": [
+              "PCP-E-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -26241,6 +28578,46 @@
             "cablesAdapters": [
               "ACW-643"
             ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "UBR-PLUS-LTEA-US-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-B-1Y"
+            ],
+            "std2y": [
+              "PRM-B-2Y"
+            ],
+            "std4y": [
+              "PRM-B-4Y"
+            ],
+            "plus1y": [
+              "PCP-B-1Y"
+            ],
+            "plus2y": [
+              "PCP-B-2Y"
+            ],
+            "plus4y": [
+              "PCP-B-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
             "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
@@ -26876,6 +29253,46 @@
             "mountingBrackets": [
               "ACW-DIN-M2MS"
             ],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR2-LTE-US-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-B-1Y"
+            ],
+            "std2y": [
+              "PRM-B-2Y"
+            ],
+            "std4y": [
+              "PRM-B-4Y"
+            ],
+            "plus1y": [
+              "PCP-B-1Y"
+            ],
+            "plus2y": [
+              "PCP-B-2Y"
+            ],
+            "plus4y": [
+              "PCP-B-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
           }
@@ -29901,7 +32318,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-021",
+          "addons": {
+            "std1y": [
+              "SVL-705"
+            ],
+            "std2y": [
+              "SVL-601"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-B-1Y"
+            ],
+            "plus2y": [
+              "ECP-B-2Y"
+            ],
+            "plus4y": [
+              "ECP-B-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance 30 LTE",
@@ -30230,7 +32686,84 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-031-LTEA-W-T",
+          "addons": {
+            "std1y": [
+              "SVL-443"
+            ],
+            "std2y": [
+              "SVL-530"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "BPL-031-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-739"
+            ],
+            "std2y": [
+              "SVL-603"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance 30 PRO",
@@ -30896,7 +33429,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-ONE",
+          "addons": {
+            "std1y": [
+              "SVL-768"
+            ],
+            "std2y": [
+              "SVL-657"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-C-1Y"
+            ],
+            "plus2y": [
+              "ECP-C-2Y"
+            ],
+            "plus4y": [
+              "ECP-C-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance ONE Core",
@@ -31230,7 +33802,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-ONE-CORE",
+          "addons": {
+            "std1y": [
+              "SVL-411"
+            ],
+            "std2y": [
+              "SVL-511"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-C-1Y"
+            ],
+            "plus2y": [
+              "ECP-C-2Y"
+            ],
+            "plus4y": [
+              "ECP-C-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance TWO",
@@ -31562,7 +34173,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-TWO",
+          "addons": {
+            "std1y": [
+              "SVL-333"
+            ],
+            "std2y": [
+              "SVL-537"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-E-1Y"
+            ],
+            "plus2y": [
+              "ECP-E-2Y"
+            ],
+            "plus4y": [
+              "ECP-E-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance 210",
@@ -31892,7 +34542,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-210",
+          "addons": {
+            "std1y": [
+              "SVL-706"
+            ],
+            "std2y": [
+              "SVL-605"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BPL-210-1Y"
+            ],
+            "plus2y": [
+              "ECP-BPL-210-2Y"
+            ],
+            "plus4y": [
+              "ECP-BPL-210-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance 310 5G",
@@ -34370,7 +37059,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-380",
+          "addons": {
+            "std1y": [
+              "SVL-703"
+            ],
+            "std2y": [
+              "SVL-608"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BPL-380-1Y"
+            ],
+            "plus2y": [
+              "ECP-BPL-380-2Y"
+            ],
+            "plus4y": [
+              "ECP-BPL-380-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance 380X",
@@ -34705,7 +37433,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-380X",
+          "addons": {
+            "std1y": [
+              "SVL-BPL-380X-1Y"
+            ],
+            "std2y": [
+              "SVL-BPL-380X-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BPL-380X-1Y"
+            ],
+            "plus2y": [
+              "ECP-BPL-380X-2Y"
+            ],
+            "plus4y": [
+              "ECP-BPL-380X-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance 580",
@@ -35430,6 +38197,44 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
+        },
+        {
+          "sku": "BPL-580X",
+          "addons": {
+            "std1y": [
+              "SVL-BPL-580X-1Y"
+            ],
+            "std2y": [
+              "SVL-BPL-580X-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BPL-580X-1Y"
+            ],
+            "plus2y": [
+              "ECP-BPL-580X-2Y"
+            ],
+            "plus4y": [
+              "ECP-BPL-580X-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
         }
       ]
     },
@@ -35759,7 +38564,46 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-710",
+          "addons": {
+            "std1y": [
+              "SVL-704"
+            ],
+            "std2y": [
+              "SVL-610"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BPL-710-1Y"
+            ],
+            "plus2y": [
+              "ECP-BPL-710-2Y"
+            ],
+            "plus4y": [
+              "ECP-BPL-710-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "Balance 1350",
@@ -39161,6 +42005,44 @@
             "mountingBrackets": [
               "ACW-DIN-BR1-MINI"
             ],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "APO-RUG",
+          "addons": {
+            "std1y": [
+              "SVL-413"
+            ],
+            "std2y": [
+              "SVL-513"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-A-1Y"
+            ],
+            "plus2y": [
+              "ECP-A-2Y"
+            ],
+            "plus4y": [
+              "ECP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
           }
@@ -43367,22 +46249,1103 @@
           }
         }
       ]
+    },
+    {
+      "product_name": "RDR-IW-LCD",
+      "type": "accessory",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "RDR-IW-LCD",
+          "addons": {
+            "std1y": [
+              "SVL-469"
+            ],
+            "std2y": [
+              "SVL-582"
+            ],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "MAX-HSP-LTEA-W",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "MAX-HSP-LTEA-W",
+          "addons": {
+            "std1y": [
+              "SVL-422"
+            ],
+            "std2y": [
+              "SVL-522"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-HSP-LTEA-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-HSP-LTEA-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-HSP-LTEA-4Y"
+            ],
+            "vwanLicenses": [
+              "LIC-VWAN"
+            ],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-B",
+              "SFC-CLD-C",
+              "SFC-CLD-D",
+              "SFC-CLD-E",
+              "SFC-CLD-F",
+              "SFC-CLD-G",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "MAX-OTG-U4",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "MAX-OTG-U4",
+          "addons": {
+            "std1y": [
+              "SVL-727"
+            ],
+            "std2y": [
+              "SVL-637"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-OTG-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-OTG-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-OTG-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [
+              "MAX-OTG-U4-LC-SF"
+            ],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-B",
+              "SFC-CLD-G",
+              "SFC-CLD-F",
+              "SFC-CLD-E",
+              "SFC-CLD-C",
+              "SFC-CLD-D",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "PMU-DD-52V-400W",
+      "type": "accessory",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "PMU-DD-52V-400W",
+          "addons": {
+            "std1y": [
+              "SVL-477"
+            ],
+            "std2y": [
+              "SVL-583"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [
+              "ICS-012",
+              "ICS-024"
+            ],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [
+              "ACW-741",
+              "ACW-743"
+            ],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "DCS-RUG",
+      "type": "switch",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "DCS-RUG",
+          "addons": {
+            "std1y": [
+              "SVL-709"
+            ],
+            "std2y": [
+              "SVL-660"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-A-1Y"
+            ],
+            "plus2y": [
+              "ECP-A-2Y"
+            ],
+            "plus4y": [
+              "ECP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [
+              "ICS-012",
+              "ICS-024"
+            ],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "MAX-OTG-U4-SF",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "MAX-OTG-U4-SF",
+          "addons": {
+            "std1y": [
+              "SVL-727"
+            ],
+            "std2y": [
+              "SVL-637"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-MAX-OTG-1Y"
+            ],
+            "plus2y": [
+              "ECP-MAX-OTG-2Y"
+            ],
+            "plus4y": [
+              "ECP-MAX-OTG-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "PUMA-020-R-B-6",
+      "type": "antenna",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "PUMA-020-R-B-6",
+          "addons": {
+            "std1y": [],
+            "std2y": [],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-651",
+              "ACW-652"
+            ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "PUMA-221-S-W-6",
+      "type": "antenna",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "PUMA-221-S-W-6",
+          "addons": {
+            "std1y": [],
+            "std2y": [],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-651",
+              "ACW-652"
+            ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "PUMA-421-S-W-6",
+      "type": "antenna",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "PUMA-421-S-W-6",
+          "addons": {
+            "std1y": [],
+            "std2y": [],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-651",
+              "ACW-652"
+            ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "PUMA-421-Q-W-6",
+      "type": "antenna",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "PUMA-421-Q-W-6",
+          "addons": {
+            "std1y": [],
+            "std2y": [],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-651",
+              "ACW-652"
+            ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "POTS-ADP-LTE-EU-T-PRM",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "POTS-ADP-LTE-EU-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [
+              "ANT-MB-20G-S-B-6",
+              "ANT-MB-20G-S-W-6"
+            ],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-634"
+            ],
+            "mountingBrackets": [
+              "ACW-DIN-BR1-MINI"
+            ],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "POTS-ADP-LTE-US-T-PRM",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "POTS-ADP-LTE-US-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [
+              "ANT-MB-20G-S-W-6",
+              "ANT-MB-20G-S-B-6"
+            ],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-634"
+            ],
+            "mountingBrackets": [
+              "ACW-DIN-BR1-MINI"
+            ],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "POTS-ADP-LTE-US-DC-T-PRM",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "POTS-ADP-LTE-US-DC-T-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [
+              "ANT-MB-20G-S-W-6",
+              "ANT-MB-20G-S-B-6"
+            ],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [
+              "ACW-791",
+              "ACW-634"
+            ],
+            "mountingBrackets": [
+              "ACW-DIN-BR1-MINI"
+            ],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "SFC-ESIM-V",
+      "type": "accessory",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "SFC-ESIM-V",
+          "addons": {
+            "std1y": [],
+            "std2y": [],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [
+              "SFC-CN-S-C",
+              "SFC-CN-S-A",
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-B",
+              "SFC-CN-PROMO-5"
+            ],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "APO-FLX",
+      "type": "access_point",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "APO-FLX",
+          "addons": {
+            "std1y": [
+              "SVL-743"
+            ],
+            "std2y": [
+              "SVL-621"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-B-1Y"
+            ],
+            "plus2y": [
+              "ECP-B-2Y"
+            ],
+            "plus4y": [
+              "ECP-B-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "SFC-RLY",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "SFC-RLY",
+          "addons": {
+            "std1y": [
+              "SVL-SFC-RLY-1Y"
+            ],
+            "std2y": [
+              "SVL-SFC-RLY-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-A-1Y"
+            ],
+            "plus2y": [
+              "ECP-A-2Y"
+            ],
+            "plus4y": [
+              "ECP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "MAX-BR1-SLIM-LTEA-W-T",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "MAX-BR1-SLIM-LTEA-W-T",
+          "addons": {
+            "std1y": [],
+            "std2y": [
+              "SVL-565"
+            ],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "MAX-BR1-SLIM-LTE-US-T",
+      "type": "router",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "MAX-BR1-SLIM-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-796"
+            ],
+            "std2y": [
+              "SVL-696"
+            ],
+            "std4y": [],
+            "plus1y": [],
+            "plus2y": [],
+            "plus4y": [],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "APP-AGN",
+      "type": "access_point",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "APP-AGN",
+          "addons": {
+            "std1y": [
+              "SVL-746"
+            ],
+            "std2y": [
+              "SVL-624"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-B-1Y"
+            ],
+            "plus2y": [
+              "ECP-B-2Y"
+            ],
+            "plus4y": [
+              "ECP-B-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "APP-AGN2",
+      "type": "access_point",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "APP-AGN2",
+          "addons": {
+            "std1y": [
+              "SVL-747"
+            ],
+            "std2y": [
+              "SVL-625"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-C-1Y"
+            ],
+            "plus2y": [
+              "ECP-C-2Y"
+            ],
+            "plus4y": [
+              "ECP-C-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "EXM-MINI-1LTEA-W",
+      "type": "flex_module",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "EXM-MINI-1LTEA-W",
+          "addons": {
+            "std1y": [
+              "SVL-517"
+            ],
+            "std2y": [
+              "SVL-536"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-C-1Y"
+            ],
+            "plus2y": [
+              "ECP-C-2Y"
+            ],
+            "plus4y": [
+              "ECP-C-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "EXM-3LTEA-R",
+      "type": "flex_module",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "EXM-3LTEA-R",
+          "addons": {
+            "std1y": [
+              "SVL-507"
+            ],
+            "std2y": [
+              "SVL-509"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-EXM-1Y"
+            ],
+            "plus2y": [
+              "ECP-EXM-2Y"
+            ],
+            "plus4y": [
+              "ECP-EXM-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
+    },
+    {
+      "product_name": "APO-AGN2-IW-US",
+      "type": "access_point",
+      "metadata": {},
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "APO-AGN2-IW-US",
+          "addons": {
+            "std1y": [
+              "SVL-742"
+            ],
+            "std2y": [
+              "SVL-620"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-A-1Y"
+            ],
+            "plus2y": [
+              "ECP-A-2Y"
+            ],
+            "plus4y": [
+              "ECP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     }
   ],
   "_sku_attribution": {
     "csv_source": "productSKU_addonSKUs_with_care.csv",
-    "csv_rows_total": 227,
-    "csv_rows_mapped_to_existing_devices": 143,
-    "csv_rows_added_as_stub_devices": 60,
-    "csv_rows_ignored": 18,
-    "csv_rows_orphaned": 6,
-    "orphans": [
-      "PMU-DD-52V-400W",
-      "DCS-RUG",
-      "POTS-ADP-LTE-EU-T-PRM",
-      "POTS-ADP-LTE-US-T-PRM",
-      "POTS-ADP-LTE-US-DC-T-PRM",
-      "SFC-ESIM-V"
-    ]
+    "csv_rows_total": 298,
+    "csv_rows_mapped_to_existing_devices": 215,
+    "csv_rows_added_as_stub_devices": 83,
+    "csv_rows_ignored": 0,
+    "csv_rows_orphaned": 0,
+    "orphans": []
   }
 }

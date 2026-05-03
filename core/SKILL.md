@@ -1,6 +1,6 @@
 # Peplink Advisor
 
-This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 165 catalog records covering 105 fully specified devices plus SKU-only records for modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.2 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
+This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 188 catalog records covering 105 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.4 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
 
 **Dataset last updated: 2026-05-03.** If the user asks about a device or SKU missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
 
@@ -106,7 +106,7 @@ These exist because Peplink spec sheets are dense and easy to misquote.
 - **Preserve licensing language.** If the `note` mentions PrimeCare, Virtual WAN, eSIM SKU, or x.509 License Key, include it. The user cares whether a feature is standard or add-on.
 - **Disambiguate product names.** BR1 Mini (HW1), BR1 Mini, and BR1 Mini 5G are three different devices. When the user is ambiguous ("BR1 Mini"), either ask or list the candidates.
 - **Respect status fields.** Access points and switches carry a `Status` key in metadata (e.g., end-of-sale). Don't recommend an EOS device without flagging it.
-- **Cite the datasheet, then the product page.** Most fully specified device records (currently 84 of 103) have a `Datasheet URL` that points at Peplink's official PDF spec sheet, and all 103 have `Product URL`. When you recommend, compare, or answer a spec question about a device, prefer `Datasheet URL` for sourcing the specific numbers you cite and include `Product URL` as a secondary link for general context. If `Datasheet URL` is null for that device, fall back to `Product URL` and say "datasheet not published for this variant" so the user knows why they're not seeing the PDF. SKU-only records often do not have source URLs; when a SKU belongs to a full device record, cite that device's URLs for hardware specs.
+- **Cite the datasheet, then the product page.** Most fully specified device records (currently 85 of 105) have a `Datasheet URL` that points at Peplink's official PDF spec sheet, and 104 of 105 have `Product URL`. When you recommend, compare, or answer a spec question about a device, prefer `Datasheet URL` for sourcing the specific numbers you cite and include `Product URL` as a secondary link for general context. If `Datasheet URL` is null for that device, fall back to `Product URL` and say "datasheet not published for this variant" so the user knows why they're not seeing the PDF. SKU-only records often do not have source URLs; when a SKU belongs to a full device record, cite that device's URLs for hardware specs.
 
 ## Data shape quick reference
 
@@ -114,7 +114,7 @@ These exist because Peplink spec sheets are dense and easy to misquote.
 - `metadata` on fully specified devices contains `Product URL` (if published); most devices also carry `Datasheet URL` (the PDF spec sheet), `Image URL`, and one of `Marketing Series` / `Marketing Category`. Access points and switches can also carry `Status` — respect it (EOS devices should never be recommended without a warning). SKU-only records often have empty metadata.
 - **Routers** have nine sections: `Interfaces`, `Performance`, `Wireless details`, `Features`, `Core Functionality`, `Advanced QoS Functionality`, `VPN Functionality`, `Hardware`, `Warranty Info`.
 - **Access points** and **switches** have a single flat section called `Specifications`. When comparing these to routers, expect lots of `null` cells — that's the schema, not missing data.
-- **SKU-only records** such as `flex_module`, `fusionhub_license`, `sim_injector`, `antenna`, and `accessory` can have empty `specifications`; use their `sku_variants` rather than spec filtering.
+- **SKU-only records** can have empty `specifications`; use their `sku_variants` rather than spec filtering. This includes module/license/accessory-style records and selected legacy router, access point, and switch SKUs that are present in the SKU source but do not have a full spec record in the bundled catalog.
 - Each leaf field is `{value, note?}`. The `note` is where licensing and "valid for HW2+" caveats live.
 - `sku_variants` is an array of `{sku, addons}`. `addons` maps categories such as `plus1y`, `vwanLicenses`, `speedfusionLicenses`, `flexModules`, `simInjectors`, `antennas`, `powerSupplies`, and `cablesAdapters` to compatible SKU strings.
 - `_sku_attribution` documents how the SKU CSV was mapped into the catalog. Orphaned SKUs are source rows that were not mapped to any device; do not infer compatibility for them.

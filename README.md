@@ -54,7 +54,7 @@ The shared source lives under `core/`:
 - `core/solutions/` contains curated deployment recipes.
 - `core/references/` contains supporting reference notes.
 
-The current catalog contains 165 records: 105 fully specified devices plus SKU-only records for modules, FusionHub licenses, SIM injectors, antennas, and accessories. Many fully specified devices include direct datasheet URLs in addition to product page URLs.
+The current catalog contains 188 records: 105 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, FusionHub licenses, SIM injectors, antennas, and accessories. Many fully specified devices include direct datasheet URLs in addition to product page URLs.
 
 ## Example Questions
 
