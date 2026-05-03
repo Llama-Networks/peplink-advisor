@@ -1,15 +1,15 @@
 # Peplink Advisor
 
-This skill equips you to answer Peplink hardware questions accurately. The ground truth for all 103 current devices lives in `data/peplink_all_devices.json`. That file is ~1 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
+This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 163 catalog records covering 103 fully specified devices plus SKU-only records for modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.2 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
 
-**Dataset last updated: 2026-04-22.** If the user asks about a device missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
+**Dataset last updated: 2026-05-03.** If the user asks about a device or SKU missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
 
 ## When to use this skill
 
 Trigger on any of:
 
 - A Peplink product name or family (BR1, BR2, HD2, HD4, MBX, Balance, Transit, Dome, SDX, EPX, MAX, UBR, B One, AP One, AP Pro, SD Switch).
-- Peplink-specific technology or licenses (SpeedFusion, PepVPN, InControl, PrimeCare, Hot Failover, FusionSIM, RemoteSIM, Drop-In Mode, SpeedFusion Connect, Synergy Mode).
+- Peplink-specific technology, licenses, or SKU strings (SpeedFusion, PepVPN, InControl, PrimeCare, Hot Failover, FusionSIM, RemoteSIM, Drop-In Mode, SpeedFusion Connect, Synergy Mode, LIC-VWAN, PVN-LC, SFC-CLD, ACW).
 - A deployment description where Peplink is plausibly the answer (bonded cellular, WAN aggregation, failover at a remote branch, maritime/vessel connectivity, transit/vehicle, first responder, broadcast/ENG, IoT gateway, retail with cellular backup).
 - Direct requests to compare two or more networking devices if at least one is Peplink.
 
@@ -37,7 +37,13 @@ Use `filter`: `python3 scripts/query.py filter --type router --field "5G support
 
 `python3 scripts/query.py search "<query>"` scans names, metadata, section/field names, values, and notes. Use it when you don't know which field to target.
 
-### 5. Use-case → device recommendation ("We need connectivity for a fishing charter with two crew and guests")
+### 5. SKU/add-on lookup ("What are the SKUs for Balance 20X?" / "Where is LIC-VWAN used?")
+
+Run `python3 scripts/query.py skus "<device name>"` to list product SKU variants and their compatible add-ons. For a SKU or add-on string where you do not know the parent device, run `python3 scripts/query.py skus --find "<SKU>"`; add `--type router` / `--type flex_module` / etc. when a broad add-on appears on many records. `search` also scans `sku_variants`, but `skus` returns cleaner compatibility slices.
+
+Preserve SKU strings exactly. Treat add-on categories as compatibility data, not pricing, stock, or bundle availability. If the SKU is listed under `_sku_attribution.orphans`, say it was present in the source CSV but not mapped to a catalog record.
+
+### 6. Use-case → device recommendation ("We need connectivity for a fishing charter with two crew and guests")
 
 This is the highest-value path and needs a deliberate approach:
 
@@ -100,15 +106,18 @@ These exist because Peplink spec sheets are dense and easy to misquote.
 - **Preserve licensing language.** If the `note` mentions PrimeCare, Virtual WAN, eSIM SKU, or x.509 License Key, include it. The user cares whether a feature is standard or add-on.
 - **Disambiguate product names.** BR1 Mini (HW1), BR1 Mini, and BR1 Mini 5G are three different devices. When the user is ambiguous ("BR1 Mini"), either ask or list the candidates.
 - **Respect status fields.** Access points and switches carry a `Status` key in metadata (e.g., end-of-sale). Don't recommend an EOS device without flagging it.
-- **Cite the datasheet, then the product page.** Every device has a `Product URL` in metadata; most (currently 84 of 103) also have a `Datasheet URL` that points at Peplink's official PDF spec sheet. When you recommend, compare, or answer a spec question about a device, prefer `Datasheet URL` for sourcing the specific numbers you cite and include `Product URL` as a secondary link for general context. If `Datasheet URL` is null for that device, fall back to `Product URL` and say "datasheet not published for this variant" so the user knows why they're not seeing the PDF.
+- **Cite the datasheet, then the product page.** Most fully specified device records (currently 84 of 103) have a `Datasheet URL` that points at Peplink's official PDF spec sheet, and all 103 have `Product URL`. When you recommend, compare, or answer a spec question about a device, prefer `Datasheet URL` for sourcing the specific numbers you cite and include `Product URL` as a secondary link for general context. If `Datasheet URL` is null for that device, fall back to `Product URL` and say "datasheet not published for this variant" so the user knows why they're not seeing the PDF. SKU-only records often do not have source URLs; when a SKU belongs to a full device record, cite that device's URLs for hardware specs.
 
 ## Data shape quick reference
 
-- `type` is always one of `router`, `access_point`, `switch`.
-- `metadata` always contains `Product URL` (if published); most devices also carry `Datasheet URL` (the PDF spec sheet), `Image URL`, and one of `Marketing Series` / `Marketing Category`. Access points and switches can also carry `Status` — respect it (EOS devices should never be recommended without a warning).
+- `type` is one of `router`, `access_point`, `switch`, `flex_module`, `fusionhub_license`, `accessory`, `sim_injector`, or `antenna`.
+- `metadata` on fully specified devices contains `Product URL` (if published); most devices also carry `Datasheet URL` (the PDF spec sheet), `Image URL`, and one of `Marketing Series` / `Marketing Category`. Access points and switches can also carry `Status` — respect it (EOS devices should never be recommended without a warning). SKU-only records often have empty metadata.
 - **Routers** have nine sections: `Interfaces`, `Performance`, `Wireless details`, `Features`, `Core Functionality`, `Advanced QoS Functionality`, `VPN Functionality`, `Hardware`, `Warranty Info`.
 - **Access points** and **switches** have a single flat section called `Specifications`. When comparing these to routers, expect lots of `null` cells — that's the schema, not missing data.
+- **SKU-only records** such as `flex_module`, `fusionhub_license`, `sim_injector`, `antenna`, and `accessory` can have empty `specifications`; use their `sku_variants` rather than spec filtering.
 - Each leaf field is `{value, note?}`. The `note` is where licensing and "valid for HW2+" caveats live.
+- `sku_variants` is an array of `{sku, addons}`. `addons` maps categories such as `plus1y`, `vwanLicenses`, `speedfusionLicenses`, `flexModules`, `simInjectors`, `antennas`, `powerSupplies`, and `cablesAdapters` to compatible SKU strings.
+- `_sku_attribution` documents how the SKU CSV was mapped into the catalog. Orphaned SKUs are source rows that were not mapped to any device; do not infer compatibility for them.
 
 ## Output shape guidance
 
@@ -121,7 +130,7 @@ These exist because Peplink spec sheets are dense and easy to misquote.
 
 When the user says "I have a new dataset" or similar:
 
-1. Replace `data/peplink_all_devices.json` with the new export (same schema).
+1. Replace `data/peplink_all_devices.json` with the new full export.
 2. Re-run the datasheet enrichment so new devices get PDF links and any changed names get re-probed:
 
    ```bash
@@ -130,4 +139,4 @@ When the user says "I have a new dataset" or similar:
 
    This probes Peplink's two known URL conventions for each device and fills in a `Datasheet URL` field on every match. Misses are expected for legacy variants and parenthetical SKUs.
 3. Bump the "Dataset last updated" date at the top of this file.
-4. If the JSON schema changed, read the first few lines of `data/peplink_all_devices.json`, update the "Data shape quick reference" section, and re-run the sanity queries before answering anything substantive.
+4. If the JSON schema changed, read the first few lines of `data/peplink_all_devices.json`, update the "Data shape quick reference" section, and re-run the sanity queries before answering anything substantive. For SKU schema changes, also verify `python3 scripts/query.py skus "<device name>"` and `python3 scripts/query.py skus --find "<SKU>"`.

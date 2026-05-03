@@ -4,6 +4,14 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+### Added
+- Replaced the device-only catalog with a SKU-enriched catalog covering 163 records, including SKU variants and compatible add-on categories.
+- Added `query.py skus` plus SKU-aware search/list behavior so the skill can answer product SKU and add-on compatibility questions.
+
+### Changed
+- Updated skill, Custom GPT, and maintainer documentation for SKU-only catalog records and expanded product types.
+- Rewrote public README and contribution guidance for external users, with maintainer workflow notes moved to an ignored local file.
+
 ## [0.1.7] — 2026-04-22
 
 ### Fixed

@@ -1,68 +1,104 @@
 # Contributing to Peplink Advisor
 
-Most changes happen in `core/`. The adapters are intentionally thin wrappers, don't add behavior there.
+Peplink Advisor is meant to help people specify Peplink solutions with clear source grounding. Contributions are most useful when they improve accuracy, add practical deployment knowledge, or make the packaged assistant easier to use.
 
-## Where does my change go?
+## Useful Contributions
 
-| Change | Location |
-| --- | --- |
-| Updated device specs / new devices | `core/data/peplink_all_devices.json` (full export, not a patch) |
-| New deployment recipe | `core/solutions/<slug>.md` (use `_template.md`) |
-| New family reference | `core/references/<topic>.md` |
-| Tweaking how the model answers | `core/SKILL.md` |
-| New `query.py` subcommand | `core/scripts/query.py` |
-| Plugin manifest / discovery string | `adapters/anthropic/` |
-| ChatGPT GPT configuration / deploy instructions | `adapters/chatgpt/` |
-| Build pipeline | `build/` |
+- Correct a spec, SKU, add-on, URL, or licensing note.
+- Add a missing current device, module, accessory, or SKU mapping.
+- Improve a deployment recipe for a real-world use case.
+- Add a new solution recipe for a common scenario.
+- Report a confusing answer pattern or missing caveat in the assistant instructions.
+- Report packaging or installation problems with a release download.
 
-## Authoring a new solution
+Please do not add confidential customer details, private price lists, distributor-only terms, or unsourced commercial claims.
 
-1. Copy `core/solutions/_template.md` to `core/solutions/<slug>.md`.
-2. Fill in the frontmatter first (`name`, `slug`, `use_cases`, `primary_devices`, `alternate_devices`, `licenses`, `last_reviewed`).
-3. Write the body. Ground every concrete number against the dataset:
-   ```bash
-   python3 core/scripts/query.py show "Balance 20X"
-   ```
-4. Prefer the `Datasheet URL` over the `Product URL` when citing specs.
-5. If your scenario stretches the "device recommendations" shape (e.g., a topology guide, a troubleshooting runbook), talk through the fit before adding it — solutions work best when they're recommendation-shaped.
+## Source Standard
 
-## Refreshing the dataset
+For catalog and spec changes, include enough information for another person to verify the update:
 
-When you have updated JSON data:
+- Product name or exact SKU.
+- Field being corrected or added.
+- Current value in this repository, if present.
+- Proposed value.
+- Official Peplink product page, datasheet, or other public source URL.
+- Date you checked the source.
+
+Preserve Peplink wording for licensing and hardware revision caveats when that wording affects whether a feature is standard, included with PrimeCare, firmware-gated, SKU-specific, or separately licensed.
+
+## Catalog Changes
+
+Catalog data lives in `core/data/peplink_all_devices.json`.
+
+If you propose a data update, prefer a complete corrected record or export over a vague description. At minimum, provide the exact fields and source links needed to make the correction.
+
+When checking the local catalog, use:
 
 ```bash
-# 1. Replace the file.
-cp /path/to/peplink_all_devices.json core/data/peplink_all_devices.json
+python3 core/scripts/query.py show "Balance 20X"
+python3 core/scripts/query.py skus "Balance 20X"
+python3 core/scripts/query.py skus --find "LIC-VWAN" --type router
+```
 
-# 2. Re-probe datasheet URLs (adds/updates `Datasheet URL` in each device's metadata).
-python3 core/scripts/enrich_datasheets.py
+The query helper keeps reviews focused on the relevant device or SKU instead of requiring people to inspect the full JSON file manually.
 
-# 3. Update the "Dataset last updated: YYYY-MM-DD" line in core/SKILL.md.
+## Solution Recipes
 
-# 4. Bump version in adapters/anthropic/.claude-plugin/plugin.json.
+Solution recipes live in `core/solutions/`. They are for repeatable deployment patterns, not one-off guesses.
 
-# 5. Update CHANGELOG.md.
+A useful recipe should include:
 
-# 6. Run the builds locally to confirm nothing broke:
+- The deployment scenario and assumptions.
+- Primary device recommendations.
+- Reasonable alternatives and when to choose them.
+- Required or optional licenses.
+- Common accessories or modules.
+- Material caveats, especially throughput, environment, power, antenna, SIM, and PrimeCare dependencies.
+- Source checks against the dataset using `core/scripts/query.py`.
+
+Avoid recommending end-of-sale hardware unless the scenario explicitly requires it and the warning is clear.
+
+## Assistant Behavior
+
+Assistant instructions live in `core/SKILL.md`. Changes there affect how the packaged assistant answers.
+
+Good behavior changes usually make the assistant:
+
+- Ask for missing deployment constraints before recommending hardware.
+- Cite datasheet and product URLs when giving concrete specs.
+- Preserve licensing notes and SKU-specific caveats.
+- Say when the dataset does not contain an answer.
+- Avoid over-recommending add-ons when the user's scenario does not require them.
+
+## Local Validation
+
+If you are editing files locally, these checks are useful before sharing a change:
+
+```bash
+python3 -m py_compile core/scripts/query.py
+python3 core/scripts/query.py show "Balance 20X"
+python3 core/scripts/query.py skus "Balance 20X"
+python3 core/scripts/query.py search "GPS"
+```
+
+If you changed packaged instructions or adapter files, rebuilding the release packages is also useful:
+
+```bash
 python3 build/build_anthropic.py
 python3 build/build_chatgpt.py
 python3 build/verify_chatgpt_bundle.py
 ```
 
-If the JSON schema changed (new nested sections, renamed fields), update the "Data shape quick reference" section in `core/SKILL.md` and run the query.py sanity checks from `.github/workflows/ci.yml` before merging.
+## Where Files Live
 
-## Versioning
+| Change | Location |
+| --- | --- |
+| Device specs, SKUs, add-ons, and source URLs | `core/data/peplink_all_devices.json` |
+| Deployment recipes | `core/solutions/` |
+| Reference notes | `core/references/` |
+| Assistant behavior | `core/SKILL.md` |
+| Catalog query helper | `core/scripts/query.py` |
+| Claude packaging metadata | `adapters/anthropic/` |
+| ChatGPT package instructions and config | `adapters/chatgpt/` |
 
-`adapters/anthropic/.claude-plugin/plugin.json` is the single source of truth for version. Both build scripts read it; don't duplicate it elsewhere.
-
-- **PATCH** (0.1.x) — dataset refresh, new solution, copy edits to SKILL.md.
-- **MINOR** (0.x.0) — new query.py subcommand, breaking change to a solution's frontmatter schema, dataset schema change.
-- **MAJOR** (x.0.0) — incompatible adapter changes (new plugin format, new GPT config shape).
-
-## Releasing
-
-See `README.md` for the tag-and-push workflow. CI must pass before tagging.
-
-## Local iteration tip
-
-While editing `core/SKILL.md`, symlink the built plugin into your Cowork or Claude Code plugins directory once, then keep re-running `build/build_anthropic.py` to overwrite the artifact in place. Restarting the host picks up the new version.
+Keep changes focused. A spec correction, a solution recipe, and a behavior rewrite are easier to review as separate changes.

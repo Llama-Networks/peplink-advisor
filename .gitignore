@@ -1,4 +1,4 @@
-# Build outputs — always regenerated; don't commit.
+# Build outputs - always regenerated; don't commit.
 dist/
 build/__pycache__/
 
@@ -20,7 +20,10 @@ Thumbs.db
 *.swp
 *.swo
 
-# Local eval / experiment scratch space — keep out of the repo.
+# Local eval / experiment scratch space - keep out of the repo.
 /.scratch/
 /peplink-advisor-workspace/
+
+# Local maintainer notes. This is intentionally not published.
+/MAINTAINERS.local.md
 .DS_Store

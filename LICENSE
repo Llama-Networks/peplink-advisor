@@ -22,10 +22,11 @@ SOFTWARE.
 
 ---
 
-Note: the Peplink device dataset bundled at core/data/peplink_all_devices.json
-is derived from Peplink Inc.'s publicly published product specifications. It is
-redistributed for interoperability and fair-use purposes. Peplink's own
-website remains the authoritative source. "Peplink", "Pepwave", "SpeedFusion",
-"PepVPN", "InControl", and "FusionSIM" are trademarks of Peplink International
-Limited or its affiliates and are used here for descriptive reference only.
-This project is not affiliated with, endorsed by, or sponsored by Peplink.
+Note: the Peplink dataset bundled at core/data/peplink_all_devices.json is
+derived from Peplink Inc.'s publicly published product specifications and SKU
+material. It is redistributed for interoperability and fair-use purposes.
+Peplink's own website remains the authoritative source. "Peplink", "Pepwave",
+"SpeedFusion", "PepVPN", "InControl", and "FusionSIM" are trademarks of
+Peplink International Limited or its affiliates and are used here for
+descriptive reference only. This project is not affiliated with, endorsed by,
+or sponsored by Peplink.

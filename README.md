@@ -1,93 +1,105 @@
 # Peplink Advisor
 
-An AI assistant for Peplink hardware questions including spec lookups, side-by-side comparisons, and use-case-driven device recommendations grounded in a dataset of 103 current devices plus a curated solutions library.
+Peplink Advisor is a downloadable AI assistant package for people who need to specify Peplink hardware, licenses, and related accessories. It answers Peplink product questions using a bundled catalog instead of relying on memory.
 
-This repo ships **two deployment targets from a single source of truth**:
+Use it to:
 
-- **Anthropic** — published in two Anthropic-native formats (both `.zip`; Claude Desktop's upload handler rejects any other extension):
-  - `peplink-advisor-anthropic-plugin-<version>.zip` — plugin-bundle layout with `.claude-plugin/plugin.json` at the root. This is what Claude Desktop's Customize menu and Claude Code plugin installs accept.
-  - `peplink-advisor-anthropic-standalone-<version>.zip` — single-skill layout (`peplink-advisor/SKILL.md` at the root) for dropping into `~/.claude/skills/`.
-- **ChatGPT** (Custom GPT) — packaged as a knowledge bundle with pasted Instructions.
+- Look up device specs and caveats.
+- Compare routers, access points, switches, and modules.
+- Shortlist hardware for branch, marine, vehicle, retail, IoT, and bonded cellular deployments.
+- Check product SKUs and compatible add-ons, including care plans, licenses, modules, SIM injectors, antennas, and accessories.
+- Keep licensing notes visible when features depend on PrimeCare, SpeedFusion, Virtual WAN, eSIM, or other add-ons.
 
-Both builds are produced from the same data, they're just wrapped up differently :) 
+This project is not affiliated with, endorsed by, or sponsored by Peplink. Peplink's own product pages, datasheets, partner portal, and price lists remain authoritative.
 
-## Layout
+## Download
 
+Most users should download a release from the [GitHub Releases page](../../releases). Each release includes ready-to-use packages:
+
+- `peplink-advisor-anthropic-plugin-<version>.zip` for Claude Desktop and Claude Code plugin installs.
+- `peplink-advisor-anthropic-standalone-<version>.zip` for users who want a standalone Claude skill folder.
+- `peplink-advisor-chatgpt-<version>.zip` for creating or updating a ChatGPT Custom GPT with the included knowledge bundle.
+
+You can also download the repository source if you want to inspect the dataset, run the local query helper, or customize the assistant instructions before packaging it yourself.
+
+## Install
+
+### Claude Desktop
+
+Download `peplink-advisor-anthropic-plugin-<version>.zip`. In Claude Desktop, open Customize and upload the zip. Claude Desktop expects a `.zip` file with a `.claude-plugin/plugin.json` manifest at the root, which this package includes.
+
+### Claude Code
+
+Use the same `peplink-advisor-anthropic-plugin-<version>.zip` with `/plugin install`, or point Claude Code at the unpacked plugin directory.
+
+### Standalone Claude Skill
+
+Download `peplink-advisor-anthropic-standalone-<version>.zip` and unzip it so the skill folder lives at:
+
+```text
+~/.claude/skills/peplink-advisor/SKILL.md
 ```
-peplink-advisor/
-├── core/                       # The portable 90% — shared by both adapters.
-│   ├── SKILL.md                # Instructions for the model (body only, no frontmatter).
-│   ├── scripts/
-│   │   ├── query.py            # Helper the model runs to query the dataset.
-│   │   └── enrich_datasheets.py# Maintenance script for datasheet URL discovery.
-│   ├── data/
-│   │   └── peplink_all_devices.json
-│   ├── solutions/              # Curated deployment recipes (markdown + YAML frontmatter).
-│   └── references/             # On-demand reference material.
-├── adapters/
-│   ├── anthropic/              # Plugin manifest + SKILL.md frontmatter.
-│   └── chatgpt/                # Instructions template + knowledge manifest + deploy README.
-├── build/
-│   ├── common.py
-│   ├── build_anthropic.py      # -> Desktop skill zip + Cowork/Code plugin bundle
-│   └── build_chatgpt.py        # -> dist/peplink-advisor-chatgpt-<version>.zip
-└── .github/workflows/
-    ├── ci.yml                  # Build both adapters on every push/PR.
-    └── release.yml             # Cut a GitHub Release on every `v*` tag.
-```
-
-## Install / deploy
-
-### Claude Desktop (Customize menu)
-
-Grab `peplink-advisor-anthropic-plugin-<version>.zip` from the latest [GitHub Release](../../releases). In Claude Desktop, go to Customize and upload the zip. Claude Desktop requires the `.zip` extension and a `.claude-plugin/plugin.json` at the zip root — this artifact has both.
-
-### Claude Code plugins
-
-Same zip — `peplink-advisor-anthropic-plugin-<version>.zip`. Use `/plugin install` or point `--plugin-dir` at the unpacked directory.
-
-### Claude Code skills (standalone)
-
-If you'd rather drop the skill into `~/.claude/skills/`, grab `peplink-advisor-anthropic-standalone-<version>.zip` and unzip it so the skill lives at `~/.claude/skills/peplink-advisor/SKILL.md`.
 
 ### ChatGPT Custom GPT
 
-Grab `peplink-advisor-chatgpt-<version>.zip` from the latest [GitHub Release](../../releases), unzip it, and follow `README-deploy.md` inside.
+Download `peplink-advisor-chatgpt-<version>.zip`, unzip it, and follow the `README-deploy.md` included in that package. It contains the instructions, configuration, dataset, query helper, and knowledge files needed by the Custom GPT builder.
 
-## Customizing behavior
+## What Is Included
 
-For account- or user-specific defaults, edit `core/SKILL.md` and add the rules under `## User-specific instructions`, below the line `User instructions should be inserted below this line.` Those instructions flow into both the Anthropic and ChatGPT builds automatically because `core/SKILL.md` is the shared source of truth.
+The shared source lives under `core/`:
 
-## Develop
+- `core/SKILL.md` contains the assistant instructions.
+- `core/data/peplink_all_devices.json` contains the bundled catalog.
+- `core/scripts/query.py` returns small, targeted JSON slices from the catalog.
+- `core/solutions/` contains curated deployment recipes.
+- `core/references/` contains supporting reference notes.
+
+The current catalog contains 163 records: 103 fully specified devices plus SKU-only records for modules, FusionHub licenses, SIM injectors, antennas, and accessories. Many fully specified devices include direct datasheet URLs in addition to product page URLs.
+
+## Example Questions
+
+Ask questions like:
+
+- Which Peplink routers support 5G and GPS?
+- Compare the HD2 MBX 5G and HD4 MBX 5G on throughput, cellular count, and VPN performance.
+- What SKUs and add-ons apply to the Balance 20X?
+- Does this feature require PrimeCare or an extra license?
+- What would you specify for a retail branch with wired internet plus cellular failover?
+- What is a reasonable Peplink hardware stack for a small vessel with guest Wi-Fi?
+
+The advisor is designed to say when the dataset does not contain an answer rather than inventing numbers.
+
+## Optional Local Queries
+
+If you download the source repository, you can query the catalog directly:
 
 ```bash
-# Build both artifacts locally.
-python3 build/build_anthropic.py
-python3 build/verify_anthropic_artifacts.py
-python3 build/build_chatgpt.py
-python3 build/verify_chatgpt_bundle.py
-
-# Sanity-check query.py against the dataset.
 python3 core/scripts/query.py list
 python3 core/scripts/query.py show "Balance 20X"
 python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
+python3 core/scripts/query.py filter --type router --field "5G support" --value Yes
+python3 core/scripts/query.py skus "Balance 20X"
+python3 core/scripts/query.py skus --find "LIC-VWAN" --type router
 ```
 
-## Updating the dataset on your own
+The helper prints JSON so you can inspect it directly or pipe it into other tools.
 
-See `CONTRIBUTING.md` for the full procedure, but the short version:
+## Custom Defaults
 
-```bash
-# Replace the JSON file with your new export, then re-probe datasheet URLs.
-cp /path/to/new-peplink-export.json core/data/peplink_all_devices.json
-python3 core/scripts/enrich_datasheets.py
+Organizations can add local recommendation preferences in `core/SKILL.md` under `## User-specific instructions`. Examples include preferring global cellular variants, avoiding end-of-sale hardware, or requiring a certain accessory standard.
 
-# Update the "Dataset last updated" line in core/SKILL.md.
-# Bump version, commit, tag, push.
-```
+After changing instructions or data, rebuild the package for the platform you use.
+
+## Data Limits
+
+The bundled dataset is derived from publicly published Peplink specifications and SKU material. It is intended for compatibility, planning, and proposal support. It does not include live inventory, current pricing, distributor availability, private partner terms, or carrier certification status unless that information appears in the bundled source material.
+
+Before committing a customer design or quote, verify important specs against the linked Peplink datasheet or product page and confirm commercial details through your normal supplier or partner channel.
+
+## Contributing
+
+Corrections and deployment recipes are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) for the kind of source evidence and detail that make updates useful.
 
 ## License
 
-MIT. See `LICENSE`.
-
-The `peplink_all_devices.json` dataset is derived from Peplink's publicly published specifications and is redistributed here for compatibility/fair-use purposes. Peplink's own site remains the authoritative source; verify any spec with the linked Datasheet URL before committing it to a customer quote.
+MIT. See [LICENSE](LICENSE).

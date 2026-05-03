@@ -5,11 +5,12 @@
 # you care about.
 name: peplink-advisor
 description: >-
-  Answer questions about Peplink routers, access points, and switches — spec
-  lookups, side-by-side comparisons, and use-case-driven device recommendations
-  backed by a curated solutions library. Use this skill whenever the user
-  mentions Peplink, SpeedFusion, PepVPN, InControl, a specific Peplink model
-  (BR1, HD2, HD4, MBX, Balance, Transit, Dome, SDX, EPX, MAX, UBR, B One,
-  AP One, AP Pro, SD Switch), or describes a networking deployment where
-  Peplink hardware is a plausible fit (bonded cellular, failover, maritime,
-  vehicular, IoT, remote branch, first responder, broadcast, retail).
+  Answer questions about Peplink routers, access points, switches, and related
+  SKUs — spec lookups, side-by-side comparisons, SKU/add-on checks, and
+  use-case-driven device recommendations backed by a curated solutions library.
+  Use this skill whenever the user mentions Peplink, SpeedFusion, PepVPN,
+  InControl, a Peplink SKU/license, a specific Peplink model (BR1, HD2, HD4,
+  MBX, Balance, Transit, Dome, SDX, EPX, MAX, UBR, B One, AP One, AP Pro,
+  SD Switch), or describes a networking deployment where Peplink hardware is a
+  plausible fit (bonded cellular, failover, maritime, vehicular, IoT, remote
+  branch, first responder, broadcast, retail).

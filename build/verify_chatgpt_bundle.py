@@ -61,6 +61,17 @@ def main() -> None:
         if payload.get("product_name") != "Balance 20X":
             raise SystemExit("Packaged query.py returned an unexpected payload.")
 
+        result = subprocess.run(
+            ["python3", "query.py", "skus", "Balance 20X"],
+            cwd=stage / "knowledge",
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        payload = json.loads(result.stdout)
+        if not payload.get("sku_variants"):
+            raise SystemExit("Packaged query.py did not return SKU variants.")
+
     print(f"[chatgpt] verified {artifact.relative_to(root)}")
 
 
