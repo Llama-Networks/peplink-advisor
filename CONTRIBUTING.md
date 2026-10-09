@@ -56,7 +56,7 @@ A useful recipe should include:
 - Material caveats, especially throughput, environment, power, antenna, SIM, and PrimeCare dependencies.
 - Source checks against the dataset using `core/scripts/query.py`.
 
-Avoid recommending end-of-sale hardware unless the scenario explicitly requires it and the warning is clear.
+Do not recommend legacy or end-of-sale hardware for new solutions. Retain it for existing-installation support, comparisons, and migration. Check exact hardware revisions and SKU variants with `query.py ... --new-solutions`; a warning alone does not make a legacy product eligible. Preserve lifecycle evidence and reviewed SKU mappings when refreshing source workbooks.
 
 ## Assistant Behavior
 
@@ -79,6 +79,7 @@ python3 -m py_compile core/scripts/query.py
 python3 core/scripts/query.py show "B One 5G"
 python3 core/scripts/query.py skus "B One 5G"
 python3 core/scripts/query.py search "GPS"
+python3 -m unittest discover -s core/scripts -p 'test_*.py'
 ```
 
 If you changed packaged instructions or adapter files, rebuilding the release packages is also useful:

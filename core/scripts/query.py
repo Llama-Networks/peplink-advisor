@@ -20,6 +20,8 @@ Subcommands
   skus [QUERY]        Show SKU variants for a device, or find SKU/add-on usage.
 
 All subcommands print JSON to stdout. Pipe through `jq` for pretty printing.
+Use --new-solutions on list/filter/search/skus to exclude known legacy hardware.
+Unfiltered commands retain the complete catalog for existing installations.
 
 Examples
 --------
@@ -107,6 +109,129 @@ def sku_variants(device: dict[str, Any]) -> list[dict[str, Any]]:
     return [v for v in variants if isinstance(v, dict)]
 
 
+# ---------- lifecycle policy ----------
+
+def lifecycle_summary(device: dict[str, Any]) -> dict[str, Any]:
+    """Preserve source evidence while deriving recommendation eligibility.
+
+    Absence from the legacy list is not proof that a device is currently sold.
+    Vendor spreadsheet lifecycle signals also apply if the page omitted a model.
+    """
+    out = dict(device.get("lifecycle") or {})
+    metadata = device.get("metadata") or {}
+    vendor_status = str(metadata.get("Status", ""))
+    blocked_status = bool(re.search(
+        r"\b(?:eol|eos|end[\s-]+of[\s-]+(?:sale|life)|discontinued)\b",
+        f"{vendor_status} {metadata.get('Component Status', '')}", re.IGNORECASE,
+    ))
+    legacy_series = any(
+        "legacy" in str(metadata.get(key, "")).lower()
+        for key in ("Marketing Series", "Marketing Category")
+    )
+    legacy_url = "legacy-products" in str(metadata.get("Product URL", "")).lower()
+    legacy = out.get("status") == "legacy" or blocked_status or legacy_series or legacy_url
+    out["status"] = "legacy" if legacy else (
+        out["status"] if out.get("status") in ("mixed", "review_required") else "not_identified_as_legacy"
+    )
+    blocked = out["status"] in ("legacy", "review_required")
+    out["new_solution_eligible"] = not blocked
+    if vendor_status:
+        out["vendor_status"] = vendor_status
+    if legacy:
+        out["recommendation_policy"] = "Existing-installation reference only; do not recommend for new solutions."
+    elif out["status"] == "review_required":
+        out["recommendation_policy"] = "Lifecycle evidence needs review; do not recommend for new solutions until resolved."
+    elif out["status"] == "mixed":
+        out["requires_exact_sku"] = True
+        out["recommendation_policy"] = "Select an exact nonlegacy SKU and verify the hardware revision before recommending."
+    excluded = [
+        variant["sku"] for variant in sku_variants(device)
+        if variant.get("sku") and (
+            blocked or (variant.get("lifecycle") or {}).get("status") in ("legacy", "review_required")
+        )
+    ]
+    if excluded:
+        # A filtered catalog view retains the exclusions even after removing SKUs.
+        out["excluded_skus"] = sorted(set(out.get("excluded_skus", [])) | set(excluded))
+    return out
+
+
+def variant_lifecycle(device: dict[str, Any], variant: dict[str, Any]) -> dict[str, Any]:
+    parent = lifecycle_summary(device)
+    out = dict(variant.get("lifecycle") or {})
+    if parent["status"] == "legacy" or out.get("status") == "legacy":
+        out["status"] = "legacy"
+    elif parent["status"] == "review_required" or out.get("status") == "review_required":
+        out["status"] = "review_required"
+    elif out.get("status") != "mixed":
+        out["status"] = "not_identified_as_legacy"
+    blocked = out["status"] in ("legacy", "review_required")
+    out["new_solution_eligible"] = not blocked
+    if blocked:
+        out["recommendation_policy"] = (
+            "Existing-installation reference only; do not recommend for new solutions."
+            if out["status"] == "legacy" else
+            "Lifecycle evidence needs review; do not recommend for new solutions until resolved."
+        )
+        for key in ("source_url", "checked_on", "source_product_names", "replacement_products"):
+            if key not in out and key in parent:
+                out[key] = parent[key]
+    return out
+
+
+def blocked_skus(data: dict[str, Any]) -> set[str]:
+    """A SKU shared across revisions is blocked only when every owner is legacy."""
+    eligibility: dict[str, list[bool]] = {}
+    for device in data["devices"]:
+        for variant in sku_variants(device):
+            sku = str(variant.get("sku", "")).lower()
+            if sku:
+                eligibility.setdefault(sku, []).append(variant_lifecycle(device, variant)["new_solution_eligible"])
+    return {sku for sku, owners in eligibility.items() if not any(owners)}
+
+
+def catalog_view(data: dict[str, Any], new_solutions: bool) -> dict[str, Any]:
+    """Return a projection; never alter saved specs, SKUs, or add-on mappings."""
+    if not new_solutions:
+        return data
+    excluded = blocked_skus(data)
+    devices = []
+    for device in data["devices"]:
+        lifecycle = lifecycle_summary(device)
+        if not lifecycle["new_solution_eligible"]:
+            continue
+        variants = []
+        for variant in sku_variants(device):
+            if not variant_lifecycle(device, variant)["new_solution_eligible"]:
+                continue
+            addons = {
+                category: [value for value in values if str(value).lower() not in excluded]
+                for category, values in compact_addons(variant.get("addons"), include_empty=True).items()
+            }
+            variants.append({**variant, "addons": addons})
+        devices.append({**device, "lifecycle": lifecycle, "sku_variants": variants})
+    return {**data, "devices": devices}
+
+
+def exact_sku_owners(data: dict[str, Any], query: str) -> list[dict[str, Any]]:
+    needle = query.strip().lower()
+    return [d for d in data["devices"] if any(
+        str(v.get("sku", "")).lower() == needle for v in sku_variants(d)
+    )]
+
+
+def require_unambiguous_sku(data: dict[str, Any], query: str) -> None:
+    if any(d["product_name"].lower() == query.strip().lower() for d in data["devices"]):
+        return
+    owners = exact_sku_owners(data, query)
+    if len(owners) > 1:
+        print(json.dumps({
+            "error": f"SKU {query!r} is shared across catalog records; use an exact product name and verify the hardware revision.",
+            "candidates": [{"name": d["product_name"], "lifecycle": lifecycle_summary(d)} for d in owners],
+        }, indent=2))
+        sys.exit(1)
+
+
 def compact_addons(addons: Any, include_empty: bool = False) -> dict[str, list[Any]]:
     """Remove empty add-on categories unless the caller explicitly wants them."""
     if not isinstance(addons, dict):
@@ -132,6 +257,7 @@ def summarize_sku_variants(device: dict[str, Any], include_empty: bool = False) 
         variants.append({
             "sku": variant.get("sku"),
             "addons": compact_addons(variant.get("addons"), include_empty=include_empty),
+            "lifecycle": variant_lifecycle(device, variant),
         })
     return variants
 
@@ -178,7 +304,7 @@ def find_device(data: dict[str, Any], name: str) -> dict[str, Any] | None:
 # ---------- subcommands ----------
 
 def cmd_list(args: argparse.Namespace) -> None:
-    data = load()
+    data = catalog_view(load(), args.new_solutions)
     out = []
     for d in data["devices"]:
         if args.type and d.get("type") != args.type:
@@ -190,6 +316,7 @@ def cmd_list(args: argparse.Namespace) -> None:
                       or d.get("metadata", {}).get("Marketing Category"),
             "product_url": d.get("metadata", {}).get("Product URL"),
             "sku_count": len(sku_variants(d)),
+            "lifecycle": lifecycle_summary(d),
         })
         if args.with_skus:
             out[-1]["skus"] = [v.get("sku") for v in sku_variants(d)]
@@ -198,11 +325,19 @@ def cmd_list(args: argparse.Namespace) -> None:
 
 def cmd_show(args: argparse.Namespace) -> None:
     data = load()
+    require_unambiguous_sku(data, args.name)
     d = find_device(data, args.name)
     if not d:
         print(json.dumps({"error": f"no device matched {args.name!r}"}, indent=2))
         sys.exit(1)
-    print(json.dumps(d, indent=2))
+    out = {**d, "lifecycle": lifecycle_summary(d)}
+    out["sku_variants"] = [
+        {**v, "lifecycle": variant_lifecycle(d, v)} for v in sku_variants(d)
+    ]
+    for variant in sku_variants(d):
+        if str(variant.get("sku", "")).lower() == args.name.strip().lower():
+            out["matched_sku"] = {"sku": variant["sku"], "lifecycle": variant_lifecycle(d, variant)}
+    print(json.dumps(out, indent=2))
 
 
 def cmd_fields(args: argparse.Namespace) -> None:
@@ -223,7 +358,7 @@ def _value_matches(cell: dict[str, Any], needle: str | None) -> bool:
 
 
 def cmd_filter(args: argparse.Namespace) -> None:
-    data = load()
+    data = catalog_view(load(), args.new_solutions)
     out = []
     field_pat = re.compile(args.field, re.IGNORECASE) if args.field else None
     for d in data["devices"]:
@@ -247,6 +382,7 @@ def cmd_filter(args: argparse.Namespace) -> None:
             "name": d["product_name"],
             "type": d.get("type"),
             "matches": hits,
+            "lifecycle": lifecycle_summary(d),
         })
     print(json.dumps(out, indent=2))
 
@@ -255,6 +391,7 @@ def cmd_compare(args: argparse.Namespace) -> None:
     data = load()
     devices = []
     for n in args.names:
+        require_unambiguous_sku(data, n)
         d = find_device(data, n)
         if not d:
             print(json.dumps({"error": f"no device matched {n!r}"}, indent=2))
@@ -295,6 +432,12 @@ def cmd_compare(args: argparse.Namespace) -> None:
 
     print(json.dumps({
         "devices": [d["product_name"] for d in devices],
+        "lifecycle": {d["product_name"]: lifecycle_summary(d) for d in devices},
+        "matched_skus": {
+            name: {"sku": variant["sku"], "lifecycle": variant_lifecycle(d, variant)}
+            for name, d in zip(args.names, devices) for variant in sku_variants(d)
+            if str(variant.get("sku", "")).lower() == name.strip().lower()
+        },
         "rows": rows,
     }, indent=2))
 
@@ -325,7 +468,7 @@ def _sku_matches(
             if not sku_hit and not addon_hits:
                 continue
 
-            hit: dict[str, Any] = {"sku": sku}
+            hit: dict[str, Any] = {"sku": sku, "lifecycle": variant_lifecycle(d, variant)}
             if sku_hit:
                 hit["matched_sku"] = True
             if addon_hits:
@@ -339,6 +482,7 @@ def _sku_matches(
                 "name": d["product_name"],
                 "type": d.get("type"),
                 "matches": variant_hits,
+                "lifecycle": lifecycle_summary(d),
             })
 
     return out
@@ -350,6 +494,15 @@ def _looks_like_sku(query: str) -> bool:
 
 def cmd_skus(args: argparse.Namespace) -> None:
     data = load()
+    if args.new_solutions and args.query:
+        needle = args.query.strip().lower()
+        exact_device = next((d for d in data["devices"] if d["product_name"].lower() == needle), None)
+        if needle in blocked_skus(data) or (
+            exact_device and not lifecycle_summary(exact_device)["new_solution_eligible"]
+        ):
+            print(json.dumps({"error": f"{args.query!r} is excluded from new solutions by its lifecycle; omit --new-solutions for reference details."}, indent=2))
+            sys.exit(1)
+    data = catalog_view(data, args.new_solutions)
 
     if not args.query:
         out = []
@@ -364,13 +517,14 @@ def cmd_skus(args: argparse.Namespace) -> None:
                 "type": d.get("type"),
                 "sku_count": len(variants),
                 "skus": [v.get("sku") for v in variants],
+                "lifecycle": lifecycle_summary(d),
             })
         print(json.dumps(out, indent=2))
         return
 
     # All-caps, hyphenated queries are usually SKU/add-on strings, so search
     # SKU fields first to avoid fuzzy product-name matches.
-    if args.find or _looks_like_sku(args.query):
+    if args.find or _looks_like_sku(args.query) or exact_sku_owners(data, args.query):
         matches = _sku_matches(
             data,
             args.query,
@@ -390,6 +544,7 @@ def cmd_skus(args: argparse.Namespace) -> None:
             "name": d["product_name"],
             "type": d.get("type"),
             "sku_variants": summarize_sku_variants(d, include_empty=args.include_empty_addons),
+            "lifecycle": lifecycle_summary(d),
         }, indent=2))
         return
 
@@ -408,7 +563,7 @@ def cmd_skus(args: argparse.Namespace) -> None:
 
 
 def cmd_search(args: argparse.Namespace) -> None:
-    data = load()
+    data = catalog_view(load(), args.new_solutions)
     needle = args.query.lower()
     out = []
     for d in data["devices"]:
@@ -431,7 +586,7 @@ def cmd_search(args: argparse.Namespace) -> None:
                     blobs.append((f"sku_variants.{sku}.addons.{category}", str(value)))
         hits = [{"where": w, "text": t} for w, t in blobs if needle in t.lower()]
         if hits:
-            out.append({"name": d["product_name"], "type": d.get("type"), "hits": hits[:12]})
+            out.append({"name": d["product_name"], "type": d.get("type"), "lifecycle": lifecycle_summary(d), "hits": hits[:12]})
     print(json.dumps(out, indent=2))
 
 
@@ -474,6 +629,12 @@ def main() -> None:
     sp.add_argument("--find", action="store_true", help="Treat query as a SKU/add-on search.")
     sp.add_argument("--include-empty-addons", action="store_true", help="Include empty add-on categories.")
     sp.set_defaults(func=cmd_skus)
+
+    for command in ("list", "filter", "search", "skus"):
+        sub.choices[command].add_argument(
+            "--new-solutions", action="store_true",
+            help="Exclude known legacy records, SKU variants, and legacy SKU add-ons; mixed products require exact SKU/revision verification.",
+        )
 
     args = p.parse_args()
     args.func(args)

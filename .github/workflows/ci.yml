@@ -18,6 +18,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Test lifecycle filtering and legacy lookups
+        run: python3 -m unittest discover -s core/scripts -p 'test_*.py'
+
       - name: Sanity-check query.py against the bundled dataset
         run: |
           cd core/scripts

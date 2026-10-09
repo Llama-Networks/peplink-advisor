@@ -6,10 +6,10 @@ use_cases:
   - # e.g., "retail store"
   - # e.g., "point of sale"
 primary_devices:
-  # Exact product names from the dataset. Use `query.py list` to confirm.
+  # Exact eligible product names. Check `query.py list --new-solutions`.
   - # e.g., "B One 5G"
 alternate_devices:
-  # Optional step-up / step-down picks.
+  # Optional eligible step-up / step-down picks; no legacy hardware.
   - # e.g., "B One"
 licenses:
   # What the customer is expected to purchase alongside the hardware.
@@ -25,7 +25,7 @@ One paragraph describing the deployment shape: who the user is, what they're try
 
 ## Why this pick
 
-Two or three sentences on why the primary device is the default here. Reference specific specs (throughput, modem count, form factor) that make it the right fit.
+Two or three sentences on why the primary device is the default here. Reference specific specs (throughput, modem count, form factor) that make it the right fit. Verify lifecycle for all primary and alternate devices; mixed products require an exact eligible SKU before recommendation.
 
 ## When to step up
 
@@ -41,7 +41,7 @@ What the customer is buying on top of the hardware, and why. Call out anything c
 
 ## Accessories / BOM notes
 
-Antennas, SIMs, mounts, PoE injectors — anything the customer also needs to make this work. Keep this short; it's a prompt, not a quote.
+Antennas, SIMs, mounts, PoE injectors — anything the customer also needs to make this work. Check variants and add-ons with `query.py skus "<device name>" --new-solutions`; exclude legacy items. Keep this short; it's a prompt, not a quote.
 
 ## Known gotchas
 

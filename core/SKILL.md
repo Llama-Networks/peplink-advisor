@@ -1,6 +1,6 @@
 # Peplink Advisor
 
-This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 199 catalog records covering 116 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.5 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
+This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 201 catalog records covering 116 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.5 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
 
 **Dataset last updated: 2026-10-09.** If the user asks about a device or SKU missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
 
@@ -49,7 +49,7 @@ This is the highest-value path and needs a deliberate approach:
 
 1. **Check the solutions library first.** `ls solutions/` and skim any filenames that look related. If one matches, open it and use it as the spine of your answer — it was curated for this purpose.
 2. **If no solution fits, elicit the missing constraints before recommending.** You typically need: number of concurrent users, WAN composition (wired / cellular count / satellite / Wi-Fi WAN), throughput expectations, environment (indoor / outdoor / vehicle / marine / hazardous), power (AC / DC / PoE), form factor, and budget sensitivity.
-3. **Shortlist with `filter`, then verify with `show`.** Narrow to 2-3 candidates via the filter/search commands, then pull full specs for each finalist before writing the recommendation.
+3. **Shortlist eligible products, then verify with `show`.** Use `filter --new-solutions` or `search --new-solutions` to narrow to 2-3 candidates, then pull full specs and lifecycle details for each finalist. Use `skus "<device name>" --new-solutions` for product variants and add-ons. A `mixed` product needs an exact eligible SKU; its family name alone is not enough for a recommendation.
 4. **State assumptions and caveats.** Call out any PrimeCare, Virtual WAN, or license dependency from the `note` fields. Call out "hardware revision" footnotes verbatim when they're material (throughput, RemoteSIM, etc.).
 
 ## The solutions library
@@ -74,9 +74,20 @@ Narrative goes here: the reasoning, the topology, alternate devices for smaller 
 When consulting solutions:
 
 - Match on `use_cases` substrings and on device names appearing in the user's scenario.
-- Quote from the narrative, but cross-check `primary_devices` against the dataset with `show` in case specs have shifted since the solution was last reviewed.
+- Cross-check every proposed primary device, alternate, license, and accessory against the current dataset before recommending, even if the recipe was reviewed recently. Recipes and case studies do not override lifecycle eligibility. Use `show` for specifications and `skus --new-solutions` for variants and add-ons; replace any legacy recommendation with an eligible option that fits the requirements.
 - If a solution's `last_reviewed` is older than the dataset's "last updated" date at the top of this file, mention it to the user — the recommendation is still a good starting point but specific numbers should come from the dataset.
 - If the user describes a scenario that isn't covered, offer to draft a new solution file at the end — that's how the library grows.
+
+## Legacy products and new solutions
+
+Keep legacy product records available for specification lookups, existing-installation support, comparisons, and migration planning. **Never recommend a legacy product or SKU for a new solution**, including as an alternate, step-down option, module, or other add-on. A warning does not make a legacy recommendation acceptable.
+
+- Use `--new-solutions` with `list`, `filter`, `search`, and `skus` when selecting new equipment. Ordinary queries retain legacy records so existing equipment can still be understood.
+- Read the returned `lifecycle` and `new_solution_eligible` values. A `legacy` record is excluded. A `review_required` record is also excluded until its ambiguous or conflicting evidence is resolved; this does not label it legacy. A `mixed` record contains variants with different status and may appear in discovery, but requires an exact eligible SKU using `skus --new-solutions`. Recheck hardware revision and radio variant before specifying it. An empty eligible-SKU result does not establish a recommendable option.
+- Match the scope of the evidence. Balance 310 5G HW1–2 does not make HW3 legacy; Balance 580X HW1 does not make HW2 legacy. The older Wi-Fi 5 AP One Enterprise is distinct from the Wi-Fi 7 model. BR1 Pro 5G 5GH/5GD variants are legacy; do not generalize that finding to every BR1 Pro 5G SKU.
+- The catalog records Peplink's [legacy-products page](https://www.peplink.com/legacy-products/) and its suggested replacements. Treat those replacements as migration candidates, then verify their own eligibility, specifications, licensing, and suitability. They are not guaranteed drop-in replacements.
+- Legacy classification does not establish a support end date, firmware policy, stock availability, or an end-of-life promise. State only what the source and metadata support. Absence from the legacy list is not a promise of continued availability.
+- If the user asks about installed legacy equipment, answer the requested details and explain its lifecycle status. Keep that support or migration discussion separate from a recommendation to buy equipment for a new solution.
 
 ## User-specific instructions
 
@@ -105,13 +116,14 @@ These exist because Peplink spec sheets are dense and easy to misquote.
 - **Never invent a number.** If `query.py` doesn't have it, say so. Peplink publishes performance numbers per hardware revision; making one up is actively harmful in sales or design conversations.
 - **Preserve licensing language.** If the `note` mentions PrimeCare, Virtual WAN, eSIM SKU, or x.509 License Key, include it. The user cares whether a feature is standard or add-on.
 - **Disambiguate product names.** BR1 Mini (HW1), BR1 Mini, and BR1 Mini 5G are three different devices. When the user is ambiguous ("BR1 Mini"), either ask or list the candidates.
-- **Respect status fields.** Access points and switches carry a `Status` key in metadata (e.g., end-of-sale). Don't recommend an EOS device without flagging it.
+- **Enforce lifecycle eligibility.** Exclude legacy and end-of-sale products from new solutions, including alternates and add-ons. Inspect lifecycle annotations and metadata such as `Status`, `Component Status`, `Marketing Series`, and `Marketing Category`; a legacy/EOS/EOL value cannot be bypassed by adding a warning.
 - **Cite the datasheet, then the product page.** Most fully specified device records (currently 85 of 116) have a `Datasheet URL` that points at Peplink's official PDF spec sheet, and 112 of 116 have `Product URL`. When you recommend, compare, or answer a spec question about a device, prefer `Datasheet URL` for sourcing the specific numbers you cite and include `Product URL` as a secondary link for general context. If `Datasheet URL` is null for that device, fall back to `Product URL` and say "datasheet not published for this variant" so the user knows why they're not seeing the PDF. SKU-only records often do not have source URLs; when a SKU belongs to a full device record, cite that device's URLs for hardware specs.
 
 ## Data shape quick reference
 
 - `type` is one of `router`, `access_point`, `switch`, `flex_module`, `fusionhub_license`, `accessory`, `sim_injector`, or `antenna`.
-- `metadata` on fully specified devices contains `Product URL` (if published); most devices also carry `Datasheet URL` (the PDF spec sheet), `Image URL`, and one of `Marketing Series` / `Marketing Category`. Access points and switches can also carry `Status` — respect it (EOS devices should never be recommended without a warning). SKU-only records often have empty metadata.
+- `metadata` on fully specified devices contains `Product URL` (if published); most devices also carry `Datasheet URL` (the PDF spec sheet), `Image URL`, and one of `Marketing Series` / `Marketing Category`. Metadata status fields remain lifecycle evidence; legacy, EOS, or EOL products are ineligible for new solutions. SKU-only records often have empty metadata.
+- `lifecycle` annotations on affected records and SKU variants capture `status` (`legacy`, `mixed`, or `review_required` at product level), `source_url`, `checked_on`, `source_product_names`, and `replacement_products`. `_lifecycle_attribution` records source coverage and mapping decisions. Query summaries compute `new_solution_eligible`, apply legacy/EOS/EOL metadata fallback, and identify mixed records with `requires_exact_sku`. Product-level `mixed` status does not authorize every variant. `not_identified_as_legacy` means no legacy evidence was found in this snapshot, not a vendor support promise.
 - **Routers** have nine sections: `Interfaces`, `Performance`, `Wireless details`, `Features`, `Core Functionality`, `Advanced QoS Functionality`, `VPN Functionality`, `Hardware`, `Warranty Info`.
 - **Access points** and **switches** have a single flat section called `Specifications`. When comparing these to routers, expect lots of `null` cells — that's the schema, not missing data.
 - **SKU-only records** can have empty `specifications`; use their `sku_variants` rather than spec filtering. This includes module/license/accessory-style records and selected legacy router, access point, and switch SKUs that are present in the SKU source but do not have a full spec record in the bundled catalog.
@@ -130,7 +142,7 @@ These exist because Peplink spec sheets are dense and easy to misquote.
 
 When the user says "I have a new dataset" or similar:
 
-1. Replace `data/peplink_all_devices.json` with the new full export.
+1. Diff the new full export against `data/peplink_all_devices.json` and reconcile the changes. Preserve verified SKU/add-on mappings and corrections, manual records, datasheet links, lifecycle annotations, and `_lifecycle_attribution`; do not overwrite those enrichments with raw source sheets. Recheck lifecycle evidence for new products and changed names or revisions against Peplink's legacy-products page, and flag ambiguous matches for review before recommending them.
 2. Re-run the datasheet enrichment so new devices get PDF links and any changed names get re-probed:
 
    ```bash

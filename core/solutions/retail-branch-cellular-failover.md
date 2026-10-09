@@ -60,6 +60,7 @@ Do not step down below a B One for payment processing. The tiny BR1 Mini variant
 
 ## Known gotchas
 
+- BR1 Pro 5G has mixed lifecycle status. Before including it in a new solution, select an exact eligible SKU with `query.py skus "BR1 Pro 5G" --new-solutions` and verify the hardware revision. Exclude 5GH/5GD variants; an empty eligible-SKU result does not establish a purchasable option.
 - Confirm the SIM provisioning path up front. Retail chains often default to a fleet SIM provider (Inseego, Kajeet, etc.); Peplink's eSIM is great but isn't always allowed by corporate IT.
 - "Hot Failover" keeps the *tunnel* alive across a WAN transition. The merchant's payment application still needs to tolerate a brief latency spike. If it doesn't, the customer is solving the wrong problem with the wrong tool.
 - Balance 310 has no integrated cellular modem, no USB WAN, and no Wi-Fi AP. If cellular is required with Balance 310, use the Ethernet-based 5G Adapter, an external cellular router, or carrier CPE.

@@ -43,6 +43,13 @@ When you need a deployment recommendation, retrieve the most relevant
 `solutions/*.md` knowledge file first and use it as the spine of your answer;
 the solutions library was curated for consistency across repeat scenarios.
 
+For new solutions, add `--new-solutions` to `list`, `filter`, `search`, and
+`skus`. Exclude legacy products and SKUs from primary recommendations,
+alternates, and add-ons; a warning is not sufficient. Recheck every recipe
+against current lifecycle data, and resolve `mixed` products to an exact
+eligible SKU. Keep unfiltered queries available for existing-equipment
+support, specification comparisons, and migration planning.
+
 ---
 
 {{SKILL_BODY}}

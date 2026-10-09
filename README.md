@@ -54,7 +54,9 @@ The shared source lives under `core/`:
 - `core/solutions/` contains curated deployment recipes.
 - `core/references/` contains supporting reference notes.
 
-The current catalog contains 199 records: 116 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, FusionHub licenses, SIM injectors, antennas, and accessories. Many fully specified devices include direct datasheet URLs in addition to product page URLs.
+The current catalog contains 201 records: 116 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, FusionHub licenses, SIM injectors, antennas, and accessories. Many fully specified devices include direct datasheet URLs in addition to product page URLs.
+
+Legacy products remain available for specification, compatibility, and migration questions. New solution recommendations exclude known legacy products and variants, using Peplink's [legacy products page](https://www.peplink.com/legacy-products/) and the source workbooks. Hardware revisions and radio variants are checked separately; a legacy listing does not imply that Peplink has ended support.
 
 ## Example Questions
 
@@ -80,9 +82,13 @@ python3 core/scripts/query.py compare "HD2 MBX 5G" "HD4 MBX 5G"
 python3 core/scripts/query.py filter --type router --field "5G support" --value Yes
 python3 core/scripts/query.py skus "B One 5G"
 python3 core/scripts/query.py skus --find "LIC-VWAN" --type router
+python3 core/scripts/query.py filter --new-solutions --type router --field "5G support" --value Yes
+python3 core/scripts/query.py skus --new-solutions "BR1 Pro 5G"
 ```
 
 The helper prints JSON so you can inspect it directly or pipe it into other tools.
+
+Use `--new-solutions` with `list`, `filter`, `search`, or `skus` when selecting equipment for a new design. Records awaiting lifecycle clarification are excluded too. Unfiltered queries retain the full catalog, and lifecycle summaries explain exclusions. Passing this filter does not confirm stock or availability.
 
 ## Custom Defaults
 

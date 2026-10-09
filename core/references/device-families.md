@@ -2,32 +2,36 @@
 
 Read this when you need to orient a user who asks about a family rather than a specific SKU (e.g., "what's the difference between HD2 and HD4?" or "what's a Transit?").
 
+These families include multiple hardware generations. Use `query.py list --new-solutions` and verify the exact record/SKU lifecycle before making a new-solution recommendation. Legacy products stay in the catalog for existing-installation support, specification lookups, and migration planning; do not offer them as new equipment or alternates. Family names and case studies do not establish eligibility.
+
 ## Routers
 
-- **BR1 series** — Single-modem cellular routers. Form factors range from tiny IoT ("BR1 Mini", "BR1 Mini M2M") up through prosumer ("BR1 Pro 5G", "BR1 ENT"). Default answer for a small vehicle, kiosk, or single-user mobile setup.
+- **BR1 series** — Single-modem cellular routers, including compact BR1 Mini models and BR1 Pro 5G. Older BR1 ENT, M2M, Pro, and certain hardware revisions are legacy. BR1 Pro 5G has mixed lifecycle status: 5GH/5GD variants are legacy, so resolve an exact eligible SKU before recommending it.
 - **BR2 series** — Two cellular modems, dual-SIM per modem. "BR2 Pro" is the current high-end; "BR2 Micro" is a compact variant. Use when a single BR1 isn't enough but an HD2 MBX is overkill.
-- **HD2 / HD4 series** — Enterprise Mobility flagship. Two or four integrated modems, ruggedized, GPS. MBX variants (HD2 MBX, HD4 MBX, HD2 MBX 5G, HD4 MBX 5G) are the modern line. MediaFast variants add content caching. The "EC" suffix means higher-capacity edge compute tier.
-- **Transit series** — Mid-tier mobility. "Transit", "Transit Duo", "Transit Pro E" — good for fleet vehicles, buses, emergency response where HD2 MBX is too much.
-- **Balance series** — Stationary enterprise SD-WAN. Numbered by tier: 20, 20X, 30, 210, 310, 310X, 380, 580, 710, 1350, 2500, 5000. Higher number = more throughput, more WAN ports, more users. "X" suffix indicates cellular-capable; "EC" is the edge-compute variant.
-- **B One / B One Plus / B One 5G** — "Enterprise Branch" line, positioned below Balance 30. Good modern entry point for a single branch with integrated cellular.
-- **Dome series** — Outdoor IP67 units designed for permanent mount (on a pole, vehicle roof, etc.). HD1 Dome, HD2 Dome, Dome Pro, Dome Pro Duo, Dome Pro LR (long range).
-- **IP55 / IP67 variants** — Weather-sealed versions of BR1 and HD2/4. Used for outdoor/harsh-environment deployments.
-- **SDX, SDX Pro, EPX** — Datacenter-class SpeedFusion head-ends. These terminate tunnels from fleets of edge routers. Customer is usually a service provider or large enterprise.
-- **UBR series** — Ultra-broadband routers. UBR LTE and UBR Plus. Positioned between BR1 and Transit for mobile deployments with a cleaner form factor.
-- **MAX Adapter** — Technically a router but really a "drop-in cellular" device that adds bonded cellular to an existing network without replacing the primary router.
+- **HD2 / HD4 series** — Mobility routers with two or four modems. MBX variants are distinct from legacy MAX HD2/HD4, Mini, and IP67 products. Match the exact model and revision instead of transferring lifecycle status across the family.
+- **Transit series** — Mobility products for transport deployments. Transit, Transit 5G, Transit Duo, Transit Core, and Transit Mini are legacy. Transit Duo Pro and Transit Pro E are distinct models; verify them separately.
+- **Balance series** — Stationary enterprise SD-WAN spanning several generations. Balance 380/380X and many older numbered models are legacy. Balance 310 5G HW1–2 and Balance 580X HW1 are legacy, while HW3 and HW2 respectively have separate records. Do not infer performance, integrated cellular, or lifecycle from the number or suffix alone.
+- **B One / B One Plus / B One 5G** — Enterprise branch routers. Check the exact model for integrated cellular and WAN interfaces.
+- **Dome series** — Outdoor units including HD1 Dome Pro, Dome Pro Duo, and Dome Pro LR. HD1 Dome and HD2 Dome are legacy. Verify environmental ratings and installation requirements on the exact model.
+- **IP55 / IP67 variants** — Weather-sealed products; the older BR1 and HD2/HD4 variants are legacy. An ingress-protection rating does not establish new-solution eligibility.
+- **SDX, SDX Pro, EPX** — Enterprise SpeedFusion head-ends used to terminate tunnels from fleets of edge routers. EPX is legacy; inspect its suggested replacements for migration planning.
+- **UBR series** — UBR LTE and UBR Plus are legacy mobile routers, retained for existing-equipment reference.
+- **MAX Adapter** — External cellular connectivity for an existing network. The 5GH variant is legacy; check the exact SKU rather than treating all variants alike.
 - **PDX** — Specialized datacenter/head-end unit.
-- **SpeedFusion Engine** — A module rather than a standalone router.
+- **SpeedFusion Engine** — A legacy module retained for existing-equipment reference.
 
 ## Access Points
 
-Six current models: **AP One Mini**, **AP One Rugged**, **AP Pro AX**, **AP One Enterprise (HW2)**, **AP One AX**, **AP One AX Lite**. "AX" suffix means Wi-Fi 6. The "Rugged" / outdoor models are IP-rated for outdoor deployment.
+The catalog includes AP One and AP Pro products across Wi-Fi generations. The older **AP One Enterprise (HW2)** (Wi-Fi 5) is legacy and must not be confused with the newer **AP One Enterprise** (Wi-Fi 7). **AP One Flex** and older **AP Pro AC/Duo/300M** products are also legacy. Use eligible exact models such as AP One AX, AP One AX Lite, AP One Rugged, or AP Pro AX as candidates, then verify their specifications and environment ratings.
+
+**AP Pro AX Legacy HW2** has conflicting source labels and is marked `review_required`; exclude it from new solutions until resolved. It is distinct from the eligible AP Pro AX record.
 
 ## Switches
 
-Nine current models. Two naming conventions coexist:
+Two naming conventions coexist in the catalog, with different lifecycle status:
 
 - Descriptive: "8 PoE 10G Switch", "24 PoE 2.5G Switch", "48 PoE 2.5G Switch", "24 PoE 2.5G Switch Rugged".
-- Prefixed: "SD Switch 24-Port Enterprise", "SD Switch 48-Port Enterprise", "SD Switch 8/16/24-Port Rugged".
+- Legacy prefixed models: "SD Switch 24-Port Enterprise", "SD Switch 48-Port Enterprise", "SD Switch 8/16/24-Port Rugged". Retain these for support and migration, and exclude them from new-solution BOMs.
 
 The "Rugged" line is DIN-rail or industrial-enclosure-friendly; "Enterprise" is a standard 1U rackmount. Port speed is in the product name (2.5G, 10G).
 

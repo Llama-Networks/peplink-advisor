@@ -8,6 +8,7 @@ import zipfile
 from pathlib import Path
 
 from common import repo_root, read_version
+from verify_lifecycle import verify_lifecycle_queries
 
 
 def require(path: Path, rel_path: str) -> None:
@@ -45,6 +46,11 @@ def main() -> None:
         plugin_manifest = json.loads((plugin_dir / ".claude-plugin" / "plugin.json").read_text())
         if plugin_manifest.get("name") != "peplink-advisor":
             raise SystemExit("Plugin manifest name is not peplink-advisor")
+
+        for skill_dir in (desktop_dir / 'peplink-advisor', plugin_dir / 'skills' / 'peplink-advisor'):
+            if '--new-solutions' not in (skill_dir / 'SKILL.md').read_text():
+                raise SystemExit('Packaged skill is missing lifecycle filtering guidance.')
+            verify_lifecycle_queries(skill_dir / 'scripts' / 'query.py')
 
     print(f"[anthropic] verified {desktop_artifact.relative_to(root)}")
     print(f"[anthropic] verified {plugin_artifact.relative_to(root)}")

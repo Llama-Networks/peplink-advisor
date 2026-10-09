@@ -63,6 +63,7 @@ If the site needs multiple overlays, plan for Virtual WAN Activation Licenses. I
 
 ## Known gotchas
 
+- BR1 Pro 5G has mixed lifecycle status. Before including it in a new solution, select an exact eligible SKU with `query.py skus "BR1 Pro 5G" --new-solutions` and verify the hardware revision. Exclude 5GH/5GD variants; an empty eligible-SKU result does not establish a purchasable option.
 - BR1 Mini 5G can do the job, but the PrimeCare/feature-pack dependency is the gotcha. Confirm the license path before quoting a Starlink failover design.
 - Starlink and cellular often fail for different reasons. That is useful, but the cellular path still needs real signal testing at the enclosure location.
 - For camera-heavy sites, fail over only the critical VLAN or camera event stream. Letting all video move to cellular can burn data quickly.

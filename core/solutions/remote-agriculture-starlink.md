@@ -59,6 +59,7 @@ PrimeCare is assumed for SpeedFusion features, InControl, and SpeedFusion Connec
 
 ## Known gotchas
 
+- BR1 Pro 5G has mixed lifecycle status. Before including it in a new solution, select an exact eligible SKU with `query.py skus "BR1 Pro 5G" --new-solutions` and verify the hardware revision. Exclude 5GH/5GD variants; an empty eligible-SKU result does not establish a purchasable option.
 - Power is the design constraint in off-grid agriculture. The router is only a small part of total load.
 - Greenhouses and metal containers can block RF. Put the cellular antenna or Dome outside.
 - Sensor traffic is low bandwidth but high value; protect it from worker/guest Wi-Fi and camera uploads.

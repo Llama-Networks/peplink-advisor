@@ -62,6 +62,7 @@ BR1 Mini 5G requires PrimeCare or the feature pack to enable Ethernet WAN, Hot F
 
 ## Known gotchas
 
+- BR1 Pro 5G has mixed lifecycle status. Before including it in a new solution, select an exact eligible SKU with `query.py skus "BR1 Pro 5G" --new-solutions` and verify the hardware revision. Exclude 5GH/5GD variants; an empty eligible-SKU result does not establish a purchasable option.
 - BR1 Mini 5G does not include GPS or Wi-Fi AP. If those are expected, choose BR1 Pro 5G or add external devices.
 - Public-safety kits need operational procedures: who turns it on, how SSIDs are named, who monitors data use, and how it is recovered after the incident.
 - Battery runtime claims must be tested with Starlink, the Peplink router, enclosure fans/heaters, and APs running together.

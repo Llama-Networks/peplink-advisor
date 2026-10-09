@@ -59,6 +59,7 @@ PrimeCare is assumed. It covers SpeedFusion Hot Failover, Smoothing, Bandwidth B
 
 ## Known gotchas
 
+- BR1 Pro 5G has mixed lifecycle status. Before including it in a new solution, select an exact eligible SKU with `query.py skus "BR1 Pro 5G" --new-solutions` and verify the hardware revision. Exclude 5GH/5GD variants; an empty eligible-SKU result does not establish a purchasable option.
 - Vehicle body materials can hurt RF badly. Roof antennas are not optional for reliable fleet Wi-Fi.
 - Starlink on vehicles may have service-plan and mounting constraints; verify before quoting it as a standard WAN.
 - Passenger Wi-Fi needs policy. Without per-user shaping, entertainment traffic can starve ticketing and telemetry.

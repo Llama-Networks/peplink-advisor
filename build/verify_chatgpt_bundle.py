@@ -9,6 +9,7 @@ import zipfile
 from pathlib import Path
 
 from common import repo_root, read_version
+from verify_lifecycle import verify_lifecycle_queries
 
 
 REQUIRED_FILES = (
@@ -49,6 +50,10 @@ def main() -> None:
         for snippet in STALE_INSTRUCTION_SNIPPETS:
             if snippet in instructions:
                 raise SystemExit(f"Bundle instructions still contain stale guidance: {snippet}")
+
+        if '--new-solutions' not in instructions:
+            raise SystemExit('Bundle instructions are missing lifecycle filtering guidance.')
+        verify_lifecycle_queries(stage / 'knowledge' / 'query.py')
 
         result = subprocess.run(
             ["python3", "query.py", "show", "B One 5G"],

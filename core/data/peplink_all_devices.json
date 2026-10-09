@@ -4,10 +4,10 @@
     "PeplinkAPComparisonJSON(External).xlsx",
     "PeplinkSwitchComparisonJSON(External).xlsx"
   ],
-  "device_count": 199,
+  "device_count": 201,
   "counts_by_type": {
-    "router": 103,
-    "access_point": 17,
+    "router": 104,
+    "access_point": 18,
     "switch": 10,
     "flex_module": 31,
     "fusionhub_license": 7,
@@ -2306,7 +2306,70 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "BPL-580X-PRM",
+          "addons": {
+            "std1y": [
+              "PRM-J-1Y"
+            ],
+            "std2y": [
+              "PRM-J-2Y"
+            ],
+            "std4y": [
+              "PRM-J-4Y"
+            ],
+            "plus1y": [
+              "PCP-J-1Y"
+            ],
+            "plus2y": [
+              "PCP-J-2Y"
+            ],
+            "plus4y": [
+              "PCP-J-4Y"
+            ],
+            "vwanLicenses": [
+              "LIC-2VWAN",
+              "LIC-3VWAN",
+              "LIC-VWAN",
+              "LIC-10VWAN-MD"
+            ],
+            "openvpnLicenses": [
+              "LIC-2OPN-WAN",
+              "LIC-3OPN-WAN",
+              "LIC-OPN-WAN",
+              "LIC-4OPN-WAN"
+            ],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [
+              "SFN-LC-500",
+              "SFN-LC-300"
+            ],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-E",
+              "SFC-CLD-B",
+              "SFC-CLD-G",
+              "SFC-CLD-F",
+              "SFC-CLD-C",
+              "SFC-CLD-D",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "HD2 Next Gen",
@@ -2638,7 +2701,15 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkComparisonTableJSON(External).xlsx",
+        "source_fields": {
+          "Marketing Series": "Mobility Legacy"
+        }
+      }
     },
     {
       "product_name": "Balance 310",
@@ -3809,7 +3880,15 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkComparisonTableJSON(External).xlsx",
+        "source_fields": {
+          "Marketing Series": "Enterprise Legacy"
+        }
+      }
     },
     {
       "product_name": "MediaFast 500",
@@ -4194,7 +4273,15 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkComparisonTableJSON(External).xlsx",
+        "source_fields": {
+          "Marketing Series": "Enterprise Legacy"
+        }
+      }
     },
     {
       "product_name": "MediaFast 750",
@@ -4579,7 +4666,15 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkComparisonTableJSON(External).xlsx",
+        "source_fields": {
+          "Marketing Series": "Enterprise Legacy"
+        }
+      }
     },
     {
       "product_name": "BR1 Mini 5G (Wi-Fi)",
@@ -6573,7 +6668,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 Mini (HW1)"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX BR1 Mini (HW3)",
+            "product_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/"
+          }
+        ]
+      }
     },
     {
       "product_name": "BR1 Mini Core (HW1)",
@@ -6907,7 +7016,15 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkComparisonTableJSON(External).xlsx",
+        "source_fields": {
+          "Marketing Series": "Mobility Legacy"
+        }
+      }
     },
     {
       "product_name": "BR1 Mini",
@@ -7310,6 +7427,13 @@
             ],
             "bundleOffers": [],
             "miscAccessories": []
+          },
+          "lifecycle": {
+            "status": "review_required",
+            "checked_on": "2026-10-09",
+            "source_url": "https://download.peplink.com/resources/pepwave_max_br1_mini_LTE_datasheet.pdf",
+            "clarification_source_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/",
+            "note": "Hardware revision is not unambiguous from this non-PRM SKU string. Older HW1 ordering material lists this SKU family; confirm the exact revision before recommending. This is not a confirmed legacy classification."
           }
         },
         {
@@ -8158,6 +8282,13 @@
             "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
+          },
+          "lifecycle": {
+            "status": "review_required",
+            "checked_on": "2026-10-09",
+            "source_url": "https://download.peplink.com/resources/pepwave_max_br1_mini_LTE_datasheet.pdf",
+            "clarification_source_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/",
+            "note": "Hardware revision is not unambiguous from this non-PRM SKU string. Older HW1 ordering material lists this SKU family; confirm the exact revision before recommending. This is not a confirmed legacy classification."
           }
         },
         {
@@ -8196,6 +8327,13 @@
             "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
+          },
+          "lifecycle": {
+            "status": "review_required",
+            "checked_on": "2026-10-09",
+            "source_url": "https://download.peplink.com/resources/pepwave_max_br1_mini_LTE_datasheet.pdf",
+            "clarification_source_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/",
+            "note": "Hardware revision is not unambiguous from this non-PRM SKU string. Older HW1 ordering material lists this SKU family; confirm the exact revision before recommending. This is not a confirmed legacy classification."
           }
         },
         {
@@ -8234,6 +8372,13 @@
             "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
+          },
+          "lifecycle": {
+            "status": "review_required",
+            "checked_on": "2026-10-09",
+            "source_url": "https://download.peplink.com/resources/pepwave_max_br1_mini_LTE_datasheet.pdf",
+            "clarification_source_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/",
+            "note": "Hardware revision is not unambiguous from this non-PRM SKU string. Older HW1 ordering material lists this SKU family; confirm the exact revision before recommending. This is not a confirmed legacy classification."
           }
         },
         {
@@ -8276,7 +8421,16 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "mixed",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 Mini (HW1)"
+        ],
+        "note": "Some non-PRM SKU strings also appear in older hardware documentation or lack an unambiguous hardware revision. Those variants require review. Select an eligible SKU and confirm the hardware revision for a new solution."
+      }
     },
     {
       "product_name": "BR1 Mini 5G",
@@ -10108,7 +10262,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 MK2"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX BR1 Mini (HW3) + Feature Pack",
+            "product_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/"
+          }
+        ]
+      }
     },
     {
       "product_name": "BR1 Pro",
@@ -10440,80 +10608,100 @@
       },
       "sku_variants": [
         {
-          "sku": "MAX-BR1-PRO-GLTE-S-T-PRM",
+          "sku": "MAX-BR1-PRO-LTEA-W-T",
           "addons": {
             "std1y": [
-              "PRM-B-1Y"
+              "SVL-437"
             ],
             "std2y": [
-              "PRM-B-2Y"
+              "SVL-665"
             ],
-            "std4y": [
-              "PRM-B-4Y"
-            ],
+            "std4y": [],
             "plus1y": [
-              "PCP-B-1Y"
+              "ECP-BR1-PRO-LTEA-1Y"
             ],
             "plus2y": [
-              "PCP-B-2Y"
+              "ECP-BR1-PRO-LTEA-2Y"
             ],
             "plus4y": [
-              "PCP-B-4Y"
+              "ECP-BR1-PRO-LTEA-4Y"
             ],
-            "vwanLicenses": [
-              "LIC-VWAN",
-              "LIC-2VWAN"
-            ],
-            "openvpnLicenses": [
-              "LIC-OPN-WAN",
-              "LIC-2OPN-WAN",
-              "LIC-3OPN-WAN",
-              "LIC-4OPN-WAN"
-            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
             "apSupportLicenses": [],
-            "speedfusionLicenses": [
-              "PVN-LC-10",
-              "PVN-LC-20"
-            ],
-            "featureLicenses": [
-              "MAX-BR1-ADV"
-            ],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
             "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [
-              "SFC-CLD-D",
-              "SFC-CLD-C",
-              "SFC-CLD-G",
-              "SFC-CLD-B",
-              "SFC-CLD-E",
-              "SFC-CLD-F",
-              "SFC-CLD-U-1M",
-              "SFC-CLD-U-1Y"
-            ],
-            "esimDataPlans": [
-              "SFC-CN-A",
-              "SFC-CN-B",
-              "SFC-CN-C",
-              "SFC-CN-S-A",
-              "SFC-CN-S-B",
-              "SFC-CN-S-C"
-            ],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
             "flexModules": [],
             "simInjectors": [],
             "antennas": [],
             "powerSupplies": [],
             "poeKits": [],
-            "cablesAdapters": [
-              "ACW-634",
-              "ACW-643"
-            ],
+            "cablesAdapters": [],
             "mountingBrackets": [],
             "bundleOffers": [],
-            "miscAccessories": [
-              "ACW-765"
-            ]
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-BR1-PRO-LTE-US-T",
+          "addons": {
+            "std1y": [
+              "SVL-777"
+            ],
+            "std2y": [
+              "SVL-677"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-BR1-PRO-LTE-1Y"
+            ],
+            "plus2y": [
+              "ECP-BR1-PRO-LTE-2Y"
+            ],
+            "plus4y": [
+              "ECP-BR1-PRO-LTE-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 Pro"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/soho-routers/b-one/"
+          },
+          {
+            "product_name": "MAX BR1 Mini (HW3)",
+            "product_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/"
+          }
+        ]
+      }
     },
     {
       "product_name": "BR1 ENT",
@@ -11015,7 +11203,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 ENT"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX BR1 Pro Cat 20",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br1-pro-cat-20/"
+          }
+        ]
+      }
     },
     {
       "product_name": "MAX Adapter",
@@ -12343,82 +12545,6 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
-        },
-        {
-          "sku": "MAX-ADP-5GH",
-          "addons": {
-            "std1y": [
-              "SVL-MAX-ADP-5G-1Y"
-            ],
-            "std2y": [
-              "SVL-MAX-ADP-5G-2Y"
-            ],
-            "std4y": [],
-            "plus1y": [
-              "ECP-D-1Y"
-            ],
-            "plus2y": [
-              "ECP-D-2Y"
-            ],
-            "plus4y": [
-              "ECP-D-4Y"
-            ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [],
-            "featureLicenses": [],
-            "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [],
-            "esimDataPlans": [],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [],
-            "cablesAdapters": [],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
-          }
-        },
-        {
-          "sku": "MAX-ADP-5GH-T",
-          "addons": {
-            "std1y": [
-              "SVL-MAX-ADP-5G-1Y"
-            ],
-            "std2y": [
-              "SVL-MAX-ADP-5G-2Y"
-            ],
-            "std4y": [],
-            "plus1y": [
-              "ECP-D-1Y"
-            ],
-            "plus2y": [
-              "ECP-D-2Y"
-            ],
-            "plus4y": [
-              "ECP-D-4Y"
-            ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [],
-            "featureLicenses": [],
-            "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [],
-            "esimDataPlans": [],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [],
-            "cablesAdapters": [],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
-          }
         }
       ]
     },
@@ -12799,7 +12925,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX Transit Mini"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX BR1 Mini (HW3) + Feature Pack",
+            "product_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Transit",
@@ -13271,7 +13411,26 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX Transit",
+          "MAX Transit 5G"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX BR1 Pro Cat 20",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br1-pro-cat-20/"
+          },
+          {
+            "product_name": "MAX BR1 Pro 5G",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br1-pro-5g/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Transit Duo",
@@ -13754,7 +13913,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX Transit Duo"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX Transit Duo Pro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-transit-duo-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Transit Core",
@@ -14134,7 +14307,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX Transit Core"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX Transit Duo Pro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-transit-duo-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Transit Duo Pro",
@@ -15625,7 +15812,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 Classic"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX BR1 Mini (HW3) + Feature Pack",
+            "product_url": "https://www.peplink.com/products/mobile-routers/br1-mini-hw3/"
+          }
+        ]
+      }
     },
     {
       "product_name": "BR1 M2M",
@@ -16049,7 +16250,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 M2M"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "BR1 Mini M2M",
+            "product_url": "https://www.peplink.com/products/mobile-routers/br1-mini-m2m/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD2",
@@ -16603,7 +16818,25 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX HD2"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "BR2 Pro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br2-pro/"
+          },
+          {
+            "product_name": "HD2 MBX",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/x-series-mbx/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD2 Mini",
@@ -17336,7 +17569,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX HD2 Mini"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX Transit Duo Pro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-transit-duo-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD4",
@@ -17787,7 +18034,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX HD4"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX HD4 MBX",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/x-series-mbx/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD2 MBX",
@@ -21328,7 +21589,15 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkComparisonTableJSON(External).xlsx",
+        "source_fields": {
+          "Marketing Series": "Mobility Legacy"
+        }
+      }
     },
     {
       "product_name": "HD4 Mediafast",
@@ -21740,7 +22009,15 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkComparisonTableJSON(External).xlsx",
+        "source_fields": {
+          "Marketing Series": "Mobility Legacy"
+        }
+      }
     },
     {
       "product_name": "BR1 IP55",
@@ -22126,7 +22403,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 IP55"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "HD1 Dome Pro",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/max-hd1-dome-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "BR1 IP67",
@@ -22625,7 +22916,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX BR1 IP67"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "HD1 Dome Pro",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/max-hd1-dome-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD2 IP67",
@@ -23108,7 +23413,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX HD2 IP67"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Dome Pro Duo",
+            "product_url": "https://download.peplink.com/resources/peplink_dome_pro_duo_datasheet.pdf"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD4 IP67",
@@ -23504,7 +23823,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX HD4 IP67"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX HD4 MBX",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/x-series-mbx/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD1 Dome",
@@ -23931,7 +24264,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX HD1 Dome"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX HD1 Dome Pro",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/max-hd1-dome-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD2 Dome",
@@ -24430,7 +24777,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX HD2 Dome"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "MAX HD1 Dome Pro",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/max-hd1-dome-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "HD1 Dome Pro",
@@ -26081,7 +26442,25 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "UBR LTE"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "BR2",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br2/"
+          },
+          {
+            "product_name": "MAX Transit Duo Pro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-transit-duo-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "SpeedFusion Engine",
@@ -26767,7 +27146,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "SpeedFusion Engine"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "BR2 Micro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br2-micro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "BR1 Pro (CAT-20)",
@@ -27108,79 +27501,77 @@
       },
       "sku_variants": [
         {
-          "sku": "MAX-BR1-PRO-LTEA-W-T",
+          "sku": "MAX-BR1-PRO-GLTE-S-T-PRM",
           "addons": {
             "std1y": [
-              "SVL-437"
+              "PRM-B-1Y"
             ],
             "std2y": [
-              "SVL-665"
+              "PRM-B-2Y"
             ],
-            "std4y": [],
+            "std4y": [
+              "PRM-B-4Y"
+            ],
             "plus1y": [
-              "ECP-BR1-PRO-LTEA-1Y"
+              "PCP-B-1Y"
             ],
             "plus2y": [
-              "ECP-BR1-PRO-LTEA-2Y"
+              "PCP-B-2Y"
             ],
             "plus4y": [
-              "ECP-BR1-PRO-LTEA-4Y"
+              "PCP-B-4Y"
             ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [],
+            "vwanLicenses": [
+              "LIC-VWAN",
+              "LIC-2VWAN"
+            ],
+            "openvpnLicenses": [
+              "LIC-OPN-WAN",
+              "LIC-2OPN-WAN",
+              "LIC-3OPN-WAN",
+              "LIC-4OPN-WAN"
+            ],
             "apSupportLicenses": [],
-            "speedfusionLicenses": [],
-            "featureLicenses": [],
+            "speedfusionLicenses": [
+              "PVN-LC-10",
+              "PVN-LC-20"
+            ],
+            "featureLicenses": [
+              "MAX-BR1-ADV"
+            ],
             "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [],
-            "esimDataPlans": [],
+            "speedfusionConnectUsage": [
+              "SFC-CLD-D",
+              "SFC-CLD-C",
+              "SFC-CLD-G",
+              "SFC-CLD-B",
+              "SFC-CLD-E",
+              "SFC-CLD-F",
+              "SFC-CLD-U-1M",
+              "SFC-CLD-U-1Y"
+            ],
+            "esimDataPlans": [
+              "SFC-CN-A",
+              "SFC-CN-B",
+              "SFC-CN-C",
+              "SFC-CN-S-A",
+              "SFC-CN-S-B",
+              "SFC-CN-S-C"
+            ],
             "flexModules": [],
             "simInjectors": [],
             "antennas": [],
             "powerSupplies": [],
             "poeKits": [],
-            "cablesAdapters": [],
+            "cablesAdapters": [
+              "ACW-634",
+              "ACW-643"
+            ],
             "mountingBrackets": [],
             "bundleOffers": [],
-            "miscAccessories": []
-          }
-        },
-        {
-          "sku": "MAX-BR1-PRO-LTE-US-T",
-          "addons": {
-            "std1y": [
-              "SVL-777"
-            ],
-            "std2y": [
-              "SVL-677"
-            ],
-            "std4y": [],
-            "plus1y": [
-              "ECP-BR1-PRO-LTE-1Y"
-            ],
-            "plus2y": [
-              "ECP-BR1-PRO-LTE-2Y"
-            ],
-            "plus4y": [
-              "ECP-BR1-PRO-LTE-4Y"
-            ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [],
-            "featureLicenses": [],
-            "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [],
-            "esimDataPlans": [],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [],
-            "cablesAdapters": [],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
+            "miscAccessories": [
+              "ACW-765"
+            ]
           }
         }
       ]
@@ -27720,6 +28111,24 @@
             "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
+          },
+          "lifecycle": {
+            "status": "legacy",
+            "source_url": "https://www.peplink.com/legacy-products/",
+            "checked_on": "2026-10-09",
+            "source_product_names": [
+              "BR1 Pro 5G (5GH/5GD)"
+            ],
+            "replacement_products": [
+              {
+                "product_name": "BR1 Pro 5G (5GK)",
+                "product_url": "https://www.peplink.com/products/br-pro-family/"
+              },
+              {
+                "product_name": "BR1 Pro 5G (5GN)",
+                "product_url": "https://www.peplink.com/products/mobile-routers/max-br1-pro-5g/"
+              }
+            ]
           }
         },
         {
@@ -27760,9 +28169,50 @@
             "mountingBrackets": [],
             "bundleOffers": [],
             "miscAccessories": []
+          },
+          "lifecycle": {
+            "status": "legacy",
+            "source_url": "https://www.peplink.com/legacy-products/",
+            "checked_on": "2026-10-09",
+            "source_product_names": [
+              "BR1 Pro 5G (5GH/5GD)"
+            ],
+            "replacement_products": [
+              {
+                "product_name": "BR1 Pro 5G (5GK)",
+                "product_url": "https://www.peplink.com/products/br-pro-family/"
+              },
+              {
+                "product_name": "BR1 Pro 5G (5GN)",
+                "product_url": "https://www.peplink.com/products/mobile-routers/max-br1-pro-5g/"
+              }
+            ]
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "mixed",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "BR1 Pro 5G (5GH/5GD)"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "BR1 Pro 5G (5GK)",
+            "product_url": "https://www.peplink.com/products/br-pro-family/"
+          },
+          {
+            "product_name": "BR1 Pro 5G (5GN)",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br1-pro-5g/"
+          }
+        ],
+        "note": "Only 5GH/5GD radio variants are listed as legacy. Select a 5GK/5GN SKU for a new solution.",
+        "legacy_variants": [
+          "5GH",
+          "5GD"
+        ]
+      }
     },
     {
       "product_name": "BR2 Pro",
@@ -28810,7 +29260,25 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "UBR Plus"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "BR2",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br2/"
+          },
+          {
+            "product_name": "MAX Transit Duo Pro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-transit-duo-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "BR2",
@@ -30625,7 +31093,25 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MBX Mini"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "BR2 Pro",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br2-pro/"
+          },
+          {
+            "product_name": "HD2 MBX",
+            "product_url": "https://www.peplink.com/products/enterprise-mobility/x-series-mbx/"
+          }
+        ]
+      }
     },
     {
       "product_name": "PDX",
@@ -32567,7 +33053,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 20"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/enterprise-branch-routers/b-one/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 30 LTE",
@@ -32974,7 +33474,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 30 LTE"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/enterprise-branch-routers/b-one/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 30 PRO",
@@ -33307,7 +33821,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 30 Pro"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/enterprise-branch-routers/b-one/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance ONE",
@@ -33681,7 +34209,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance One"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/enterprise-branch-routers/b-one/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance ONE Core",
@@ -34055,7 +34597,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance One Core"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/enterprise-branch-routers/b-one/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance TWO",
@@ -34427,7 +34983,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance Two"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/enterprise-branch-routers/b-one/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 210",
@@ -34797,7 +35367,29 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 210"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "B One",
+            "product_url": "https://www.peplink.com/products/enterprise-branch-routers/b-one/"
+          },
+          {
+            "product_name": "Balance 310",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-310/"
+          },
+          {
+            "product_name": "Balance 580X (HW2)",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-580x"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 310 5G",
@@ -35365,7 +35957,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 310 5G (HW1-2)"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 310 5G (HW3)",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-310-5g/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 310 Fiber 5G",
@@ -36951,7 +37557,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 305"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 580X (HW2)",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-580x"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 380",
@@ -37319,7 +37939,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 380"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 580X (HW2)",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-580x"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 380X",
@@ -37694,7 +38328,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 380X"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 580X (HW2)",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-580x"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 580",
@@ -38023,7 +38671,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 580"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 580X (HW2)",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-580x"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 580X",
@@ -38361,68 +39023,6 @@
       },
       "sku_variants": [
         {
-          "sku": "BPL-580X-PRM",
-          "addons": {
-            "std1y": [
-              "PRM-J-1Y"
-            ],
-            "std2y": [
-              "PRM-J-2Y"
-            ],
-            "std4y": [
-              "PRM-J-4Y"
-            ],
-            "plus1y": [
-              "PCP-J-1Y"
-            ],
-            "plus2y": [
-              "PCP-J-2Y"
-            ],
-            "plus4y": [
-              "PCP-J-4Y"
-            ],
-            "vwanLicenses": [
-              "LIC-2VWAN",
-              "LIC-3VWAN",
-              "LIC-VWAN",
-              "LIC-10VWAN-MD"
-            ],
-            "openvpnLicenses": [
-              "LIC-2OPN-WAN",
-              "LIC-3OPN-WAN",
-              "LIC-OPN-WAN",
-              "LIC-4OPN-WAN"
-            ],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [
-              "SFN-LC-500",
-              "SFN-LC-300"
-            ],
-            "featureLicenses": [],
-            "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [
-              "SFC-CLD-E",
-              "SFC-CLD-B",
-              "SFC-CLD-G",
-              "SFC-CLD-F",
-              "SFC-CLD-C",
-              "SFC-CLD-D",
-              "SFC-CLD-U-1M",
-              "SFC-CLD-U-1Y"
-            ],
-            "esimDataPlans": [],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [],
-            "cablesAdapters": [],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
-          }
-        },
-        {
           "sku": "BPL-580X",
           "addons": {
             "std1y": [
@@ -38460,7 +39060,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 580X (HW1)"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 580X (HW2)",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-580x"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 710",
@@ -38828,7 +39442,25 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 710"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "SDX",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/x-series-sdx/"
+          },
+          {
+            "product_name": "SDX Pro",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/sdx-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 1350",
@@ -39212,7 +39844,29 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 1350"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 1350 EC",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-1350-ec/"
+          },
+          {
+            "product_name": "SDX",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/x-series-sdx/"
+          },
+          {
+            "product_name": "SDX Pro",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/sdx-pro/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 2500",
@@ -39593,7 +40247,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 2500"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 2500 EC",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-2500-ec/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 2500 (1SFP)",
@@ -39921,7 +40589,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 2500"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 2500 EC",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-2500-ec/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 2500 (2SFP)",
@@ -40249,7 +40931,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "Balance 2500"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 2500 EC",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-2500-ec/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 2500 EC",
@@ -41998,7 +42694,25 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "EPX"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "Balance 2500 EC",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-2500-ec/"
+          },
+          {
+            "product_name": "Balance 5000 EC",
+            "product_url": "https://www.peplink.com/products/enterprise-routers/balance-5000-ec/"
+          }
+        ]
+      }
     },
     {
       "product_name": "Balance 310 5G (HW3)",
@@ -43567,44 +44281,6 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
-        },
-        {
-          "sku": "APO-RUG",
-          "addons": {
-            "std1y": [
-              "SVL-413"
-            ],
-            "std2y": [
-              "SVL-513"
-            ],
-            "std4y": [],
-            "plus1y": [
-              "ECP-A-1Y"
-            ],
-            "plus2y": [
-              "ECP-A-2Y"
-            ],
-            "plus4y": [
-              "ECP-A-4Y"
-            ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [],
-            "featureLicenses": [],
-            "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [],
-            "esimDataPlans": [],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [],
-            "cablesAdapters": [],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
-          }
         }
       ]
     },
@@ -43682,54 +44358,6 @@
         }
       },
       "sku_variants": [
-        {
-          "sku": "APP-AGN3",
-          "addons": {
-            "std1y": [
-              "SVL-667"
-            ],
-            "std2y": [
-              "SVL-668"
-            ],
-            "std4y": [],
-            "plus1y": [
-              "ECP-D-1Y"
-            ],
-            "plus2y": [
-              "ECP-D-2Y"
-            ],
-            "plus4y": [
-              "ECP-D-4Y"
-            ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [],
-            "featureLicenses": [],
-            "incontrolSubscriptions": [
-              "ICS-V01-1Y",
-              "ICS-V01-2Y"
-            ],
-            "speedfusionConnectUsage": [],
-            "esimDataPlans": [],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [
-              "ACW-107-AU",
-              "ACW-107-EU",
-              "ACW-107-UK",
-              "ACW-107-US"
-            ],
-            "cablesAdapters": [
-              "ACW-835"
-            ],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
-          }
-        },
         {
           "sku": "APP-AX-IP67",
           "addons": {
@@ -43901,48 +44529,30 @@
             "bundleOffers": [],
             "miscAccessories": []
           }
-        },
-        {
-          "sku": "APO-ENTR",
-          "addons": {
-            "std1y": [
-              "PRM-A-1Y"
-            ],
-            "std2y": [
-              "PRM-A-2Y"
-            ],
-            "std4y": [
-              "PRM-A-4Y"
-            ],
-            "plus1y": [
-              "PCP-A-1Y"
-            ],
-            "plus2y": [
-              "PCP-A-2Y"
-            ],
-            "plus4y": [
-              "PCP-A-4Y"
-            ],
-            "vwanLicenses": [],
-            "openvpnLicenses": [],
-            "apSupportLicenses": [],
-            "speedfusionLicenses": [],
-            "featureLicenses": [],
-            "incontrolSubscriptions": [],
-            "speedfusionConnectUsage": [],
-            "esimDataPlans": [],
-            "flexModules": [],
-            "simInjectors": [],
-            "antennas": [],
-            "powerSupplies": [],
-            "poeKits": [],
-            "cablesAdapters": [],
-            "mountingBrackets": [],
-            "bundleOffers": [],
-            "miscAccessories": []
-          }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "AP One Enterprise"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "AP One AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-ax/"
+          },
+          {
+            "product_name": "AP One AX Lite",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-ax-lite/"
+          },
+          {
+            "product_name": "AP One Rugged",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-rugged/"
+          }
+        ]
+      }
     },
     {
       "product_name": "AP One AX",
@@ -44269,7 +44879,15 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkAPComparisonJSON(External).xlsx",
+        "source_fields": {
+          "Status": "Component EOL"
+        }
+      }
     },
     {
       "product_name": "AP One Rugged Legacy",
@@ -44342,7 +44960,54 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "APO-RUG",
+          "addons": {
+            "std1y": [
+              "SVL-413"
+            ],
+            "std2y": [
+              "SVL-513"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-A-1Y"
+            ],
+            "plus2y": [
+              "ECP-A-2Y"
+            ],
+            "plus4y": [
+              "ECP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkAPComparisonJSON(External).xlsx",
+        "source_fields": {
+          "Status": "Component EOL"
+        }
+      }
     },
     {
       "product_name": "AP Pro AX Legacy HW1",
@@ -44416,7 +45081,15 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkAPComparisonJSON(External).xlsx",
+        "source_fields": {
+          "Status": "Component EOL"
+        }
+      }
     },
     {
       "product_name": "AP Pro AX Legacy HW2",
@@ -44490,7 +45163,13 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "review_required",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkAPComparisonJSON(External).xlsx",
+        "note": "The source names this hardware revision Legacy HW2 but sets Status to Active. Confirm the revision before recommending it for a new solution. The separate AP Pro AX record remains available."
+      }
     },
     {
       "product_name": "AP One Flex (HW4)",
@@ -44563,7 +45242,33 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "AP One Flex"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "AP One AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-ax/"
+          },
+          {
+            "product_name": "AP One AX Lite",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-ax-lite/"
+          },
+          {
+            "product_name": "AP One Rugged",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-rugged/"
+          },
+          {
+            "product_name": "AP Pro AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-pro-ax/"
+          }
+        ]
+      }
     },
     {
       "product_name": "AP One Enterprise",
@@ -44636,7 +45341,48 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [
+        {
+          "sku": "APO-ENTR",
+          "addons": {
+            "std1y": [
+              "PRM-A-1Y"
+            ],
+            "std2y": [
+              "PRM-A-2Y"
+            ],
+            "std4y": [
+              "PRM-A-4Y"
+            ],
+            "plus1y": [
+              "PCP-A-1Y"
+            ],
+            "plus2y": [
+              "PCP-A-2Y"
+            ],
+            "plus4y": [
+              "PCP-A-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ]
     },
     {
       "product_name": "AP One In-Wall",
@@ -44709,7 +45455,15 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "checked_on": "2026-10-09",
+        "source_file": "PeplinkAPComparisonJSON(External).xlsx",
+        "source_fields": {
+          "Status": "Component EOL"
+        }
+      }
     },
     {
       "product_name": "8 PoE 10G Switch",
@@ -45248,7 +46002,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "SD Switch 24-Port Enterprise"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "24 PoE 2.5G Switch",
+            "product_url": "https://download.peplink.com/resources/peplink_switch_series_datasheet.pdf"
+          }
+        ]
+      }
     },
     {
       "product_name": "SD Switch 48-Port Enterprise",
@@ -45318,7 +46086,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "SD Switch 48-Port Enterprise"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "48 PoE 2.5G Switch",
+            "product_url": "https://download.peplink.com/resources/peplink_switch_series_datasheet.pdf"
+          }
+        ]
+      }
     },
     {
       "product_name": "SD Switch 8-Port Rugged",
@@ -45435,7 +46217,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "SD Switch 8-Port Rugged"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "24 PoE 2.5G Switch Rugged",
+            "product_url": "https://download.peplink.com/resources/peplink_switch_series_datasheet.pdf"
+          }
+        ]
+      }
     },
     {
       "product_name": "SD Switch 16-Port Rugged",
@@ -45508,7 +46304,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "SD Switch 16-Port Rugged"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "24 PoE 2.5G Switch Rugged",
+            "product_url": "https://download.peplink.com/resources/peplink_switch_series_datasheet.pdf"
+          }
+        ]
+      }
     },
     {
       "product_name": "SD Switch 24-Port Rugged",
@@ -45580,7 +46390,21 @@
           }
         }
       },
-      "sku_variants": []
+      "sku_variants": [],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "SD Switch 24-Port Rugged"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "24 PoE 2.5G Switch Rugged",
+            "product_url": "https://download.peplink.com/resources/peplink_switch_series_datasheet.pdf"
+          }
+        ]
+      }
     },
     {
       "product_name": "EXM-MINI-1LTEA-P",
@@ -49059,7 +49883,33 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "AP One Flex"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "AP One AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-ax/"
+          },
+          {
+            "product_name": "AP One AX Lite",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-ax-lite/"
+          },
+          {
+            "product_name": "AP One Rugged",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-one-rugged/"
+          },
+          {
+            "product_name": "AP Pro AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-pro-ax/"
+          }
+        ]
+      }
     },
     {
       "product_name": "SFC-RLY",
@@ -49229,7 +50079,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "AP Pro AC/Duo/300M & Device Connector IP67"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "AP Pro AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-pro-ax/"
+          }
+        ]
+      }
     },
     {
       "product_name": "APP-AGN2",
@@ -49275,7 +50139,21 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "AP Pro AC/Duo/300M & Device Connector IP67"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "AP Pro AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-pro-ax/"
+          }
+        ]
+      }
     },
     {
       "product_name": "EXM-MINI-1LTEA-W",
@@ -49367,7 +50245,17 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "review_required",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "3x LTE-A Module"
+        ],
+        "note": "The legacy page lists 3x LTE-A Module. The SDX Pro FAQ distinguishes CAT6 3x LTE-A (-W/-P) from CAT12 3x LTE-A Pro (-R/-K). Confirm the scope before specifying EXM-3LTEA-R for a new solution; it is not confirmed legacy.",
+        "clarification_source_url": "https://download.peplink.com/resources/peplink_sdx_pro_faq.pdf"
+      }
     },
     {
       "product_name": "APO-AGN2-IW-US",
@@ -49413,7 +50301,202 @@
             "miscAccessories": []
           }
         }
-      ]
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://download.peplink.com/resources/pepwave_apone_datasheet.pdf",
+        "source_file": "PeplinkAPComparisonJSON(External).xlsx",
+        "checked_on": "2026-10-09",
+        "source_fields": {
+          "product_name": "AP One In-Wall",
+          "Status": "Component EOL"
+        },
+        "note": "The AP One datasheet identifies APO-AGN2-IW-US as AP One In-Wall, whose comparison sheet marks it Component EOL."
+      }
+    },
+    {
+      "product_name": "AP Pro AC",
+      "type": "access_point",
+      "metadata": {
+        "Product URL": "https://www.peplink.com/legacy-products/",
+        "Datasheet URL": "https://download.peplink.com/resources/pepwave_ap_pro_AC_datasheet.pdf",
+        "Source Note": "SKU-only record separated from AP Pro AX: APP-AGN3 is AP Pro AC. AP Pro AX specifications do not apply to this SKU."
+      },
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "APP-AGN3",
+          "addons": {
+            "std1y": [
+              "SVL-667"
+            ],
+            "std2y": [
+              "SVL-668"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [
+              "ICS-V01-1Y",
+              "ICS-V01-2Y"
+            ],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [
+              "ACW-107-AU",
+              "ACW-107-EU",
+              "ACW-107-UK",
+              "ACW-107-US"
+            ],
+            "cablesAdapters": [
+              "ACW-835"
+            ],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "AP Pro AC/Duo/300M & Device Connector IP67"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "AP Pro AX",
+            "product_url": "https://www.peplink.com/products/wifi-poe/ap-pro-ax/"
+          }
+        ]
+      }
+    },
+    {
+      "product_name": "MAX Adapter 5G (5GH)",
+      "type": "router",
+      "metadata": {
+        "Product URL": "https://www.peplink.com/legacy-products/",
+        "Datasheet URL": "https://download.peplink.com/resources/max_adapter_datasheet.pdf",
+        "Source Note": "SKU-only legacy MAX Adapter 5GH record separated from the current Ethernet 5G Adapter. The current 5G Adapter specifications do not apply to these SKUs."
+      },
+      "specifications": {},
+      "sku_variants": [
+        {
+          "sku": "MAX-ADP-5GH",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-ADP-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-ADP-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        },
+        {
+          "sku": "MAX-ADP-5GH-T",
+          "addons": {
+            "std1y": [
+              "SVL-MAX-ADP-5G-1Y"
+            ],
+            "std2y": [
+              "SVL-MAX-ADP-5G-2Y"
+            ],
+            "std4y": [],
+            "plus1y": [
+              "ECP-D-1Y"
+            ],
+            "plus2y": [
+              "ECP-D-2Y"
+            ],
+            "plus4y": [
+              "ECP-D-4Y"
+            ],
+            "vwanLicenses": [],
+            "openvpnLicenses": [],
+            "apSupportLicenses": [],
+            "speedfusionLicenses": [],
+            "featureLicenses": [],
+            "incontrolSubscriptions": [],
+            "speedfusionConnectUsage": [],
+            "esimDataPlans": [],
+            "flexModules": [],
+            "simInjectors": [],
+            "antennas": [],
+            "powerSupplies": [],
+            "poeKits": [],
+            "cablesAdapters": [],
+            "mountingBrackets": [],
+            "bundleOffers": [],
+            "miscAccessories": []
+          }
+        }
+      ],
+      "lifecycle": {
+        "status": "legacy",
+        "source_url": "https://www.peplink.com/legacy-products/",
+        "checked_on": "2026-10-09",
+        "source_product_names": [
+          "MAX Adapter (5GH)"
+        ],
+        "replacement_products": [
+          {
+            "product_name": "5G Dongle (MAX Adapter 5G next gen)",
+            "availability": "coming_soon"
+          },
+          {
+            "product_name": "BR1 Mini 5G",
+            "product_url": "https://www.peplink.com/products/mobile-routers/max-br1-mini-5g/"
+          },
+          {
+            "product_name": "MAX Adapter (CAT-4)",
+            "product_url": "https://www.peplink.com/products/cellular-modems-adapters/max-adapter/"
+          }
+        ]
+      }
     }
   ],
   "_sku_attribution": {
@@ -49424,5 +50507,418 @@
     "csv_rows_ignored": 0,
     "csv_rows_orphaned": 0,
     "orphans": []
+  },
+  "_lifecycle_attribution": {
+    "source_url": "https://www.peplink.com/legacy-products/",
+    "data_url": "https://script.google.com/macros/s/AKfycbztbXpsvxQrL7tpvFlfgwbDElBnlgAL9lzcFTPp28Mw_nDTBuYhebz-7DGZ6YPJMjQY/exec?func=legacyProduct",
+    "checked_on": "2026-10-09",
+    "source_entries": 54,
+    "policy": "Retain legacy specifications and SKU compatibility for existing installations, comparisons, and migration. Exclude legacy and review_required records or variants from new solution recommendations. Legacy does not imply unsupported or out of warranty. Absence from the legacy list is not proof of current availability.",
+    "catalog_mappings": [
+      {
+        "source_product_name": "AP One Enterprise",
+        "catalog_products": [
+          "AP One Enterprise (HW2)"
+        ]
+      },
+      {
+        "source_product_name": "AP One Flex",
+        "catalog_products": [
+          "AP One Flex (HW4)",
+          "APO-FLX"
+        ]
+      },
+      {
+        "source_product_name": "AP Pro AC/Duo/300M & Device Connector IP67",
+        "catalog_products": [
+          "AP Pro AC",
+          "APP-AGN",
+          "APP-AGN2"
+        ]
+      },
+      {
+        "source_product_name": "Balance 1350",
+        "catalog_products": [
+          "Balance 1350"
+        ]
+      },
+      {
+        "source_product_name": "Balance 20",
+        "catalog_products": [
+          "Balance 20"
+        ]
+      },
+      {
+        "source_product_name": "Balance 210",
+        "catalog_products": [
+          "Balance 210"
+        ]
+      },
+      {
+        "source_product_name": "Balance 2500",
+        "catalog_products": [
+          "Balance 2500",
+          "Balance 2500 (1SFP)",
+          "Balance 2500 (2SFP)"
+        ]
+      },
+      {
+        "source_product_name": "Balance 30 LTE",
+        "catalog_products": [
+          "Balance 30 LTE"
+        ]
+      },
+      {
+        "source_product_name": "Balance 30 Pro",
+        "catalog_products": [
+          "Balance 30 PRO"
+        ]
+      },
+      {
+        "source_product_name": "Balance 305",
+        "catalog_products": [
+          "Balance 305"
+        ]
+      },
+      {
+        "source_product_name": "Balance 310 5G (HW1-2)",
+        "catalog_products": [
+          "Balance 310 5G"
+        ]
+      },
+      {
+        "source_product_name": "Balance 380",
+        "catalog_products": [
+          "Balance 380"
+        ]
+      },
+      {
+        "source_product_name": "Balance 380X",
+        "catalog_products": [
+          "Balance 380X"
+        ]
+      },
+      {
+        "source_product_name": "Balance 580",
+        "catalog_products": [
+          "Balance 580"
+        ]
+      },
+      {
+        "source_product_name": "Balance 580X (HW1)",
+        "catalog_products": [
+          "Balance 580X"
+        ]
+      },
+      {
+        "source_product_name": "Balance 710",
+        "catalog_products": [
+          "Balance 710"
+        ]
+      },
+      {
+        "source_product_name": "Balance One",
+        "catalog_products": [
+          "Balance ONE"
+        ]
+      },
+      {
+        "source_product_name": "Balance One Core",
+        "catalog_products": [
+          "Balance ONE Core"
+        ]
+      },
+      {
+        "source_product_name": "Balance Two",
+        "catalog_products": [
+          "Balance TWO"
+        ]
+      },
+      {
+        "source_product_name": "EPX",
+        "catalog_products": [
+          "EPX"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 Classic",
+        "catalog_products": [
+          "BR1 Classic"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 ENT",
+        "catalog_products": [
+          "BR1 ENT"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 IP55",
+        "catalog_products": [
+          "BR1 IP55"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 IP67",
+        "catalog_products": [
+          "BR1 IP67"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 M2M",
+        "catalog_products": [
+          "BR1 M2M"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 Mini (HW1)",
+        "catalog_products": [
+          "BR1 Mini (HW1)"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 MK2",
+        "catalog_products": [
+          "BR1 MK2"
+        ]
+      },
+      {
+        "source_product_name": "MAX BR1 Pro",
+        "catalog_products": [
+          "BR1 Pro"
+        ]
+      },
+      {
+        "source_product_name": "MAX HD1 Dome",
+        "catalog_products": [
+          "HD1 Dome"
+        ]
+      },
+      {
+        "source_product_name": "MAX HD2",
+        "catalog_products": [
+          "HD2"
+        ]
+      },
+      {
+        "source_product_name": "MAX HD2 Dome",
+        "catalog_products": [
+          "HD2 Dome"
+        ]
+      },
+      {
+        "source_product_name": "MAX HD2 IP67",
+        "catalog_products": [
+          "HD2 IP67"
+        ]
+      },
+      {
+        "source_product_name": "MAX HD2 Mini",
+        "catalog_products": [
+          "HD2 Mini"
+        ]
+      },
+      {
+        "source_product_name": "MAX HD4",
+        "catalog_products": [
+          "HD4"
+        ]
+      },
+      {
+        "source_product_name": "MAX HD4 IP67",
+        "catalog_products": [
+          "HD4 IP67"
+        ]
+      },
+      {
+        "source_product_name": "MAX Transit",
+        "catalog_products": [
+          "Transit"
+        ]
+      },
+      {
+        "source_product_name": "MAX Transit 5G",
+        "catalog_products": [
+          "Transit"
+        ]
+      },
+      {
+        "source_product_name": "MAX Transit Core",
+        "catalog_products": [
+          "Transit Core"
+        ]
+      },
+      {
+        "source_product_name": "MAX Transit Duo",
+        "catalog_products": [
+          "Transit Duo"
+        ]
+      },
+      {
+        "source_product_name": "MAX Transit Mini",
+        "catalog_products": [
+          "Transit Mini"
+        ]
+      },
+      {
+        "source_product_name": "MBX Mini",
+        "catalog_products": [
+          "MBX Mini"
+        ]
+      },
+      {
+        "source_product_name": "SD Switch 16-Port Rugged",
+        "catalog_products": [
+          "SD Switch 16-Port Rugged"
+        ]
+      },
+      {
+        "source_product_name": "SD Switch 24-Port Enterprise",
+        "catalog_products": [
+          "SD Switch 24-Port Enterprise"
+        ]
+      },
+      {
+        "source_product_name": "SD Switch 24-Port Rugged",
+        "catalog_products": [
+          "SD Switch 24-Port Rugged"
+        ]
+      },
+      {
+        "source_product_name": "SD Switch 48-Port Enterprise",
+        "catalog_products": [
+          "SD Switch 48-Port Enterprise"
+        ]
+      },
+      {
+        "source_product_name": "SD Switch 8-Port Rugged",
+        "catalog_products": [
+          "SD Switch 8-Port Rugged"
+        ]
+      },
+      {
+        "source_product_name": "SpeedFusion Engine",
+        "catalog_products": [
+          "SpeedFusion Engine"
+        ]
+      },
+      {
+        "source_product_name": "UBR LTE",
+        "catalog_products": [
+          "UBR LTE"
+        ]
+      },
+      {
+        "source_product_name": "UBR Plus",
+        "catalog_products": [
+          "UBR Plus"
+        ]
+      },
+      {
+        "source_product_name": "BR1 Pro 5G (5GH/5GD)",
+        "catalog_products": [
+          "BR1 Pro 5G"
+        ],
+        "scope": "Only 5GH/5GD SKU variants."
+      },
+      {
+        "source_product_name": "MAX Adapter (5GH)",
+        "catalog_products": [
+          "MAX Adapter 5G (5GH)"
+        ],
+        "scope": "5GH version only; the separate MAX Adapter LTE and 5G Adapter ADP-5GY records are not covered by this listing."
+      }
+    ],
+    "unmapped_source_entries": [
+      {
+        "product_name": "IoT 20G",
+        "reason": "No matching ANT-IOT-20G-S-W-16 or ANT-IOT-20G-N-W-2 record."
+      },
+      {
+        "product_name": "Surf SOHO",
+        "reason": "No matching catalog record."
+      }
+    ],
+    "unresolved_source_entries": [
+      {
+        "product_name": "3x LTE-A Module",
+        "catalog_candidate": "EXM-3LTEA-R",
+        "reason": "Source does not distinguish LTE-A from LTE-A Pro; candidate requires review."
+      }
+    ],
+    "sku_mapping_corrections": [
+      {
+        "sku": "APO-ENTR",
+        "previous_product_name": "AP One Enterprise (HW2)",
+        "product_name": "AP One Enterprise",
+        "source_url": "https://www.peplink.com/products/wifi-poe/ap-one-enterprise/",
+        "checked_on": "2026-10-09",
+        "note": "APO-ENTR is the Wi-Fi 7 model, not the legacy Wi-Fi 5 HW2 model."
+      },
+      {
+        "sku": "BPL-580X-PRM",
+        "previous_product_name": "Balance 580X",
+        "product_name": "Balance 580X (HW2)",
+        "source_url": "https://download.peplink.com/manual/peplink-balance-and-mediafast-firmware-manual-declaration.pdf",
+        "checked_on": "2026-10-09",
+        "note": "The hardware declaration identifies BPL-580X-PRM as HW2 and BPL-580X as HW1."
+      },
+      {
+        "sku": "APO-RUG",
+        "previous_product_name": "AP One Rugged",
+        "product_name": "AP One Rugged Legacy",
+        "source_url": "https://download.peplink.com/resources/pepwave_apone_datasheet.pdf",
+        "checked_on": "2026-10-09",
+        "note": "APO-RUG is the legacy 3x3, two-Ethernet-port model; APO-AC-RUG is the newer model."
+      },
+      {
+        "sku": "APP-AGN3",
+        "previous_product_name": "AP Pro AX",
+        "product_name": "AP Pro AC",
+        "source_url": "https://download.peplink.com/resources/pepwave_ap_pro_AC_datasheet.pdf",
+        "checked_on": "2026-10-09",
+        "note": "The ordering table identifies APP-AGN3 as AP Pro AC, not AP Pro AX."
+      },
+      {
+        "sku": "MAX-BR1-PRO-GLTE-S-T-PRM",
+        "previous_product_name": "BR1 Pro",
+        "product_name": "BR1 Pro (CAT-20)",
+        "source_url": "https://www.peplink.com/products/mobile-routers/max-br1-pro-cat-20/",
+        "checked_on": "2026-10-09",
+        "note": "Current CAT-20 ordering table identifies this SKU; it is not the old BR1 Pro."
+      },
+      {
+        "sku": "MAX-BR1-PRO-LTEA-W-T",
+        "previous_product_name": "BR1 Pro (CAT-20)",
+        "product_name": "BR1 Pro",
+        "source_url": "https://download.peplink.com/resources/pepwave_max_br1_pro_datasheet.pdf",
+        "checked_on": "2026-10-09",
+        "note": "The legacy BR1 Pro ordering table identifies this CAT6 SKU."
+      },
+      {
+        "sku": "MAX-BR1-PRO-LTE-US-T",
+        "previous_product_name": "BR1 Pro (CAT-20)",
+        "product_name": "BR1 Pro",
+        "source_url": "https://download.peplink.com/manual/pepwave_max_surf_v6.3.1_user_manual.pdf",
+        "checked_on": "2026-10-09",
+        "note": "The legacy BR1 Pro ordering table identifies this LTE SKU."
+      },
+      {
+        "sku": "MAX-ADP-5GH",
+        "previous_product_name": "5G Adapter",
+        "product_name": "MAX Adapter 5G (5GH)",
+        "source_url": "https://download.peplink.com/resources/max_adapter_datasheet.pdf",
+        "checked_on": "2026-10-09",
+        "note": "MAX-ADP-5GH is the legacy MAX Adapter 5GH family; the ordering table lists MAX-ADP-5GH-T. ADP-5GY-T-PRM remains the current Ethernet 5G Adapter."
+      },
+      {
+        "sku": "MAX-ADP-5GH-T",
+        "previous_product_name": "5G Adapter",
+        "product_name": "MAX Adapter 5G (5GH)",
+        "source_url": "https://download.peplink.com/resources/max_adapter_datasheet.pdf",
+        "checked_on": "2026-10-09",
+        "note": "MAX-ADP-5GH is the legacy MAX Adapter 5GH family; the ordering table lists MAX-ADP-5GH-T. ADP-5GY-T-PRM remains the current Ethernet 5G Adapter."
+      }
+    ]
   }
 }
