@@ -1,8 +1,8 @@
 # Peplink Advisor
 
-This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 188 catalog records covering 105 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.4 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
+This skill equips you to answer Peplink hardware questions accurately. The ground truth lives in `data/peplink_all_devices.json`: 199 catalog records covering 116 fully specified devices plus SKU-only records for selected routers, access points, switches, modules, licenses, SIM injectors, antennas, and accessories. That file is ~1.5 MB; do **not** read it whole into context. Instead, run the `scripts/query.py` helper and reason over the small JSON slices it returns.
 
-**Dataset last updated: 2026-05-03.** If the user asks about a device or SKU missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
+**Dataset last updated: 2026-10-09.** If the user asks about a device or SKU missing from the dataset, say so plainly rather than guessing — Peplink releases hardware frequently.
 
 ## When to use this skill
 
@@ -106,7 +106,7 @@ These exist because Peplink spec sheets are dense and easy to misquote.
 - **Preserve licensing language.** If the `note` mentions PrimeCare, Virtual WAN, eSIM SKU, or x.509 License Key, include it. The user cares whether a feature is standard or add-on.
 - **Disambiguate product names.** BR1 Mini (HW1), BR1 Mini, and BR1 Mini 5G are three different devices. When the user is ambiguous ("BR1 Mini"), either ask or list the candidates.
 - **Respect status fields.** Access points and switches carry a `Status` key in metadata (e.g., end-of-sale). Don't recommend an EOS device without flagging it.
-- **Cite the datasheet, then the product page.** Most fully specified device records (currently 85 of 105) have a `Datasheet URL` that points at Peplink's official PDF spec sheet, and 104 of 105 have `Product URL`. When you recommend, compare, or answer a spec question about a device, prefer `Datasheet URL` for sourcing the specific numbers you cite and include `Product URL` as a secondary link for general context. If `Datasheet URL` is null for that device, fall back to `Product URL` and say "datasheet not published for this variant" so the user knows why they're not seeing the PDF. SKU-only records often do not have source URLs; when a SKU belongs to a full device record, cite that device's URLs for hardware specs.
+- **Cite the datasheet, then the product page.** Most fully specified device records (currently 85 of 116) have a `Datasheet URL` that points at Peplink's official PDF spec sheet, and 112 of 116 have `Product URL`. When you recommend, compare, or answer a spec question about a device, prefer `Datasheet URL` for sourcing the specific numbers you cite and include `Product URL` as a secondary link for general context. If `Datasheet URL` is null for that device, fall back to `Product URL` and say "datasheet not published for this variant" so the user knows why they're not seeing the PDF. SKU-only records often do not have source URLs; when a SKU belongs to a full device record, cite that device's URLs for hardware specs.
 
 ## Data shape quick reference
 

@@ -4,6 +4,10 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+### Changed
+- Refreshed the catalog from 114 device sheets in the three Peplink comparison workbooks supplied on 2026-10-09, updating 96 existing records and adding 11 devices: MAX Orbit 2/4/8, Balance 310 5G (HW3), and seven access point variants.
+- The catalog now contains 199 records (116 fully specified devices and 83 SKU-only records), with existing SKU/add-on mappings, datasheet URLs, and manual device records retained.
+
 ## [0.2.2] — 2026-05-03
 
 ### Fixed

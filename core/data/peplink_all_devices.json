@@ -4,10 +4,10 @@
     "PeplinkAPComparisonJSON(External).xlsx",
     "PeplinkSwitchComparisonJSON(External).xlsx"
   ],
-  "device_count": 188,
+  "device_count": 199,
   "counts_by_type": {
-    "router": 99,
-    "access_point": 10,
+    "router": 103,
+    "access_point": 17,
     "switch": 10,
     "flex_module": 31,
     "fusionhub_license": 7,
@@ -101,6 +101,10 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "24dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors",
+            "note": "Compatible with ACW-235 LTE/5G Antennas."
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -185,7 +189,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes",
@@ -207,14 +212,14 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
           },
           "External Storage via USB Port": {
             "value": "Yes",
-            "note": "Require software add-on licence (LIC-DOC) and Firmware 8.5.2 or above to enable edge computing (Docker)."
+            "note": "Requires FW 8.5.2+ with a perpetual software license (LIC-DOC), or FW 8.6.0+ with active PrimeCare, to enable Docker."
           },
           "Dead Reckoning": {
             "value": "No"
@@ -680,6 +685,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "CAT-12: 8 x SMA Cellular Antenna Connectors\nCAT-20: 16 x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -744,7 +752,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -763,7 +771,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -1018,6 +1027,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": ""
           },
+          "Cellular Antenna Connectors": {
+            "value": "CAT-12: 4 x SMA Cellular Antenna Connectors\nCAT-20: 8 x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -1082,7 +1094,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -1101,7 +1113,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -1356,6 +1369,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "CAT-12: 8 x SMA Cellular Antenna Connectors\nCAT-20: 16 x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -1420,7 +1436,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -1439,7 +1455,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -1694,6 +1711,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "CAT-12: 4 x SMA Cellular Antenna Connectors\nCAT-20: 8 x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -1758,7 +1778,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -1777,7 +1797,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -2118,7 +2139,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -2136,8 +2158,7 @@
             "value": "Yes"
           },
           "LACP (802.3ad) NIC Bonding": {
-            "value": "Yes",
-            "note": "Available in Firmware 8.6.0."
+            "value": "Yes"
           },
           "Jumbo Frame Support": {
             "value": "Yes"
@@ -2242,7 +2263,7 @@
           },
           "PoE Output": {
             "value": "Yes",
-            "note": "8x 802.3bt 2.5GE WAN/LAN.\nA DC input voltage of 52V – 56V is required to enable PoE output."
+            "note": "8x 802.3bt 2.5GE WAN/LAN."
           },
           "USB Power Input": {
             "value": "No"
@@ -2371,6 +2392,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "22dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "8x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -2450,7 +2474,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -2471,7 +2496,7 @@
             "value": "Yes"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "Yes (8GB)",
@@ -2780,7 +2805,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -2801,7 +2827,7 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "Yes (8GB)",
@@ -3037,7 +3063,7 @@
             "value": "8 WAN with 0 LAN\n0 WAN with 8 LAN"
           },
           "SFP LAN / WAN": {
-            "value": "4-8 10G SFP+ WAN\n4-8 10G SFP+ LAN",
+            "value": "4–8 10G SFP+ WAN\n4–8 10G SFP+ LAN",
             "note": "WAN/LAN Configuration is changeable on the Web Admin."
           },
           "Serial Interface": {
@@ -3181,7 +3207,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -3578,7 +3605,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -3948,7 +3976,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -4332,7 +4361,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -4637,6 +4667,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "20dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -5054,7 +5087,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -5094,7 +5128,7 @@
             "value": "Yes"
           },
           "802.1q VLANs Supported": {
-            "value": "2048"
+            "value": "1024"
           },
           "Port-Based VLAN": {
             "value": "Yes"
@@ -5137,7 +5171,7 @@
             "value": "Yes"
           },
           "Number of IPsec Tunnels": {
-            "value": "800"
+            "value": "1000"
           },
           "L2TP VPN / Open VPN / PPTP VPN Server": {
             "value": "Yes"
@@ -5432,7 +5466,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -5472,7 +5507,7 @@
             "value": "Yes"
           },
           "802.1q VLANs Supported": {
-            "value": "2048"
+            "value": "1024"
           },
           "Port-Based VLAN": {
             "value": "Yes"
@@ -5515,7 +5550,7 @@
             "value": "Yes"
           },
           "Number of IPsec Tunnels": {
-            "value": "800"
+            "value": "1000"
           },
           "L2TP VPN / Open VPN / PPTP VPN Server": {
             "value": "Yes"
@@ -5816,7 +5851,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -6291,6 +6327,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": "2x SMA Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -6621,6 +6660,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "2x SMA Antenna Connectors"
           },
           "Multiple SSIDs": {
             "value": "No"
@@ -6954,6 +6996,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "20dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "2x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -7155,7 +7200,7 @@
             "note": "Compatible with ACW-632."
           },
           "Input voltage": {
-            "value": "DC 12–30V"
+            "value": "DC 10–30V"
           },
           "PoE Input": {
             "value": "Yes",
@@ -8319,6 +8364,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -8822,6 +8870,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": "2x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -9159,6 +9210,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "20dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "2x SMA Cellular Connectors"
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -9715,6 +9769,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "17dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -10137,6 +10194,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "25dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -10538,6 +10598,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -10618,7 +10681,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "No"
@@ -11033,6 +11097,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "2x SMA Cellular Antenna Connectors"
           },
           "Multiple SSIDs": {
             "value": "No"
@@ -12442,6 +12509,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -12818,6 +12888,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -12901,7 +12974,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "No"
@@ -13286,6 +13360,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -13370,7 +13447,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -13765,6 +13843,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -13849,7 +13930,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "No"
@@ -14141,6 +14223,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "22dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -14165,7 +14250,7 @@
         "Features": {
           "SpeedFusion Hot Failover": {
             "value": "Yes",
-            "note": "Require PrimeCare Subscription, complimentary for the first year.\nEnabled by default after Firmware 8.5.0"
+            "note": "Enabled by default after Firmware 8.5.0"
           },
           "SpeedFusion Smoothing": {
             "value": "Yes",
@@ -14227,7 +14312,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -14248,7 +14334,7 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "Yes (8GB)",
@@ -14651,6 +14737,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "22dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -14731,7 +14820,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -14752,7 +14842,7 @@
             "value": "Yes"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "Yes (8GB)",
@@ -15094,6 +15184,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
+          },
+          "Cellular Antenna Connectors": {
+            "value": ""
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -15618,6 +15711,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -16040,6 +16136,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -16120,7 +16219,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -16590,6 +16690,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -16675,7 +16778,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -17320,6 +17424,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -17401,7 +17508,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -17768,6 +17876,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "CAT-12: 4 x SMA Cellular Antenna Connectors\nCAT-20: 8 x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -17832,7 +17943,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -17851,7 +17962,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -18411,6 +18523,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "8 x SMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -18475,7 +18590,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -18494,7 +18609,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -19149,6 +19265,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "CAT-12: 8 x SMA Cellular Antenna Connectors\nCAT-20: 16 x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -19213,7 +19332,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -19232,7 +19351,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -20114,6 +20234,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "16 x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -20178,7 +20301,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -20197,7 +20320,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -20880,6 +21004,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -20960,7 +21087,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -21288,6 +21416,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -21368,7 +21499,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -21693,6 +21825,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": ""
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -22076,6 +22211,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
+          },
+          "Cellular Antenna Connectors": {
+            "value": ""
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -22574,6 +22712,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -22654,7 +22795,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -23053,6 +23195,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": ""
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -23133,7 +23278,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -23444,6 +23590,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": "Embedded Antenna"
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -23524,7 +23673,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -23867,6 +24017,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": "Embedded Antenna"
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -23948,7 +24101,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -24350,7 +24504,7 @@
             "value": "2"
           },
           "SIM Card Size": {
-            "value": "Nano-SIM (4FF)"
+            "value": "Mini-SIM (2FF)"
           },
           "Wi-Fi Radio": {
             "value": "Dual (2.4GHz + 5GHz)\n2x2 Wi-Fi 6"
@@ -24360,6 +24514,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "22dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "Embedded Antenna"
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -24443,7 +24600,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -24464,7 +24622,7 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
@@ -24518,7 +24676,7 @@
             "value": "Yes"
           },
           "Number of SpeedFusion VPN Peers": {
-            "value": "3 / 10 / 20",
+            "value": "3 or 10 or 20",
             "note": "3 SpeedFusion VPN Peers are enabled by default.10 or 20 SpeedFusion VPN peers can be enabled with software license (PVN-LC-10 and PVN-LC-20)."
           },
           "IPsec VPN": {
@@ -24814,6 +24972,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "22dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "Embedded Antenna"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -24897,7 +25058,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -24918,7 +25080,7 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
@@ -25225,6 +25387,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "22dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "Embedded Antenna"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -25308,7 +25473,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -25329,7 +25495,7 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
@@ -25626,6 +25792,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "25dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -25999,6 +26168,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "4x MMCX Antenna Connectors"
           },
           "Multiple SSIDs": {
             "value": "No"
@@ -26683,6 +26855,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "26dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -26765,7 +26940,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "No"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes",
@@ -26788,7 +26964,7 @@
             "note": "Require Firmware 8.4.1 or above."
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
@@ -27096,6 +27272,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "26dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -27178,7 +27357,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "No"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes",
@@ -27201,7 +27381,7 @@
             "note": "Require Firmware 8.4.1 or above."
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "Yes (8GB) (HW3)",
@@ -27671,6 +27851,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "22dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "8x SMA Cellular Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -27754,7 +27937,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "No"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes",
@@ -27777,7 +27961,7 @@
             "note": "Require Firmware 8.4.1 or above."
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "Yes (8GB)",
@@ -28263,6 +28447,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "25dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -28708,6 +28895,9 @@
           },
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "20dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors"
           },
           "Multiple SSIDs": {
             "value": "16"
@@ -29385,6 +29575,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "No"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x MMCX Cellular Antenna Connectors\n"
+          },
           "Multiple SSIDs": {
             "value": "No"
           },
@@ -29936,6 +30129,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "8x QMA Cellular Antenna Connectors"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -30000,7 +30196,7 @@
           },
           "Virtual WAN": {
             "value": "Yes",
-            "note": "Up to 40 Virtual WAN if purchasing Virtual WAN Activation Licence."
+            "note": "Up to 10 Virtual WAN if purchasing Virtual WAN Activation Licence."
           },
           "Synergy Mode (Controller)": {
             "value": "Yes"
@@ -30019,7 +30215,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -30515,6 +30712,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "21dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "Embedded Cellular Antenna"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -30598,7 +30798,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -31192,6 +31393,9 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "24dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "No"
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -31276,7 +31480,8 @@
             "note": "Available for Firmware 8.5.0 or above."
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes",
@@ -31298,14 +31503,14 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
           },
           "External Storage via USB Port": {
             "value": "Yes",
-            "note": "Require software add-on licence (LIC-DOC) and Firmware 8.5.2 or above to enable edge computing (Docker)."
+            "note": "Requires FW 8.5.2+ with a perpetual software license (LIC-DOC), or FW 8.6.0+ with active PrimeCare, to enable Docker."
           },
           "Dead Reckoning": {
             "value": "No"
@@ -31599,6 +31804,10 @@
           "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
             "value": "24dBm"
           },
+          "Cellular Antenna Connectors": {
+            "value": "4x SMA Cellular Connectors",
+            "note": "Compatible with ACW-235 LTE/5G Antennas."
+          },
           "Multiple SSIDs": {
             "value": "16"
           },
@@ -31704,14 +31913,14 @@
             "value": "No"
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
           },
           "External Storage via USB Port": {
             "value": "Yes",
-            "note": "Require software add-on licence (LIC-DOC) and Firmware 8.5.2 or above to enable edge computing (Docker)."
+            "note": "Requires FW 8.5.2+ with a perpetual software license (LIC-DOC), or FW 8.6.0+ with active PrimeCare, to enable Docker."
           },
           "Dead Reckoning": {
             "value": "No"
@@ -32156,7 +32365,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -32524,7 +32734,8 @@
             "value": "No"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -32932,7 +33143,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -33267,7 +33479,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -33640,7 +33853,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -34011,7 +34225,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -34380,7 +34595,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -34587,7 +34803,7 @@
       "product_name": "Balance 310 5G",
       "type": "router",
       "metadata": {
-        "Marketing Series": "Enterprise Router",
+        "Marketing Series": "Enterprise Legacy",
         "Image URL": "https://estore.peplink.com//downloads/product/6045e36d21a92c109b7448e0/balance-310-5g-1.png",
         "Product URL": "https://www.peplink.com/products/balance-310-5g/",
         "Datasheet URL": "https://www.peplink.com/compare/tech-specs/balance-310-5g.pdf"
@@ -34750,7 +34966,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -34772,7 +34989,7 @@
             "note": "Require Firmware 8.4.1 or above."
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
@@ -35317,7 +35534,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -35339,7 +35557,7 @@
             "note": "Require Firmware 8.4.1 or above."
           },
           "Jumbo Frame Support": {
-            "value": "No"
+            "value": "Yes"
           },
           "Internal Storage for Edge Computing": {
             "value": "No"
@@ -35756,7 +35974,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -36507,7 +36726,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -36897,7 +37117,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -37270,7 +37491,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -37588,7 +37810,7 @@
             "value": "Yes"
           },
           "SpeedFusion Connect": {
-            "value": "Yes",
+            "value": "Yes (HW2+)",
             "note": "CarePlan subscription includes 1TB/year complimentary SpeedFusion Connect Usage data."
           },
           "SpeedFusion Relay Mode (Server)": {
@@ -37638,7 +37860,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -37972,7 +38195,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -38402,7 +38626,8 @@
             "value": "Yes (HW3+)"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -38719,7 +38944,8 @@
             "value": "Yes"
           },
           "SpeedFusion Connect": {
-            "value": "Yes (HW2+)"
+            "value": "Yes (HW2+)",
+            "note": "CarePlan subscription includes 2.5TB/year complimentary SpeedFusion Connect Usage data."
           },
           "SpeedFusion Relay Mode (Server)": {
             "value": "Yes"
@@ -38768,7 +38994,8 @@
             "value": "Yes (HW2+)"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -39151,7 +39378,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -39530,7 +39758,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -39857,7 +40086,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -40189,7 +40419,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -40581,7 +40812,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -40999,7 +41231,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -41359,7 +41592,7 @@
       "product_name": "EPX",
       "type": "router",
       "metadata": {
-        "Marketing Series": "Enterprise Router",
+        "Marketing Series": "Enterprise Legacy",
         "Image URL": "https://estore.peplink.com//downloads/product/5eb0062ee204b53f1051b44d/epx_m8_1.png",
         "Product URL": "https://www.peplink.com/products/enterprise-routers/epx/",
         "Datasheet URL": "https://www.peplink.com/compare/tech-specs/epx.pdf"
@@ -41530,7 +41763,8 @@
             "value": "Yes"
           },
           "IPv6": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
           },
           "x.509 Certificate": {
             "value": "Yes"
@@ -41765,6 +41999,1331 @@
           }
         }
       ]
+    },
+    {
+      "product_name": "Balance 310 5G (HW3)",
+      "type": "router",
+      "metadata": {
+        "Marketing Series": "Enterprise Router",
+        "Image URL": "https://sa.peplink.com/downloads/product/685a1a770bc831456a5c0f92/01_Balance-310-5G_Front.png",
+        "Product URL": "https://www.peplink.com/products/enterprise-routers/balance-310-5g/"
+      },
+      "specifications": {
+        "Interfaces": {
+          "Number of Ethernet WAN port": {
+            "value": "1 (10GE)"
+          },
+          "Number of Ethernet LAN port": {
+            "value": "8 (2.5GE)"
+          },
+          "Maximum Ethernet WAN / LAN port configuration": {
+            "value": "1 WAN with 8 LAN"
+          },
+          "SFP LAN / WAN": {
+            "value": "1x 10G SFP+ WAN/LAN",
+            "note": "WAN/LAN Configuration is changeable on the Web Admin."
+          },
+          "Serial Interface": {
+            "value": "No"
+          },
+          "Wi-Fi AP": {
+            "value": "Yes"
+          },
+          "Wi-Fi WAN": {
+            "value": "Yes"
+          },
+          "USB WAN": {
+            "value": "Yes (2x USB-C)"
+          },
+          "Module Expansion": {
+            "value": "No"
+          }
+        },
+        "Performance": {
+          "Router Throughput": {
+            "value": "4Gbps"
+          },
+          "SpeedFusion VPN Throughput (No Encryption)": {
+            "value": "1Gbps"
+          },
+          "SpeedFusion VPN Throughput (256-bit AES)": {
+            "value": "1Gbps"
+          },
+          "Maximum Number of Controlled AP / Switch": {
+            "value": "30 / 50",
+            "note": "50 AP is available as a license add-on (AP-LC-50)."
+          },
+          "Number of Recommended Users": {
+            "value": "50–500"
+          }
+        },
+        "Wireless details": {
+          "Number of Cellular Modem": {
+            "value": "1"
+          },
+          "Cellular Modem Category options": {
+            "value": "1x 5G"
+          },
+          "5G support": {
+            "value": "Yes"
+          },
+          "SIM Slots": {
+            "value": "2"
+          },
+          "SIM Card Size": {
+            "value": "Nano SIM (4FF)"
+          },
+          "Wi-Fi Radio": {
+            "value": "Dual (2.4GHz + 5GHz)\n2x2 Wi-Fi 7"
+          },
+          "Wi-Fi Antenna Transmit Power (2.4GHz, single chain)": {
+            "value": "24dBm"
+          },
+          "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
+            "value": "23dBm"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "GPS": {
+            "value": "Yes"
+          },
+          "RemoteSIM (used in SIM Injector)": {
+            "value": "Yes"
+          },
+          "FusionSIM": {
+            "value": "Yes"
+          },
+          "Peplink eSIM Data Plans": {
+            "value": "Yes"
+          },
+          "BYO eSIM": {
+            "value": "Yes"
+          }
+        },
+        "Features": {
+          "SpeedFusion Hot Failover": {
+            "value": "Yes"
+          },
+          "SpeedFusion Smoothing": {
+            "value": "Yes"
+          },
+          "SpeedFusion Bandwidth Bonding": {
+            "value": "Yes"
+          },
+          "SpeedFusion Connect": {
+            "value": "Yes",
+            "note": "PrimeCare subscription includes 1TB/year complimentary SpeedFusion Connect Usage data."
+          },
+          "SpeedFusion Relay Mode (Server)": {
+            "value": "Yes"
+          },
+          "Drop-In Mode": {
+            "value": "Yes"
+          },
+          "High Availability": {
+            "value": "Yes"
+          },
+          "Peplink AP Series Management": {
+            "value": "Yes"
+          },
+          "Remote AP & Multiple Config Profiles Management": {
+            "value": "No"
+          },
+          "Switch Controller": {
+            "value": "Yes"
+          },
+          "WAN as LAN": {
+            "value": "Yes"
+          },
+          "LAN Bypass": {
+            "value": "No"
+          },
+          "InTouch": {
+            "value": "Yes"
+          },
+          "Virtual WAN": {
+            "value": "Yes"
+          },
+          "Synergy Mode (Controller)": {
+            "value": "Yes"
+          },
+          "Synergized Device": {
+            "value": "Yes"
+          },
+          "Application and Web Blocking": {
+            "value": "Yes"
+          },
+          "Web Content Filtering": {
+            "value": "Full"
+          },
+          "IP Passthrough": {
+            "value": "Yes"
+          },
+          "IPv6": {
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
+          },
+          "x.509 Certificate": {
+            "value": "Yes"
+          },
+          "Captive Portal": {
+            "value": "Yes"
+          },
+          "GPIO": {
+            "value": "No"
+          },
+          "Ignition Sensing": {
+            "value": "No"
+          },
+          "Netflow Support": {
+            "value": "Yes"
+          },
+          "LACP (802.3ad) NIC Bonding": {
+            "value": "Yes"
+          },
+          "Jumbo Frame Support": {
+            "value": "Yes"
+          },
+          "Internal Storage for Edge Computing": {
+            "value": "Yes (8GB)",
+            "note": "Support Application, Docker."
+          },
+          "External Storage via USB Port": {
+            "value": "Yes",
+            "note": "Support Docker."
+          },
+          "Dead Reckoning": {
+            "value": "Yes"
+          }
+        },
+        "Core Functionality": {
+          "Inter-VLAN Routing": {
+            "value": "Yes"
+          },
+          "802.1q VLANs Supported": {
+            "value": "20"
+          },
+          "Port-Based VLAN": {
+            "value": "Yes"
+          },
+          "Load Balancing & Failover": {
+            "value": "Yes"
+          },
+          "Load Balancing Algorithms": {
+            "value": "8"
+          },
+          "Inbound Load Balancing": {
+            "value": "Yes"
+          },
+          "InControl 2 Cloud Management": {
+            "value": "Yes"
+          },
+          "InControl GPS Fleet Management": {
+            "value": "Yes"
+          }
+        },
+        "Advanced QoS Functionality": {
+          "Bandwidth Usage Monitoring": {
+            "value": "Yes"
+          },
+          "QoS for VoIP and E-Commerce": {
+            "value": "Yes"
+          },
+          "User Groups Bandwidth Control": {
+            "value": "Yes"
+          }
+        },
+        "VPN Functionality": {
+          "SpeedFusion VPN": {
+            "value": "Yes"
+          },
+          "Number of SpeedFusion VPN Peers": {
+            "value": "2 or 30 or 50",
+            "note": "2 SpeedFusion VPN Peers are enabled by default. 30 SpeedFusion VPN Peers are enabled with PrimeCare Subscription, complimentary for the first year. Expansion to 50 peers is available via optional software licenses (SFN-LC-50)."
+          },
+          "IPsec VPN": {
+            "value": "Yes"
+          },
+          "Number of IPsec Tunnels": {
+            "value": "5"
+          },
+          "L2TP VPN / Open VPN / PPTP VPN Server": {
+            "value": "Yes"
+          },
+          "Maximum PPTP / L2TP / OpenVPN Users": {
+            "value": "15"
+          },
+          "Remote RADIUS / LDAP authentication in Remote User Access": {
+            "value": "Yes"
+          },
+          "Number of OpenVPN Tunnel (Site to Site)": {
+            "value": "5"
+          },
+          "Number of GRE Tunnel (Site to Site)": {
+            "value": "5"
+          }
+        },
+        "Hardware": {
+          "Enclosure": {
+            "value": "Indoor,Metal"
+          },
+          "4pin Molex Micro-Fit Connector": {
+            "value": "No"
+          },
+          "Terminal Block Power Connector for Mobile / Vehicular Deployment": {
+            "value": "Yes"
+          },
+          "AC Adapter or PSU": {
+            "value": "54V 5.19A PSU"
+          },
+          "Input voltage": {
+            "value": "DC 12–54V"
+          },
+          "PoE Input": {
+            "value": "No"
+          },
+          "PoE Output": {
+            "value": "Yes",
+            "note": "8x 802.3at 2.5GE LAN.\nA DC input voltage of 50V – 54V is required to enable PoE output."
+          },
+          "USB Power Input": {
+            "value": "No"
+          },
+          "Nominal Power Consumption": {
+            "value": "27W"
+          },
+          "Maximum Power Consumption": {
+            "value": "54W",
+            "note": "Maximum without USB-C output and PoE output"
+          },
+          "Dimensions in inches": {
+            "value": "7.3 x 8.07 x 1.61 inches"
+          },
+          "Dimensions in mm": {
+            "value": "186 x 205 x 41 mm"
+          },
+          "Weight (Pound)": {
+            "value": "5.06 pounds"
+          },
+          "Weight (Gram / Kilogram)": {
+            "value": "2.3 kg"
+          },
+          "Operating Temperature": {
+            "value": "-40°–149°F\n-40°–65°C"
+          },
+          "Humidity": {
+            "value": "15%–95% non-condensing"
+          },
+          "Rack-mount": {
+            "value": "No"
+          },
+          "Dual Hot Swap Power Supply": {
+            "value": "No"
+          }
+        },
+        "Warranty Info": {
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "MAX Orbit 8",
+      "type": "router",
+      "metadata": {
+        "Marketing Series": "Multi-Orbit",
+        "Image URL": "https://estore.peplink.com/downloads/product/69844dd6b1d8d7403783dd22/01_MAX_Orbit_8_Front.png",
+        "Product URL": "https://www.peplink.com/products/orbit-series/max-orbit-series/"
+      },
+      "specifications": {
+        "Interfaces": {
+          "Number of Ethernet WAN port": {
+            "value": "8 / 9 (2.5G)"
+          },
+          "Number of Ethernet LAN port": {
+            "value": "1 / 0 (10G)"
+          },
+          "Maximum Ethernet WAN / LAN port configuration": {
+            "value": "9 WAN with 0 LAN\n8 WAN with 1 LAN"
+          },
+          "SFP LAN / WAN": {
+            "value": "1x 10G SFP+ WAN/LAN"
+          },
+          "Serial Interface": {
+            "value": "No"
+          },
+          "Wi-Fi AP": {
+            "value": "Yes"
+          },
+          "Wi-Fi WAN": {
+            "value": "No"
+          },
+          "USB WAN": {
+            "value": "Yes (2x USB-C)"
+          },
+          "Module Expansion": {
+            "value": "No"
+          }
+        },
+        "Performance": {
+          "Router Throughput": {
+            "value": "4Gbps"
+          },
+          "SpeedFusion VPN Throughput (No Encryption)": {
+            "value": "1Gbps"
+          },
+          "SpeedFusion VPN Throughput (256-bit AES)": {
+            "value": "1Gbps"
+          },
+          "Number of Recommended Users": {
+            "value": "50–500"
+          },
+          "Maximum Number of Controlled AP / Switch": {
+            "value": "30 / 50",
+            "note": "50 AP is available as a license add-on (AP-LC-50)."
+          }
+        },
+        "Wireless details": {
+          "Number of Cellular Modem": {
+            "value": "No"
+          },
+          "Cellular Modem Category options": {
+            "value": "No"
+          },
+          "5G support": {
+            "value": "No"
+          },
+          "SIM Slots": {
+            "value": "No"
+          },
+          "SIM Card Size": {
+            "value": "No"
+          },
+          "Wi-Fi Radio": {
+            "value": "Dual (2.4GHz + 5GHz)\n2x2 Wi-Fi 7"
+          },
+          "Wi-Fi Antenna Transmit Power (2.4GHz, single chain)": {
+            "value": "24dBm"
+          },
+          "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
+            "value": "23dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "No"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "GPS": {
+            "value": "Yes"
+          },
+          "RemoteSIM (used in SIM Injector)": {
+            "value": "No"
+          },
+          "FusionSIM": {
+            "value": "No"
+          },
+          "Peplink eSIM Data Plans": {
+            "value": "No"
+          },
+          "BYO eSIM": {
+            "value": "No"
+          }
+        },
+        "Features": {
+          "SpeedFusion Hot Failover": {
+            "value": "Yes"
+          },
+          "SpeedFusion Smoothing": {
+            "value": "Yes"
+          },
+          "SpeedFusion Bandwidth Bonding": {
+            "value": "Yes"
+          },
+          "SpeedFusion Connect": {
+            "value": "Yes"
+          },
+          "SpeedFusion Relay Mode (Server)": {
+            "value": "Yes"
+          },
+          "Drop-In Mode": {
+            "value": "Yes"
+          },
+          "High Availability": {
+            "value": "Yes"
+          },
+          "Peplink AP Series Management": {
+            "value": "Yes"
+          },
+          "Remote AP & Multiple Config Profiles Management": {
+            "value": "No"
+          },
+          "Switch Controller": {
+            "value": "Yes"
+          },
+          "WAN as LAN": {
+            "value": "Yes"
+          },
+          "LAN Bypass": {
+            "value": "No"
+          },
+          "InTouch": {
+            "value": "Yes"
+          },
+          "Virtual WAN": {
+            "value": "Yes",
+            "note": "1 Virtual WAN complimentary with active PrimeCare. Up to 3 Virtual WAN upon purchasing Virtual WAN Activation Licence."
+          },
+          "Synergy Mode (Controller)": {
+            "value": "Yes"
+          },
+          "Synergized Device": {
+            "value": "Yes"
+          },
+          "Application and Web Blocking": {
+            "value": "Yes"
+          },
+          "Web Content Filtering": {
+            "value": "Full"
+          },
+          "IP Passthrough": {
+            "value": "Yes"
+          },
+          "IPv6": {
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
+          },
+          "x.509 Certificate": {
+            "value": "Yes"
+          },
+          "Captive Portal": {
+            "value": "Yes"
+          },
+          "GPIO": {
+            "value": "No"
+          },
+          "Ignition Sensing": {
+            "value": "No"
+          },
+          "Netflow Support": {
+            "value": "Yes"
+          },
+          "LACP (802.3ad) NIC Bonding": {
+            "value": "No"
+          },
+          "Jumbo Frame Support": {
+            "value": "Yes"
+          },
+          "Internal Storage for Edge Computing": {
+            "value": "Yes (8GB) ",
+            "note": "Support Application and Docker."
+          },
+          "External Storage via USB Port": {
+            "value": "Yes",
+            "note": "Support Docker."
+          },
+          "Dead Reckoning": {
+            "value": "Yes"
+          }
+        },
+        "Core Functionality": {
+          "Inter-VLAN Routing": {
+            "value": "Yes"
+          },
+          "802.1q VLANs Supported": {
+            "value": "20"
+          },
+          "Port-Based VLAN": {
+            "value": "Yes"
+          },
+          "Load Balancing Algorithms": {
+            "value": "8"
+          },
+          "Load Balancing & Failover": {
+            "value": "Yes"
+          },
+          "Inbound Load Balancing": {
+            "value": "Yes"
+          },
+          "InControl 2 Cloud Management": {
+            "value": "Yes"
+          },
+          "InControl GPS Fleet Management": {
+            "value": "Yes"
+          }
+        },
+        "Advanced QoS Functionality": {
+          "Bandwidth Usage Monitoring": {
+            "value": "Yes"
+          },
+          "QoS for VoIP and E-Commerce": {
+            "value": "Yes"
+          },
+          "User Groups Bandwidth Control": {
+            "value": "Yes"
+          }
+        },
+        "VPN Functionality": {
+          "SpeedFusion VPN": {
+            "value": "Yes"
+          },
+          "Number of SpeedFusion VPN Peers": {
+            "value": "2 or 30 ",
+            "note": "2 SpeedFusion VPN Peers are enabled by default. 30 SpeedFusion VPN Peers are enabled with PrimeCare Subscription, complimentary for the first year. "
+          },
+          "IPsec VPN": {
+            "value": "Yes"
+          },
+          "Number of IPsec Tunnels": {
+            "value": "5"
+          },
+          "L2TP VPN / Open VPN / PPTP VPN Server": {
+            "value": "Yes"
+          },
+          "Maximum PPTP / L2TP / OpenVPN Users": {
+            "value": "15"
+          },
+          "Remote RADIUS / LDAP authentication in Remote User Access": {
+            "value": "Yes"
+          },
+          "Number of OpenVPN Tunnel (Site to Site)": {
+            "value": "5"
+          },
+          "Number of GRE Tunnel (Site to Site)": {
+            "value": "5"
+          }
+        },
+        "Hardware": {
+          "Enclosure": {
+            "value": "Indoor,Metal"
+          },
+          "4pin Molex Micro-Fit Connector": {
+            "value": "No"
+          },
+          "Terminal Block Power Connector for Mobile / Vehicular Deployment": {
+            "value": "Yes"
+          },
+          "AC Adapter or PSU": {
+            "value": "AC Input 100V – 240V\nDC Output 54V 5.19A"
+          },
+          "Input voltage": {
+            "value": "DC 12–54V"
+          },
+          "PoE Input": {
+            "value": "No"
+          },
+          "PoE Output": {
+            "value": "Up to 8x 802.3at PoE+",
+            "note": "A DC input voltage of 50V – 54V is required to enable PoE output."
+          },
+          "USB Power Input": {
+            "value": "No"
+          },
+          "Nominal Power Consumption": {
+            "value": "25W"
+          },
+          "Maximum Power Consumption": {
+            "value": "50W",
+            "note": "Maximum without USB-C output and PoE output"
+          },
+          "Dimensions in inches": {
+            "value": "7.3 x 8 x 1.61 inches"
+          },
+          "Dimensions in mm": {
+            "value": "186 x 204.5 x 41 mm"
+          },
+          "Weight (Pound)": {
+            "value": "7.58 pounds"
+          },
+          "Weight (Gram / Kilogram)": {
+            "value": "3.44 kg"
+          },
+          "Operating Temperature": {
+            "value": "-40°–149°F\n-40°–65°C"
+          },
+          "Humidity": {
+            "value": "15%–95% non-condensing"
+          },
+          "Rack-mount": {
+            "value": "No"
+          },
+          "Dual Hot Swap Power Supply": {
+            "value": "No"
+          }
+        },
+        "Warranty Info": {
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "MAX Orbit 4",
+      "type": "router",
+      "metadata": {
+        "Marketing Series": "Multi-Orbit",
+        "Image URL": "https://estore.peplink.com/downloads/product/698446f3b1d8d7403783868e/01_MAX_Orbit_4_Front.png",
+        "Product URL": "https://www.peplink.com/products/orbit-series/max-orbit-series/"
+      },
+      "specifications": {
+        "Interfaces": {
+          "Number of Ethernet WAN port": {
+            "value": "4 / 6  (GE)"
+          },
+          "Number of Ethernet LAN port": {
+            "value": "2 / 0 (2.5G)"
+          },
+          "Maximum Ethernet WAN / LAN port configuration": {
+            "value": "6 WAN with 0 LAN\n4 WAN with 2 LAN"
+          },
+          "SFP LAN / WAN": {
+            "value": "No"
+          },
+          "Serial Interface": {
+            "value": "Yes (RS-232)"
+          },
+          "Wi-Fi AP": {
+            "value": "Yes"
+          },
+          "Wi-Fi WAN": {
+            "value": "Yes"
+          },
+          "USB WAN": {
+            "value": "Yes (1x USB)"
+          },
+          "Module Expansion": {
+            "value": "No"
+          }
+        },
+        "Performance": {
+          "Router Throughput": {
+            "value": "1Gbps"
+          },
+          "SpeedFusion VPN Throughput (No Encryption)": {
+            "value": "400Mbps"
+          },
+          "SpeedFusion VPN Throughput (256-bit AES)": {
+            "value": "200Mbps"
+          },
+          "Number of Recommended Users": {
+            "value": "1–150"
+          },
+          "Maximum Number of Controlled AP / Switch": {
+            "value": "30 / 50",
+            "note": "50 AP is available as a license add-on (AP-LC-50)."
+          }
+        },
+        "Wireless details": {
+          "Number of Cellular Modem": {
+            "value": "No"
+          },
+          "Cellular Modem Category options": {
+            "value": "No"
+          },
+          "5G support": {
+            "value": "No"
+          },
+          "SIM Slots": {
+            "value": "No"
+          },
+          "SIM Card Size": {
+            "value": "No"
+          },
+          "Wi-Fi Radio": {
+            "value": "Dual (2.4GHz + 5GHz)\n2x2 Wi-Fi 6"
+          },
+          "Wi-Fi Antenna Transmit Power (2.4GHz, single chain)": {
+            "value": "21dBm"
+          },
+          "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
+            "value": "22dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "No"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "GPS": {
+            "value": "Yes"
+          },
+          "RemoteSIM (used in SIM Injector)": {
+            "value": "No"
+          },
+          "FusionSIM": {
+            "value": "No"
+          },
+          "Peplink eSIM Data Plans": {
+            "value": "No"
+          },
+          "BYO eSIM": {
+            "value": "No"
+          }
+        },
+        "Features": {
+          "SpeedFusion Hot Failover": {
+            "value": "Yes"
+          },
+          "SpeedFusion Smoothing": {
+            "value": "Yes"
+          },
+          "SpeedFusion Bandwidth Bonding": {
+            "value": "Yes"
+          },
+          "SpeedFusion Connect": {
+            "value": "Yes",
+            "note": "PrimeCare subscription includes 500GB/year complimentary SpeedFusion Connect Usage data."
+          },
+          "SpeedFusion Relay Mode (Server)": {
+            "value": "Yes"
+          },
+          "Drop-In Mode": {
+            "value": "Yes"
+          },
+          "High Availability": {
+            "value": "Yes"
+          },
+          "Peplink AP Series Management": {
+            "value": "Yes"
+          },
+          "Remote AP & Multiple Config Profiles Management": {
+            "value": "No"
+          },
+          "Switch Controller": {
+            "value": "Yes"
+          },
+          "WAN as LAN": {
+            "value": "Yes"
+          },
+          "LAN Bypass": {
+            "value": "No"
+          },
+          "InTouch": {
+            "value": "Yes"
+          },
+          "Virtual WAN": {
+            "value": "Yes",
+            "note": "1 Virtual WAN complimentary with active PrimeCare. Up to 3 Virtual WAN upon purchasing Virtual WAN Activation Licence."
+          },
+          "Synergy Mode (Controller)": {
+            "value": "Yes"
+          },
+          "Synergized Device": {
+            "value": "Yes"
+          },
+          "Application and Web Blocking": {
+            "value": "Yes"
+          },
+          "Web Content Filtering": {
+            "value": "Full"
+          },
+          "IP Passthrough": {
+            "value": "Yes"
+          },
+          "IPv6": {
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
+          },
+          "x.509 Certificate": {
+            "value": "Yes",
+            "note": "Require IPsec X.509 Certificate License Key."
+          },
+          "Captive Portal": {
+            "value": "Yes"
+          },
+          "GPIO": {
+            "value": "Yes"
+          },
+          "Ignition Sensing": {
+            "value": "Yes"
+          },
+          "Netflow Support": {
+            "value": "Yes"
+          },
+          "LACP (802.3ad) NIC Bonding": {
+            "value": "No"
+          },
+          "Jumbo Frame Support": {
+            "value": "Yes"
+          },
+          "Internal Storage for Edge Computing": {
+            "value": "Yes (8GB) ",
+            "note": "Support Application and Docker."
+          },
+          "External Storage via USB Port": {
+            "value": "Yes",
+            "note": "Support Docker."
+          },
+          "Dead Reckoning": {
+            "value": "Yes"
+          }
+        },
+        "Core Functionality": {
+          "Inter-VLAN Routing": {
+            "value": "Yes"
+          },
+          "802.1q VLANs Supported": {
+            "value": "16"
+          },
+          "Port-Based VLAN": {
+            "value": "Yes"
+          },
+          "Load Balancing Algorithms": {
+            "value": "8"
+          },
+          "Load Balancing & Failover": {
+            "value": "Yes"
+          },
+          "Inbound Load Balancing": {
+            "value": "No"
+          },
+          "InControl 2 Cloud Management": {
+            "value": "Yes"
+          },
+          "InControl GPS Fleet Management": {
+            "value": "Yes"
+          }
+        },
+        "Advanced QoS Functionality": {
+          "Bandwidth Usage Monitoring": {
+            "value": "Yes"
+          },
+          "QoS for VoIP and E-Commerce": {
+            "value": "Yes"
+          },
+          "User Groups Bandwidth Control": {
+            "value": "Yes"
+          }
+        },
+        "VPN Functionality": {
+          "SpeedFusion VPN": {
+            "value": "Yes"
+          },
+          "Number of SpeedFusion VPN Peers": {
+            "value": "2 / 5 / 10 / 20",
+            "note": "2 SpeedFusion VPN Peers are enabled by default. 5 SpeedFusion VPN Peers are enabled with PrimeCare Subscription, complimentary for the first year. 10 or 20 SpeedFusion VPN peers can be enabled with software license (PVN-LC-10 and PVN-LC-20)."
+          },
+          "IPsec VPN": {
+            "value": "Yes"
+          },
+          "Number of IPsec Tunnels": {
+            "value": "5"
+          },
+          "L2TP VPN / Open VPN / PPTP VPN Server": {
+            "value": "Yes"
+          },
+          "Maximum PPTP / L2TP / OpenVPN Users": {
+            "value": "3"
+          },
+          "Remote RADIUS / LDAP authentication in Remote User Access": {
+            "value": "No"
+          },
+          "Number of OpenVPN Tunnel (Site to Site)": {
+            "value": "5"
+          },
+          "Number of GRE Tunnel (Site to Site)": {
+            "value": "5"
+          }
+        },
+        "Hardware": {
+          "Enclosure": {
+            "value": "Indoor,Metal"
+          },
+          "4pin Molex Micro-Fit Connector": {
+            "value": "Yes"
+          },
+          "Terminal Block Power Connector for Mobile / Vehicular Deployment": {
+            "value": "No"
+          },
+          "AC Adapter or PSU": {
+            "value": "AC Input 100V–240V\nDC Output 12V"
+          },
+          "Input voltage": {
+            "value": "DC 10–30V"
+          },
+          "PoE Input": {
+            "value": "Yes"
+          },
+          "PoE Output": {
+            "value": "No"
+          },
+          "USB Power Input": {
+            "value": "No"
+          },
+          "Nominal Power Consumption": {
+            "value": "11W"
+          },
+          "Maximum Power Consumption": {
+            "value": "14W",
+            "note": "Maximum without USB-C output"
+          },
+          "Dimensions in inches": {
+            "value": "8.58 x 7.68 x 1.61 inches"
+          },
+          "Dimensions in mm": {
+            "value": "218 x 195 x 29.5 mm"
+          },
+          "Weight (Pound)": {
+            "value": "2.03 pounds"
+          },
+          "Weight (Gram / Kilogram)": {
+            "value": "924 grams"
+          },
+          "Operating Temperature": {
+            "value": "-40°–149°F\n-40°–65°C"
+          },
+          "Humidity": {
+            "value": "15%–95% (non-condensing)"
+          },
+          "Rack-mount": {
+            "value": "No"
+          },
+          "Dual Hot Swap Power Supply": {
+            "value": "No"
+          }
+        },
+        "Warranty Info": {
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "MAX Orbit 2",
+      "type": "router",
+      "metadata": {
+        "Marketing Series": "Multi-Orbit",
+        "Image URL": "https://estore.peplink.com/downloads/product/69843f06b8453b04261ce0b3/01_MAX_Orbit_2_Front.png",
+        "Product URL": "https://www.peplink.com/products/orbit-series/max-orbit-series/"
+      },
+      "specifications": {
+        "Interfaces": {
+          "Number of Ethernet WAN port": {
+            "value": "1 (2.5G)\n1 (GE)"
+          },
+          "Number of Ethernet LAN port": {
+            "value": "1 (GE)"
+          },
+          "Maximum Ethernet WAN / LAN port configuration": {
+            "value": "2 WAN with 1 LAN"
+          },
+          "SFP LAN / WAN": {
+            "value": "No"
+          },
+          "Serial Interface": {
+            "value": "No"
+          },
+          "Wi-Fi AP": {
+            "value": "Yes"
+          },
+          "Wi-Fi WAN": {
+            "value": "Yes"
+          },
+          "USB WAN": {
+            "value": "No"
+          },
+          "Module Expansion": {
+            "value": "No"
+          }
+        },
+        "Performance": {
+          "Router Throughput": {
+            "value": "1Gbps"
+          },
+          "SpeedFusion VPN Throughput (No Encryption)": {
+            "value": "400Mbps"
+          },
+          "SpeedFusion VPN Throughput (256-bit AES)": {
+            "value": "200Mbps"
+          },
+          "Number of Recommended Users": {
+            "value": "1–150"
+          },
+          "Maximum Number of Controlled AP / Switch": {
+            "value": "30 / 50",
+            "note": "50 AP is available as a license add-on (AP-LC-50)."
+          }
+        },
+        "Wireless details": {
+          "Number of Cellular Modem": {
+            "value": "No"
+          },
+          "Cellular Modem Category options": {
+            "value": "No"
+          },
+          "5G support": {
+            "value": "No"
+          },
+          "SIM Slots": {
+            "value": "No"
+          },
+          "SIM Card Size": {
+            "value": "No"
+          },
+          "Wi-Fi Radio": {
+            "value": "Dual (2.4GHz + 5GHz)\n2x2 Wi-Fi 6"
+          },
+          "Wi-Fi Antenna Transmit Power (2.4GHz, single chain)": {
+            "value": "24dBm"
+          },
+          "Wi-Fi Antenna Transmit Power (5GHz, single chain)": {
+            "value": "26dBm"
+          },
+          "Cellular Antenna Connectors": {
+            "value": "No"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "GPS": {
+            "value": "Yes"
+          },
+          "RemoteSIM (used in SIM Injector)": {
+            "value": "No"
+          },
+          "FusionSIM": {
+            "value": "No"
+          },
+          "Peplink eSIM Data Plans": {
+            "value": "No"
+          },
+          "BYO eSIM": {
+            "value": "No"
+          }
+        },
+        "Features": {
+          "SpeedFusion Hot Failover": {
+            "value": "Yes"
+          },
+          "SpeedFusion Smoothing": {
+            "value": "Yes"
+          },
+          "SpeedFusion Bandwidth Bonding": {
+            "value": "Yes"
+          },
+          "SpeedFusion Connect": {
+            "value": "Yes",
+            "note": "PrimeCare subscription includes 500GB/year complimentary SpeedFusion Connect Usage data."
+          },
+          "SpeedFusion Relay Mode (Server)": {
+            "value": "Yes"
+          },
+          "Drop-In Mode": {
+            "value": "Yes"
+          },
+          "High Availability": {
+            "value": "Yes"
+          },
+          "Peplink AP Series Management": {
+            "value": "Yes"
+          },
+          "Remote AP & Multiple Config Profiles Management": {
+            "value": "No"
+          },
+          "Switch Controller": {
+            "value": "Yes"
+          },
+          "WAN as LAN": {
+            "value": "No"
+          },
+          "LAN Bypass": {
+            "value": "No"
+          },
+          "InTouch": {
+            "value": "Yes"
+          },
+          "Virtual WAN": {
+            "value": "Yes",
+            "note": "1 Virtual WAN complimentary with active PrimeCare. Up to 3 Virtual WAN upon purchasing Virtual WAN Activation Licence."
+          },
+          "Synergy Mode (Controller)": {
+            "value": "Yes"
+          },
+          "Synergized Device": {
+            "value": "Yes"
+          },
+          "Application and Web Blocking": {
+            "value": "Yes"
+          },
+          "Web Content Filtering": {
+            "value": "Full"
+          },
+          "IP Passthrough": {
+            "value": "Yes"
+          },
+          "IPv6": {
+            "value": "Yes",
+            "note": "Support IP Passthrough mode."
+          },
+          "x.509 Certificate": {
+            "value": "Yes",
+            "note": "Require IPsec X.509 Certificate License Key."
+          },
+          "Captive Portal": {
+            "value": "Yes"
+          },
+          "GPIO": {
+            "value": "Yes"
+          },
+          "Ignition Sensing": {
+            "value": "Yes"
+          },
+          "Netflow Support": {
+            "value": "Yes"
+          },
+          "LACP (802.3ad) NIC Bonding": {
+            "value": "No"
+          },
+          "Jumbo Frame Support": {
+            "value": "Yes"
+          },
+          "Internal Storage for Edge Computing": {
+            "value": "Yes (8GB)"
+          },
+          "External Storage via USB Port": {
+            "value": "No"
+          },
+          "Dead Reckoning": {
+            "value": "Yes"
+          }
+        },
+        "Core Functionality": {
+          "Inter-VLAN Routing": {
+            "value": "Yes"
+          },
+          "802.1q VLANs Supported": {
+            "value": "16"
+          },
+          "Port-Based VLAN": {
+            "value": "Yes"
+          },
+          "Load Balancing Algorithms": {
+            "value": "8"
+          },
+          "Load Balancing & Failover": {
+            "value": "Yes"
+          },
+          "Inbound Load Balancing": {
+            "value": "No"
+          },
+          "InControl 2 Cloud Management": {
+            "value": "Yes"
+          },
+          "InControl GPS Fleet Management": {
+            "value": "Yes"
+          }
+        },
+        "Advanced QoS Functionality": {
+          "Bandwidth Usage Monitoring": {
+            "value": "Yes"
+          },
+          "QoS for VoIP and E-Commerce": {
+            "value": "Yes"
+          },
+          "User Groups Bandwidth Control": {
+            "value": "Yes"
+          }
+        },
+        "VPN Functionality": {
+          "SpeedFusion VPN": {
+            "value": "Yes"
+          },
+          "Number of SpeedFusion VPN Peers": {
+            "value": "2 / 5 / 10 / 20",
+            "note": "2 SpeedFusion VPN Peers are enabled by default. 5 SpeedFusion VPN Peers are enabled with PrimeCare Subscription, complimentary for the first year. 10 or 20 SpeedFusion VPN peers can be enabled with software license (PVN-LC-10 and PVN-LC-20)."
+          },
+          "IPsec VPN": {
+            "value": "Yes"
+          },
+          "Number of IPsec Tunnels": {
+            "value": "5"
+          },
+          "L2TP VPN / Open VPN / PPTP VPN Server": {
+            "value": "Yes"
+          },
+          "Maximum PPTP / L2TP / OpenVPN Users": {
+            "value": "3"
+          },
+          "Remote RADIUS / LDAP authentication in Remote User Access": {
+            "value": "No"
+          },
+          "Number of OpenVPN Tunnel (Site to Site)": {
+            "value": "5"
+          },
+          "Number of GRE Tunnel (Site to Site)": {
+            "value": "5"
+          }
+        },
+        "Hardware": {
+          "Enclosure": {
+            "value": "Indoor,Metal"
+          },
+          "4pin Molex Micro-Fit Connector": {
+            "value": "Yes"
+          },
+          "Terminal Block Power Connector for Mobile / Vehicular Deployment": {
+            "value": "No"
+          },
+          "AC Adapter or PSU": {
+            "value": "AC Input 100V–240V\nDC Output 12V 2A"
+          },
+          "Input voltage": {
+            "value": "DC 10–30V"
+          },
+          "PoE Input": {
+            "value": "Yes"
+          },
+          "PoE Output": {
+            "value": "No"
+          },
+          "USB Power Input": {
+            "value": "No"
+          },
+          "Nominal Power Consumption": {
+            "value": "9W"
+          },
+          "Maximum Power Consumption": {
+            "value": "11W"
+          },
+          "Dimensions in inches": {
+            "value": "5.78 x 5.08 x 1.15 inches"
+          },
+          "Dimensions in mm": {
+            "value": "146.8 x 129 x 29.3 mm"
+          },
+          "Weight (Pound)": {
+            "value": "1.21 pounds"
+          },
+          "Weight (Gram / Kilogram)": {
+            "value": "550 grams"
+          },
+          "Operating Temperature": {
+            "value": "-40°–149°F\n-40°–65°C"
+          },
+          "Humidity": {
+            "value": "15%–95% (non-condensing)"
+          },
+          "Rack-mount": {
+            "value": "No"
+          },
+          "Dual Hot Swap Power Supply": {
+            "value": "No"
+          }
+        },
+        "Warranty Info": {
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
     },
     {
       "product_name": "AP One Mini",
@@ -42112,7 +43671,7 @@
             "value": "14.5W (max.)"
           },
           "Operating Temperature": {
-            "value": "-40° – 149°F\n-40° – 60°C"
+            "value": "-40° – 149°F\n-40° – 65°C"
           },
           "Humidity": {
             "value": "15% – 95% (non-condensing)"
@@ -42639,6 +44198,520 @@
       ]
     },
     {
+      "product_name": "AP One AC Mini",
+      "type": "access_point",
+      "metadata": {
+        "Status": "Component EOL",
+        "Image URL": "https://estore.pepwave.com/downloads/product/5eb0026fe204b53f10519412/ac_one_ac_mini_estore_01.png",
+        "Product URL": "https://www.peplink.com/products/wifi-poe/ap-one-series-mini/",
+        "Marketing Category": "Enterprise Branch"
+      },
+      "specifications": {
+        "Specifications": {
+          "Ethernet Port": {
+            "value": "1x Gigabit Ethernet"
+          },
+          "Wi-Fi Standard": {
+            "value": "Wi-Fi 5"
+          },
+          "Data Rates": {
+            "value": "2×2 MU-MIMO\n2.4GHz: up to 300Mbps\n5GHz: up to 866Mbps"
+          },
+          "Recommended Concurrent Users Per Radio": {
+            "value": "60"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "Wireless Security": {
+            "value": "Open (No Encryption)\nOWE\nWPA3 – Personal (HW2)\nWPA3 – Enterprise (HW2)\nWPA2/WPA3 – Personal (HW2)\nWPA2 – Personal\nWPA2 – Enterprise\nWPA/WPA2 – Personal\nWPA/WPA2 – Enterprise",
+            "note": "WPA2/WPA3 Personal, WPA3 Personal requires AP Firmware 3.6.2 and 3.7.1 or above.\nWPA3 Enterprise requires AP Firmware 3.9.2 or above."
+          },
+          "Transmit Power": {
+            "value": "2.4GHz: 22dBm\n5GHz: 23dBm"
+          },
+          "Antenna": {
+            "value": "Built-In Omni Antenna"
+          },
+          "Antenna Gain": {
+            "value": "2.2dBi for 2.4GHz\n3dBi for 5GHz"
+          },
+          "Antenna Connector": {
+            "value": "N/A"
+          },
+          "Enclosure": {
+            "value": "Plenum-rated\nIndoor Plastic"
+          },
+          "Dimensions": {
+            "value": "3.9 x 3.9 x 0.8 inches\n98 x 98 x 19.7 mm"
+          },
+          "Weight (Pound)": {
+            "value": "0.33 pounds"
+          },
+          "Weight (Kilogram)": {
+            "value": "150 grams"
+          },
+          "Power Input": {
+            "value": "AC Adapter: 100V – 240V to 12V DC\n802.3af PoE",
+            "note": "PoE Injector is not included."
+          },
+          "Power Consumption": {
+            "value": "12W (max.)"
+          },
+          "Operating Temperature": {
+            "value": "23° – 113°F\n-5° – 45°C"
+          },
+          "Humidity": {
+            "value": "15% – 95% (non-condensing)"
+          },
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "AP One Rugged Legacy",
+      "type": "access_point",
+      "metadata": {
+        "Status": "Component EOL",
+        "Image URL": "https://estore.pepwave.com/downloads/product/5eb00477e204b53f1051a6f7/ap1_rugged_1.png",
+        "Product URL": null,
+        "Marketing Category": "Industrial"
+      },
+      "specifications": {
+        "Specifications": {
+          "Ethernet Port": {
+            "value": "2x Gigabit Ethernet"
+          },
+          "Wi-Fi Standard": {
+            "value": "Wi-Fi 5"
+          },
+          "Data Rates": {
+            "value": "3×3 MIMO\n2.4GHz: up to 450Mbps\n5GHz: up to 1300Mbps"
+          },
+          "Recommended Concurrent Users Per Radio": {
+            "value": "60"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "Wireless Security": {
+            "value": "Open (No Encryption)\nOWE\nWPA3 – Personal\nWPA2/WPA3 – Personal\nWPA2 – Personal\nWPA2 – Enterprise\nWPA/WPA2 – Personal\nWPA/WPA2 – Enterprise",
+            "note": "WPA2/WPA3 Personal, WPA3 Personal requires AP Firmware 3.6.2 or above."
+          },
+          "Transmit Power": {
+            "value": "2.4GHz: 24dBm\n5GHz: 22dBm"
+          },
+          "Antenna": {
+            "value": "2x Dual-Band Omni Antenna"
+          },
+          "Antenna Gain": {
+            "value": "3dBi for 2.4GHz\n5dBi for 5GHz"
+          },
+          "Antenna Connector": {
+            "value": "2x RP-SMA Connectors"
+          },
+          "Enclosure": {
+            "value": "Ruggedized Metal"
+          },
+          "Dimensions": {
+            "value": "5.8 x 4.6 x 1.6 inches\n147 x 115 x 40 mm"
+          },
+          "Weight (Pound)": {
+            "value": "0.93 pounds"
+          },
+          "Weight (Kilogram)": {
+            "value": "420 grams"
+          },
+          "Power Input": {
+            "value": "AC Adapter: 100V – 240V to 12V DC\n802.3af PoE"
+          },
+          "Power Consumption": {
+            "value": "13W (max.)"
+          },
+          "Operating Temperature": {
+            "value": "-40° – 149°F\n-40° – 65°C"
+          },
+          "Humidity": {
+            "value": "15% – 95% (non-condensing)"
+          },
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "AP Pro AX Legacy HW1",
+      "type": "access_point",
+      "metadata": {
+        "Status": "Component EOL",
+        "Image URL": "https://estore.pepwave.com/downloads/product/5eb00944e204b53f1051ccde/ap_pro_ac_1.png",
+        "Product URL": "https://www.peplink.com/products/wifi-poe/ap-pro-ax/",
+        "Marketing Category": "Outdoor"
+      },
+      "specifications": {
+        "Specifications": {
+          "Ethernet Port": {
+            "value": "1x Gigabit Ethernet"
+          },
+          "Wi-Fi Standard": {
+            "value": "Wi-Fi 6"
+          },
+          "Data Rates": {
+            "value": "2×2 MU-MIMO\n2.4 GHz: up to 574Mbps\n5 GHz: up to 1200Mbps"
+          },
+          "Recommended Concurrent Users Per Radio": {
+            "value": "256"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "Wireless Security": {
+            "value": "Open (No Encryption)\nEnhanced Open (OWE)\nWPA3 – Personal (AES:CCMP) \nWPA3 – Enterprise (AES:CCMP) \nWPA2/WPA3 – Personal (AES:CCMP)\nWPA2 – Personal (AES:CCMP) \nWPA2 – Enterprise (AES:CCMP) \nWPA/WPA2 – Personal (TKIP/AES: CCMP)\nWPA/WPA2 – Enterprise (TKIP/AES: CCMP)"
+          },
+          "Transmit Power": {
+            "value": "2.4GHz: 24dBm\n5GHz: 25dBm"
+          },
+          "Antenna": {
+            "value": "External Omni Directional Wi-Fi Antenna",
+            "note": "No Wi-Fi Antenna is included.\n2.4GHz & 5GHz Outdoor Wi-Fi Antenna Kit (ACW-825) is compatible.\n"
+          },
+          "Antenna Gain": {
+            "value": "2x 8dBi for 2.4GHz\n2x 8dBi for 5GHz"
+          },
+          "Antenna Connector": {
+            "value": "4x N-Type Connectors"
+          },
+          "Enclosure": {
+            "value": "Waterproof IP67 Outdoor"
+          },
+          "Dimensions": {
+            "value": "9.0 x 12.2 x 2.6 inches\n230 x 310 x 66 mm"
+          },
+          "Weight (Pound)": {
+            "value": "4.85 pounds"
+          },
+          "Weight (Kilogram)": {
+            "value": "2.2 kg"
+          },
+          "Power Input": {
+            "value": "Power Port: 12V DC\n802.3at PoE+",
+            "note": "AC/DC adapter (ACW-601/ACW-602) and PoE Injector (ACW-107) are not included."
+          },
+          "Power Consumption": {
+            "value": "14.5W (max.)"
+          },
+          "Operating Temperature": {
+            "value": "32° – 104°F\n0° – 40°C"
+          },
+          "Humidity": {
+            "value": "15% – 95% (non-condensing)"
+          },
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "AP Pro AX Legacy HW2",
+      "type": "access_point",
+      "metadata": {
+        "Status": "Active",
+        "Image URL": "https://estore.pepwave.com/downloads/product/6200dd0421a92c335bb4f150/05_AP-Pro-AX-HW2_Main.png",
+        "Product URL": "https://www.peplink.com/products/wifi-poe/ap-pro-ax/",
+        "Marketing Category": "Outdoor"
+      },
+      "specifications": {
+        "Specifications": {
+          "Ethernet Port": {
+            "value": "1x Gigabit Ethernet"
+          },
+          "Wi-Fi Standard": {
+            "value": "Wi-Fi 6"
+          },
+          "Data Rates": {
+            "value": "2×2 MU-MIMO\n2.4 GHz: up to 574Mbps\n5 GHz: up to 1200Mbps"
+          },
+          "Recommended Concurrent Users Per Radio": {
+            "value": "256"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "Wireless Security": {
+            "value": "Open (No Encryption)\nEnhanced Open (OWE)\nWPA3 – Personal (AES:CCMP) \nWPA3 – Enterprise (AES:CCMP) \nWPA2/WPA3 – Personal (AES:CCMP)\nWPA2 – Personal (AES:CCMP) \nWPA2 – Enterprise (AES:CCMP) \nWPA/WPA2 – Personal (TKIP/AES: CCMP)\nWPA/WPA2 – Enterprise (TKIP/AES: CCMP)"
+          },
+          "Transmit Power": {
+            "value": "2.4GHz: 24dBm\n5GHz: 25dBm"
+          },
+          "Antenna": {
+            "value": "External Omni Directional Wi-Fi Antenna",
+            "note": "No Wi-Fi Antenna is included.\n2.4GHz & 5GHz Outdoor Wi-Fi Antenna Kit (ACW-825) is compatible.\n"
+          },
+          "Antenna Gain": {
+            "value": "2x 8dBi for 2.4GHz\n2x 8dBi for 5GHz"
+          },
+          "Antenna Connector": {
+            "value": "4x N-Type Connectors"
+          },
+          "Enclosure": {
+            "value": "Waterproof IP67 Outdoor"
+          },
+          "Dimensions": {
+            "value": "10.0 x 8.9 x 3.1 inches\n255.1 x 225.1 x 78mm"
+          },
+          "Weight (Pound)": {
+            "value": "3.53 pounds"
+          },
+          "Weight (Kilogram)": {
+            "value": "1.6 kg"
+          },
+          "Power Input": {
+            "value": "Power Port: 12V DC\n802.3at PoE+\n",
+            "note": "AC/DC adapter and PoE Injector (ACW-107) are not included."
+          },
+          "Power Consumption": {
+            "value": "14.5W (max.)"
+          },
+          "Operating Temperature": {
+            "value": "-40° – 149°F\n-40° – 65°C"
+          },
+          "Humidity": {
+            "value": "15% – 95% (non-condensing)"
+          },
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "AP One Flex (HW4)",
+      "type": "access_point",
+      "metadata": {
+        "Status": "Component EOL",
+        "Image URL": "https://estore.pepwave.com/downloads/product/5eb0027ee204b53f105194aa/ap1_flex_1.png",
+        "Product URL": null,
+        "Marketing Category": "Outdoor"
+      },
+      "specifications": {
+        "Specifications": {
+          "Ethernet Port": {
+            "value": "3x Gigabit Ethernet"
+          },
+          "Wi-Fi Standard": {
+            "value": "Wi-Fi 5"
+          },
+          "Data Rates": {
+            "value": "2×2 MU-MIMO\n2.4GHz: up to 300Mbps\n5GHz: up to 866Mbps"
+          },
+          "Recommended Concurrent Users Per Radio": {
+            "value": "60"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "Wireless Security": {
+            "value": ""
+          },
+          "Transmit Power": {
+            "value": "2.4GHz: 20dBm\n5GHz: 21dBm"
+          },
+          "Antenna": {
+            "value": "Built-in MIMO Directional Antenna"
+          },
+          "Antenna Gain": {
+            "value": "9dBi for 2.4GHz\n10dBi for 5GHz"
+          },
+          "Antenna Connector": {
+            "value": "2x RP-SMA Connectors (5GHz)"
+          },
+          "Enclosure": {
+            "value": "Waterproof IP55 Outdoor"
+          },
+          "Dimensions": {
+            "value": "11.8 x 4.9 x 1.9 inches\n300 x 124 x 47 mm"
+          },
+          "Weight (Pound)": {
+            "value": "1.15 pounds"
+          },
+          "Weight (Kilogram)": {
+            "value": "520 grams"
+          },
+          "Power Input": {
+            "value": "802.3at PoE+\n(56V Pepwave Passive PoE Input is Needed for full 1x 802.3at PoE+ LAN Output^)",
+            "note": "PoE input available as an option add-on (ACW-109)."
+          },
+          "Power Consumption": {
+            "value": "22W (max.)"
+          },
+          "Operating Temperature": {
+            "value": "-40° – 131°F\n-40° – 55°C"
+          },
+          "Humidity": {
+            "value": "15% – 95% (non-condensing)"
+          },
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "AP One Enterprise",
+      "type": "access_point",
+      "metadata": {
+        "Status": "Active",
+        "Image URL": "https://estore.pepwave.com/downloads/product/68c92028a23beb5ea2d298d1/01_AP-One-Enterprise_Front.png",
+        "Product URL": "https://www.peplink.com/products/wifi-poe/ap-one-enterprise/",
+        "Marketing Category": "Enterprise"
+      },
+      "specifications": {
+        "Specifications": {
+          "Ethernet Port": {
+            "value": "2x 10G Ethernet"
+          },
+          "Wi-Fi Standard": {
+            "value": "Wi-Fi 7"
+          },
+          "Data Rates": {
+            "value": "4x4 MU-MIMO\n2.4 GHz: up to 1374Mbps\n5 GHz: up to 5755Mbps\n6 GHz: Up to 11511Mbps"
+          },
+          "Recommended Concurrent Users Per Radio": {
+            "value": "512"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "Wireless Security": {
+            "value": "Open (No Encryption) --- 2.4GHz/5GHz\nEnhanced Open (OWE) --- 2.4GHz/5GHz/6GHz\nWPA3 – Personal (AES:CCMP) --- 2.4GHz/5GHz/6GHz\nWPA3 – Enterprise (AES:CCMP)--- 2.4GHz/5GHz/6GHz\nWPA2/WPA3 – Personal (AES:CCMP)--- 2.4GHz/5GHz\nWPA2 – Personal (AES:CCMP) --- 2.4GHz/5GHz\nWPA2 – Enterprise (AES:CCMP) --- 2.4GHz/5GHz\nWPA/WPA2 – Personal (TKIP/AES: CCMP) --- 2.4GHz/5GHz\nWPA/WPA2 – Enterprise (TKIP/AES: CCMP) --- 2.4GHz/5GHz"
+          },
+          "Transmit Power": {
+            "value": "2.4GHz: 25dBm\n5GHz: 25dBm\n6GHz: 19dBm"
+          },
+          "Antenna": {
+            "value": "Built-in Omni Antenna"
+          },
+          "Antenna Gain": {
+            "value": "4x 4.6dBi for 2.4 GHz\n4x 5.3dBi for 5 GHz\n4x 4.9dBi for 6 GHz"
+          },
+          "Antenna Connector": {
+            "value": "N/A"
+          },
+          "Enclosure": {
+            "value": "Indoor Plastic"
+          },
+          "Dimensions": {
+            "value": "9.1 x 9.1 x 1.6 inches\n230 x 230 x 39.5 mm"
+          },
+          "Weight (Pound)": {
+            "value": "2.80 pounds"
+          },
+          "Weight (Kilogram)": {
+            "value": "1.27 kg"
+          },
+          "Power Input": {
+            "value": "DC Jack: 12V 4A\n802.3bt PoE++",
+            "note": "AC/DC adapter and PoE Injector are not included."
+          },
+          "Power Consumption": {
+            "value": "37W (nominal)\n39W (max.)"
+          },
+          "Operating Temperature": {
+            "value": "32° – 104°F\n0° – 40°C"
+          },
+          "Humidity": {
+            "value": "Up to 95% (non-condensing)"
+          },
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
+      "product_name": "AP One In-Wall",
+      "type": "access_point",
+      "metadata": {
+        "Status": "Component EOL",
+        "Image URL": "https://estore.pepwave.com/downloads/product/5eb0082de204b53f1051c432/ap1_inwall_us_1.png",
+        "Product URL": null,
+        "Marketing Category": "Industrial"
+      },
+      "specifications": {
+        "Specifications": {
+          "Ethernet Port": {
+            "value": "1x Fast Ethernet Uplink\n4x Fast Ethernet"
+          },
+          "Wi-Fi Standard": {
+            "value": "Wi-Fi 4"
+          },
+          "Data Rates": {
+            "value": "2×2 MIMO\n2.4GHz: up to 300Mbps\n5GHz: up to 300Mbps"
+          },
+          "Recommended Concurrent Users Per Radio": {
+            "value": "60"
+          },
+          "Multiple SSIDs": {
+            "value": "16"
+          },
+          "Wireless Security": {
+            "value": "Open (No Encryption)\nWPA2 – Personal\nWPA2 – Enterprise\nWPA/WPA2 – Personal\nWPA/WPA2 – Enterprise",
+            "note": "WPA2/WPA3 Personal, WPA3 Personal requires AP Firmware 3.6.2 or above."
+          },
+          "Transmit Power": {
+            "value": "2.4GHz: 20dBm\n5GHz: 20dBm"
+          },
+          "Antenna": {
+            "value": "Built-in Omni antenna"
+          },
+          "Antenna Gain": {
+            "value": "2dBi for 2.4GHz\n4dBi for 5GHz"
+          },
+          "Antenna Connector": {
+            "value": "N/A"
+          },
+          "Enclosure": {
+            "value": "Plenum-rated\nIndoor Plastic Mounts Into Standard US/EU Singe Gang Wall Jack"
+          },
+          "Dimensions": {
+            "value": "US Version: 5 x 3.4 x 2.1 inches\n128 x 86 x 53.5 mm\nInternational: 3.4 x 3.4 x 2.1 inches\n86 x 86 x 53 mm"
+          },
+          "Weight (Pound)": {
+            "value": "US: 0.37 pounds\nInternational: 0.34 pounds"
+          },
+          "Weight (Kilogram)": {
+            "value": "US: 170 grams\nInternational: 155 grams"
+          },
+          "Power Input": {
+            "value": "48V DC Connector\n802.3af PoE\n802.3at PoE+"
+          },
+          "Power Consumption": {
+            "value": "15W (max.)"
+          },
+          "Operating Temperature": {
+            "value": "-4° – 104°F\n-20° – 40°C"
+          },
+          "Humidity": {
+            "value": "15% – 95% (non-condensing)"
+          },
+          "Warranty": {
+            "value": "1-Year Limited Warranty"
+          }
+        }
+      },
+      "sku_variants": []
+    },
+    {
       "product_name": "8 PoE 10G Switch",
       "type": "switch",
       "metadata": {
@@ -42669,7 +44742,8 @@
             "value": "32000"
           },
           "Inter-VLAN Routing": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Up to 4 VLAN interfaces including the management VLAN. Available on upcoming firmware."
           },
           "Power Supply Unit": {
             "value": "1x Internal PSU (900W)"
@@ -42784,7 +44858,8 @@
             "value": "16000"
           },
           "Inter-VLAN Routing": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Up to 4 VLAN interfaces including the management VLAN. Available on upcoming firmware."
           },
           "Power Supply Unit": {
             "value": "1x External PSU (300W)\nAC Input: 100V – 240V 4A\nDC Output: 54V 5.56A"
@@ -42903,7 +44978,8 @@
             "value": "16000"
           },
           "Inter-VLAN Routing": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Up to 4 VLAN interfaces including the management VLAN. Available on upcoming firmware."
           },
           "Power Supply Unit": {
             "value": "1x Internal PSU (480W)"
@@ -43018,7 +45094,8 @@
             "value": "32000"
           },
           "Inter-VLAN Routing": {
-            "value": "Yes"
+            "value": "Yes",
+            "note": "Up to 4 VLAN interfaces including the management VLAN."
           },
           "Power Supply Unit": {
             "value": "1x Internal PSU (900W)"
@@ -43134,7 +45211,7 @@
             "value": "32000"
           },
           "Inter-VLAN Routing": {
-            "value": "Yes"
+            "value": "No"
           },
           "Power Supply Unit": {
             "value": "3x Redundant PSU (850W)"
@@ -43204,7 +45281,7 @@
             "value": "32000"
           },
           "Inter-VLAN Routing": {
-            "value": "Yes"
+            "value": "No"
           },
           "Power Supply Unit": {
             "value": "3x Redundant PSU (800W)"
@@ -43464,7 +45541,7 @@
             "value": "32000"
           },
           "Inter-VLAN Routing": {
-            "value": "Yes"
+            "value": "No"
           },
           "Power Supply Unit": {
             "value": "1x PSU 180W\nAC Input: 100V – 240V\nDC Output: 54V",
