@@ -4,6 +4,8 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ## [Unreleased]
 
+## [0.2.3] — 2026-10-09
+
 ### Changed
 - Refreshed the catalog from 114 device sheets in the three Peplink comparison workbooks supplied on 2026-10-09, updating 96 existing records and adding 11 devices: MAX Orbit 2/4/8, Balance 310 5G (HW3), and seven access point variants.
 - The spreadsheet refresh brought the catalog to 199 records (116 fully specified devices and 83 SKU-only records), with existing SKU/add-on mappings, datasheet URLs, and manual device records retained.
@@ -12,6 +14,7 @@ All notable changes to Peplink Advisor are documented here. This project follows
 
 ### Fixed
 - Corrected nine SKU-to-device associations using official ordering tables and hardware declarations, including BR1 Pro revisions, AP hardware, Balance 580X, and MAX Adapter 5GH. Separate legacy AP Pro AC and MAX Adapter 5GH SKU-only records bring the catalog to 201 records without losing SKU/add-on data.
+- Release publishing now refuses to reuse an existing tag from a different commit, preventing manual runs from replacing an older release's downloads with newer code under the old version number.
 
 ## [0.2.2] — 2026-05-03
 

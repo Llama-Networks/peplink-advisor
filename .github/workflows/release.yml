@@ -22,6 +22,12 @@ on:
 permissions:
   contents: write  # required to create a GitHub Release and upload assets
 
+# Manual runs can omit tag_name, so serialize all releases to also cover runs
+# that resolve the same tag through the manifest or a pushed tag.
+concurrency:
+  group: peplink-advisor-release
+  cancel-in-progress: false
+
 jobs:
   build-and-release:
     runs-on: ubuntu-latest
@@ -71,6 +77,16 @@ jobs:
             echo "tag_name=${tag_name}"
             echo "should_release=${should_release}"
           } >> "$GITHUB_OUTPUT"
+
+      - name: Test release safeguards
+        run: python3 -m unittest discover -s build -p 'test_*.py'
+
+      - name: Verify release tag matches the build commit
+        if: steps.release_meta.outputs.should_release == 'true'
+        env:
+          RELEASE_TAG: ${{ steps.release_meta.outputs.tag_name }}
+          RELEASE_SHA: ${{ github.sha }}
+        run: python3 build/verify_release_tag.py
 
       - name: Build Anthropic artifacts
         run: python3 build/build_anthropic.py

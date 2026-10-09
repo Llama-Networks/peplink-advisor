@@ -21,6 +21,9 @@ jobs:
       - name: Test lifecycle filtering and legacy lookups
         run: python3 -m unittest discover -s core/scripts -p 'test_*.py'
 
+      - name: Test release safeguards
+        run: python3 -m unittest discover -s build -p 'test_*.py'
+
       - name: Sanity-check query.py against the bundled dataset
         run: |
           cd core/scripts

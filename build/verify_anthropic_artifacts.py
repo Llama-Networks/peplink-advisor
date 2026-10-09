@@ -46,6 +46,8 @@ def main() -> None:
         plugin_manifest = json.loads((plugin_dir / ".claude-plugin" / "plugin.json").read_text())
         if plugin_manifest.get("name") != "peplink-advisor":
             raise SystemExit("Plugin manifest name is not peplink-advisor")
+        if plugin_manifest.get("version") != version:
+            raise SystemExit(f"Plugin manifest version does not match release version {version}")
 
         for skill_dir in (desktop_dir / 'peplink-advisor', plugin_dir / 'skills' / 'peplink-advisor'):
             if '--new-solutions' not in (skill_dir / 'SKILL.md').read_text():

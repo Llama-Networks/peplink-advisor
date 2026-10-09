@@ -86,9 +86,29 @@ If you changed packaged instructions or adapter files, rebuilding the release pa
 
 ```bash
 python3 build/build_anthropic.py
+python3 build/verify_anthropic_artifacts.py
 python3 build/build_chatgpt.py
 python3 build/verify_chatgpt_bundle.py
 ```
+
+## Publishing a Release
+
+The version in `adapters/anthropic/.claude-plugin/plugin.json` controls all three download filenames and the packaged Claude plugin version. Running the Release workflow does not automatically increment it.
+
+1. Update that version to the next unused release number and move the relevant `CHANGELOG.md` entries from `Unreleased` to a dated version heading.
+2. Run the local checks above and `python3 -m unittest discover -s build -p 'test_*.py'`, then commit and push the changes through the repository's normal review process. Wait for CI to pass.
+3. In GitHub, open **Actions → Release → Run workflow**, select the branch containing the version update, leave **publish_release** checked, and leave **tag_name** blank. The workflow creates `v<plugin.json version>` at that run's commit and publishes all three packages. An explicit tag must match that version exactly.
+
+Alternatively, push a matching tag at the version-update commit to trigger the same workflow. For example, after updating the manifest to `0.2.4`:
+
+```bash
+git tag v0.2.4
+git push origin v0.2.4
+```
+
+Creating a release only through GitHub's Releases page does not trigger the package build. Use the Release workflow or a tag push so the downloads are attached automatically.
+
+To build without publishing, uncheck **publish_release** in the manual workflow form; the packages are available in that run's **Artifacts** section. A publishing run may reuse an existing tag only when it points to the exact commit being built. If the tag points to older code, increment the manifest version and publish a new tag.
 
 ## Where Files Live
 
